@@ -1,0 +1,57 @@
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background-color: green;
+  color: #fff;
+}
+
+.indicators {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top:20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicator {
+  margin: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.indicator:before {
+  display: block;
+	position: absolute;
+  align-self: start;
+	top: -10px; 
+	width: 0;
+	height: 3px; 
+	background-color: #0070c0; 
+	content: "";
+	transition: width 3s ;
+  
+}
+
+.indicator.active:before {
+width: 100%;
+
+}
+
+.indicator.active {
+  background-color: green;
+  color: #fff;
+ 
+}
