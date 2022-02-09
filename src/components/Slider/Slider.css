@@ -5,53 +5,85 @@
 
 .inner {
   white-space: nowrap;
-  transition: transform 0.3s;
+  transition: transform 1s;
 }
 
 .carousel-item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-  background-color: green;
+  height: 900px;
+  display: inline-flex;  
+  justify-content: inherit;  
+  background-color: white;
   color: #fff;
 }
+
 
 .indicators {
   display: flex;
   position: absolute;
   width: 100%;
-  top:20px;
+  padding: 0 80px;
+  box-sizing: border-box;
+  top:40px;
   align-items: center;
-  justify-content: center;
+  gap: 30px;
+  justify-content: space-between;
 }
 
 .indicator {
-  margin: 5px;
-  width: 100%;
+  border: none;
+  width: 44px;
+  height: 30px;  
+  margin: 0; 
+  background-color: transparent;
+  width: 400px;
   position: relative;
+  color: hsla(0,0%,100%,.3);
+  cursor: pointer;
 }
 
+
+.indicator__title {
+  text-align: left;
+  margin: 0;
+  background-color: t;
+  font-size: 16;
+}
+
+.indicator:after {
+  display: block;
+	position: absolute;
+  align-self: start;
+	top: -10px;
+  left:0;
+  right: 0; 
+	width: 0;
+	height: 3px; 
+	background-color: #0050ff; 
+	content: "";
+	
+}
 .indicator:before {
   display: block;
 	position: absolute;
   align-self: start;
-	top: -10px; 
-	width: 0;
-	height: 3px; 
-	background-color: #0070c0; 
+	top: -10px;
+  left:0;
+  right: 0; 
+	width: 100%;
+	height: 2px; 
+	background-color: hsla(0,0%,100%,.3); 
 	content: "";
-	transition: width 3s ;
-  
+	
 }
 
-.indicator.active:before {
-width: 100%;
+.indicator.active:after {
+  width: 100%;
+  transition: width 5s ;
 
 }
 
 .indicator.active {
-  background-color: green;
+  
   color: #fff;
  
 }

@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import "./Slider.css";
 
+
 export const SliderItem = ({ children, width }) => {
   return (
     <div className="carousel-item" style={{ width: width }}>
+
       {children}
     </div>
   );
@@ -29,7 +31,7 @@ const Slider = ({ children }) => {
       if (!paused) {
         updateIndex(activeIndex + 1);
       }
-    }, 3000);
+    }, 5000);
 
     return () => {
       if (interval) {
@@ -40,7 +42,8 @@ const Slider = ({ children }) => {
 
   const handlers = useSwipeable({
     onSwipedLeft: () => updateIndex(activeIndex + 1),
-    onSwipedRight: () => updateIndex(activeIndex - 1)
+    onSwipedRight: () => updateIndex(activeIndex - 1),
+    trackMouse: true
   });
 
   return (
@@ -67,7 +70,15 @@ const Slider = ({ children }) => {
                 updateIndex(index);
               }}
             >
-              {index + 1}
+             {index === 0 && 
+             <p className='indicator__title'>Решения</p>               
+             }
+             {index === 1 && 
+             <p className='indicator__title'>Проекты</p>               
+             }
+             {index === 2 && 
+             <p className='indicator__title'>Технологии</p>               
+             }
             </button>
           );
         })}
