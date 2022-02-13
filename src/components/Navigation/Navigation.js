@@ -32,39 +32,47 @@ function Navigation({ loggedIn }) {
                     to='/movies'
                     className='navigation__link navigation__link_type_header'
                   >
+                    Главная
+                  </NavLink>
+                </li>
+                <li className='navigation__item_type_header'>
+                  <NavLink
+                    to='/saved-movies'
+                    className='navigation__link navigation__link_type_header'
+                  >
+                    Продукты
+                  </NavLink>
+                </li>
+                <li className='navigation__item_type_header'>
+                  <NavLink
+                    to='/saved-movies'
+                    className='navigation__link navigation__link_type_header'
+                  >
+                    Решения
+                  </NavLink>
+                </li>
+                <li className='navigation__item_type_header'>
+                  <NavLink
+                    to='/saved-movies'
+                    className='navigation__link navigation__link_type_header'
+                  >
+                    Кейсы
+                  </NavLink>
+                </li>
+                <li className='navigation__item_type_header'>
+                  <NavLink
+                    to='/saved-movies'
+                    className='navigation__link navigation__link_type_header'
+                  >
                     О компании
                   </NavLink>
                 </li>
                 <li className='navigation__item_type_header'>
                   <NavLink
-                    to='/saved-movies'
+                    to='#'
                     className='navigation__link navigation__link_type_header'
                   >
-                    ИЭТР
-                  </NavLink>
-                </li>
-                <li className='navigation__item_type_header'>
-                  <NavLink
-                    to='/saved-movies'
-                    className='navigation__link navigation__link_type_header'
-                  >
-                    КС ПТР
-                  </NavLink>
-                </li>
-                <li className='navigation__item_type_header'>
-                  <NavLink
-                    to='/saved-movies'
-                    className='navigation__link navigation__link_type_header'
-                  >
-                    Интерактивное обучние
-                  </NavLink>
-                </li>
-                <li className='navigation__item_type_header'>
-                  <NavLink
-                    to='/saved-movies'
-                    className='navigation__link navigation__link_type_header'
-                  >
-                    Корпоративные IT решения
+                    Контакты
                   </NavLink>
                 </li>
                 <li className='navigation__item_type_header navigation__item_type_profile navigation__item_position_right'>

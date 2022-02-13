@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useSwipeable } from "react-swipeable";
-import "./Slider.css";
-
+import React, { useEffect, useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
+import './Slider.css';
 
 export const SliderItem = ({ children, width }) => {
   return (
-    <div className="carousel-item" style={{ width: width }}>
-
+    <div className='carousel-item' style={{ width: width }}>
       {children}
     </div>
   );
@@ -43,48 +41,36 @@ const Slider = ({ children }) => {
   const handlers = useSwipeable({
     onSwipedLeft: () => updateIndex(activeIndex + 1),
     onSwipedRight: () => updateIndex(activeIndex - 1),
-    trackMouse: true
+    trackMouse: true,
   });
 
   return (
-    <div
-      {...handlers}
-      className="carousel"
-  
-    >
+    <div {...handlers} className='carousel'>
       <div
-        className="inner"
+        className='inner'
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child, { width: "100%" });
+          return React.cloneElement(child, { width: '100%' });
         })}
       </div>
-      <div className="indicators">
-      
+      <div className='indicators'>
         {React.Children.map(children, (child, index) => {
           return (
             <button
-              className={`indicator ${index === activeIndex ? "active" : ""}`}
+              className={`indicator ${index === activeIndex ? 'active' : ''}`}
               onClick={() => {
                 updateIndex(index);
               }}
             >
-             {index === 0 && 
-             <p className='indicator__title'>Решения</p>               
-             }
-             {index === 1 && 
-             <p className='indicator__title'>Проекты</p>               
-             }
-             {index === 2 && 
-             <p className='indicator__title'>Технологии</p>               
-             }
+              {index === 0 && <p className='indicator__title'>Решения</p>}
+              {index === 1 && <p className='indicator__title'>Проекты</p>}
+              {index === 2 && <p className='indicator__title'>Технологии</p>}
             </button>
           );
         })}
-     
       </div>
-      <button
+      {/* <button
           onClick={() => {
             updateIndex(activeIndex - 1);
           }}
@@ -97,7 +83,7 @@ const Slider = ({ children }) => {
           }}
         >
           Next
-        </button>
+        </button> */}
     </div>
   );
 };

@@ -1,11 +1,13 @@
 .carousel {
   overflow: hidden;
   position: relative;
+  max-height: 900px;
 }
 
 .inner {
   white-space: nowrap;
   transition: transform 1s;
+  
 }
 
 .carousel-item {

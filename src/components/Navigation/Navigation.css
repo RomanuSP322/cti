@@ -28,9 +28,10 @@
 
 .navigation__list_type_header {
   display: grid;
-  grid-template-columns: max-content max-content max-content max-content max-content 1fr;
+  
+  grid-template-columns: max-content max-content max-content max-content max-content max-content 1fr;
   gap: 20px;
-  padding-left: 45px;
+  padding-left: 70px;
 }
 
 .navigation__list_type_burger {
@@ -93,7 +94,7 @@
 .navigation__link_type_header {
   font-weight: 400;
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   height: 100%;
   color: #ffffff;

@@ -13,6 +13,15 @@
   padding-right: 70px;
 }
 
+.noselect {	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 
 
 .main__slider {
@@ -48,6 +57,7 @@ width: 100%;
   font-weight: 700;
   margin: 0;
   padding-bottom: 260px;
+  text-shadow: 0 0 60px #444;
 }
 
 .slide__title_span {
@@ -60,12 +70,14 @@ width: 100%;
   grid-template-columns: repeat(auto-flow, max-content);  
   max-width: 1000px;
   grid-auto-flow: column;
+  
 }
 
 .slide__subtitle{
   font-size: 50px;  
   font-weight: 300;  
   margin: 0;
+  text-shadow: 0 0 60px #444;
 }
 
 .slide__span{

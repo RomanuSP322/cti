@@ -1,9 +1,10 @@
 .header {
   display: flex;
   align-items: center;
-  max-width: 1140px;
+  max-width: calc(100% - 2*80px);
   background-color: transparent;
   padding: 14px 70px;
+  
   gap: 44px;
   position: relative;
   height: 44px;
