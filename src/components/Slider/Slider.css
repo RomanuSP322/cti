@@ -1,7 +1,7 @@
 .carousel {
   overflow: hidden;
   position: relative;
-  max-height: 900px;
+  max-height: 1020px;
 }
 
 .inner {
@@ -11,10 +11,10 @@
 }
 
 .carousel-item {
-  height: 900px;
+  height: 1020px;
   display: inline-flex;  
   justify-content: inherit;  
-  background-color: white;
+  background-color: transparent;
   color: #fff;
 }
 

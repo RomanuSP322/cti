@@ -24,14 +24,16 @@ class Accordion extends React.Component {
 		const { activeTab } = this.state;
 		return (
 			<div className='accordion' role='tablist'>
-				{panels.map((panel, index) =>
-					<Panel
+				{panels.map((panel, index) => 
+					
+				    <Panel
 						key={ index }
 						activeTab={ activeTab }
 						index={ index }
 						{ ...panel } 
-						activateTab={ this.activateTab.bind(null, index) }
-					/>
+						activateTab={ this.activateTab.bind(null, index) }						
+					/> 
+		
 				)}
 			</div>
 		);
@@ -39,3 +41,10 @@ class Accordion extends React.Component {
 }
 
 export default Accordion
+{/* <div>
+<div className='panel__content-wrapper'>
+<h2 className='panel__subtitle' >{panel.subtitle}</h2>
+  <h2 className='panel__content-title'>{panel.content_title}</h2>
+  <p className='panel__content'>{panel.content}</p>
+</div>
+</div> */}

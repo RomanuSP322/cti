@@ -1,14 +1,17 @@
 .header {
   display: flex;
+ 
+  
   align-items: center;
   max-width: calc(100% - 2*80px);
   background-color: transparent;
-  padding: 14px 70px;
-  
+  padding: 14px 140px;
+  top: 10px;
   gap: 44px;
-  position: relative;
+
   height: 44px;
   margin: 0 auto;
+  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {

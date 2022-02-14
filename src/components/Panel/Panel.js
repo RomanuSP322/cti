@@ -21,32 +21,39 @@ class Panel extends React.Component {
   }
 
   render() {
-    const { label, content, activeTab, index, activateTab, imgurl } =
+    const { label, subtitle, content_title, content, text_color, activeTab, index, activateTab, imgurl } =
       this.props;
     const { width } = this.state;
     const isActive = activeTab === index;
     const innerStyle = {
-      width: `${isActive ? width : 100}px`,
-      backgroundImage: `url(${imgurl})`
+      width: `${isActive ? width : 278}px`,
+      backgroundImage: `url(${imgurl})`,      
+      color: text_color,
     };
 
+
     return (
+      
       <div
         className='panel'
         role='tabpanel'
         aria-expanded={isActive}
 
-      >
-      
+      >     
+       
         <div
           className='panel__inner'
           style={innerStyle}
           aria-hidden={!isActive}
-        >
-            <button className='panel__label' role='tab' onClick={activateTab}>
-          {label}
+        >          
+          <div className='panel__content-wrapper'>
+          <h2 className='panel__subtitle' >{subtitle}</h2>
+            <h2 className='panel__content-title'>{content_title}</h2>
+            <p className='panel__content'>{content}</p>
+          </div>
+          <button className='panel__label' role='tab' onClick={activateTab}>
+          <h3 className='panel__title'>{label}</h3>
         </button>
-          <p className='panel__content'>{content}</p>
         </div>
       </div>
     );
