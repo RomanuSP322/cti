@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import './Slider.css';
 
-export const SliderItem = ({ children, width }) => {
+export const SliderItem = ({ children, width}) => {
   return (
-    <div className='carousel-item' style={{ width: width }}>
+    <div className='carousel-item' style={{ width: width,
+    //  opacity: `${index === activeIndex ? '1' : '0'}`,
+      }}>
       {children}
     </div>
   );
@@ -13,6 +15,7 @@ export const SliderItem = ({ children, width }) => {
 const Slider = ({ children }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+ 
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
@@ -30,7 +33,6 @@ const Slider = ({ children }) => {
         updateIndex(activeIndex + 1);
       }
     }, 5000);
-
     return () => {
       if (interval) {
         clearInterval(interval);
@@ -45,12 +47,15 @@ const Slider = ({ children }) => {
   });
 
   return (
-    <div {...handlers} className='carousel'>
+    <div  {...handlers} className='carousel'>
       <div
         className='inner'
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        style={{
+           transform: `translateX(-${activeIndex * 100}%)`,       
+                     
+          }}
       >
-        {React.Children.map(children, (child, index) => {
+        {React.Children.map(children, (child, i) => {
           return React.cloneElement(child, { width: '100%' });
         })}
       </div>

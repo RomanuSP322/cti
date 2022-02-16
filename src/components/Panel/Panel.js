@@ -12,8 +12,8 @@ class Panel extends React.Component {
 
   componentDidMount() {
     window.setTimeout(() => {
-      const el = ReactDOM.findDOMNode(this);
-      const width = el.querySelector('.panel__inner').scrollHeight;
+      
+      const width = window.innerWidth/100*50;
       this.setState({
         width,
       });
@@ -26,7 +26,7 @@ class Panel extends React.Component {
     const { width } = this.state;
     const isActive = activeTab === index;
     const innerStyle = {
-      width: `${isActive ? width : 278}px`,
+      width: `${isActive ? `${width}px` : `280px`}`,
       backgroundImage: `url(${imgurl})`,      
       color: text_color,
     };
@@ -39,8 +39,7 @@ class Panel extends React.Component {
         role='tabpanel'
         aria-expanded={isActive}
 
-      >     
-       
+      >        
         <div
           className='panel__inner'
           style={innerStyle}

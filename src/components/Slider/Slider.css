@@ -6,16 +6,17 @@
 
 .inner {
   white-space: nowrap;
-  transition: transform 1s;
-  
+  transition: transform 0.8s ease-in-out;
+ 
 }
 
 .carousel-item {
-  height: 1020px;
+  height: 900px;
   display: inline-flex;  
   justify-content: inherit;  
   background-color: transparent;
   color: #fff;
+  transition: opacity 0.2s ease-in-out;
 }
 
 
@@ -23,7 +24,7 @@
   display: flex;
   position: absolute;
   width: 100%;
-  padding: 0 80px;
+  padding: 0 150px;
   box-sizing: border-box;
   top:40px;
   align-items: center;
@@ -35,9 +36,10 @@
   border: none;
   width: 44px;
   height: 30px;  
-  margin: 0; 
+  margin: 0;
+  padding: 0; 
   background-color: transparent;
-  width: 400px;
+  width: 360px;
   position: relative;
   color: hsla(0,0%,100%,.3);
   cursor: pointer;

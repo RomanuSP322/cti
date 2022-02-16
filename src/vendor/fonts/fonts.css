@@ -11,6 +11,14 @@
   font-style:  normal;
   font-weight: 400;
   font-display: swap;
+  src: url("Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
   src: url("Montserrat-Regular.ttf");
 }
 
@@ -19,7 +27,7 @@
   font-style:  normal;
   font-weight: 700;
   font-display: swap;
-  src: url("Montserrat-Medium.ttf");
+  src: url("Montserrat-Bold.ttf");
 }
 
 
