@@ -7,7 +7,7 @@ import accordionImg1 from '../../images/diselImg.png';
 import accordionImg2 from '../../images/techImg.png';
 import accordionImg3 from '../../images/tm18dm.png';
 import accordionImg4 from '../../images/bsu.png';
-import Slider, { SliderItem } from '../Slider/Slider';
+import Slider from '../Slidernew/Slider';
 import Whowe from '../Whowe/Whowe';
 import './Main.css';
 import Accordion from '../Accordion/Accordion';
@@ -56,6 +56,36 @@ const panels = [
 
 ];
 
+const slides = [
+  {
+    title_first: "Slide 1",
+    subtitle_first: "Foxy Image",
+    title_second: "Slide 1",
+    subtitle_second: "Foxy Image",
+    title_third: "Slide 1",
+    subtitle_third: "Foxy Image",
+    image: slide_first,
+  },
+  {
+    title_first: "Slide 2",
+    subtitle_first: "cuty awl",
+    title_second: "Slide 1",
+    subtitle_second: "Foxy Image",
+    title_third: "Slide 1",
+    subtitle_third: "Foxy Image",
+    image: slide_second,
+  },
+  {
+    title_first: "Slide 3",
+    subtitle_first: "nice cat",
+    title_second: "Slide 1",
+    subtitle_second: "Foxy Image",
+    title_third: "Slide 1",
+    subtitle_third: "Foxy Image",
+    image: slide_third,
+  }
+];
+
 function Main() {
   return (
     <div className='main'>     
@@ -68,8 +98,8 @@ function Main() {
                   <span className='slider__title_span noselect'></span>{' '}
                 </h2>
                 <h3 className='slider__subtitle'><span className='slide__title_span'>Надежный партнер на пути</span><br></br> к цифровому будующему</h3>
-        <Slider className='slider'>        
-          <SliderItem >
+        <Slider slides={slides} className='slider'/>        
+          {/* <SliderItem >
             <div className='slide'>
             <img
                 className='slide__img'
@@ -131,8 +161,8 @@ function Main() {
                 </div>
               </div>
             </div>
-          </SliderItem>
-        </Slider>
+          </SliderItem> */}
+        
       </div>
      
       <div className='main__accordion'>
