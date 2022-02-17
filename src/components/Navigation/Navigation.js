@@ -40,7 +40,7 @@ function Navigation({ loggedIn }) {
                     to='/saved-movies'
                     className='navigation__link navigation__link_type_header'
                   >
-                    Продукты
+                    
                   </NavLink>
                 </li>
                 <li className='navigation__item_type_header'>
@@ -56,7 +56,7 @@ function Navigation({ loggedIn }) {
                     to='/saved-movies'
                     className='navigation__link navigation__link_type_header'
                   >
-                    Кейсы
+                    
                   </NavLink>
                 </li>
                 <li className='navigation__item_type_header'>

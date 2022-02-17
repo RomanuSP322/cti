@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Slider.css';
 
-const Slide = ({ classy, title_first, subtitle_first, title_second, subtitle_second, title_third, subtitle_third,   image }) => (
+const Slide = ({ classy, title_first, subtitle_first, title_second, subtitle_second, title_third, subtitle_third, image, indicator, indicator_class, key, updateIndex }) => (
+  <>
   <div className={classy}>
     <div className='slide__text'>
     <h1 className="slide__title">{title_first}</h1>
@@ -13,6 +14,8 @@ const Slide = ({ classy, title_first, subtitle_first, title_second, subtitle_sec
     </div>
     <img src={image} alt='img' className="slide__image" draggable='false' />
   </div>
+
+      </>
 );
 
 const Slider = ({ slides }) => {
@@ -47,7 +50,7 @@ const Slider = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       updateIndex(cur + 1);      
-    }, 2000000);
+    }, 5000);
     return () => {
       if (interval) {
         clearInterval(interval);
@@ -59,19 +62,32 @@ const Slider = ({ slides }) => {
     <section className="slider">
       {!slides || slides.length === 0 ? null : (
         <>
-          <button className="prev" onClick={prevMoving}>
-            <span className="lnr lnr-chevron-left" />
-          </button>
-          <button className="next" onClick={nextMoving}>
-            <span className="lnr lnr-chevron-right" />
-          </button>
+
+          <div className='indicators'>
+        {slides.map((slide, index) => {
+          return (
+            <button
+              className={`indicator ${index === cur ? 'indicator_active' : ''}`}
+              onClick={() => {
+                updateIndex(index);
+              }}
+            >
+             <p className='indicator__title'>{slide.indicator}</p>
+            
+            </button>
+          );
+        })}
+      </div>
           {slides.map((slide, idx) => {
             return (
-              <Slide
+             
+                  <Slide              
                 classy={idx === cur ? "slide active" : "slide"}
                 key={idx}
-                {...slide}
+                {...slide}              
+                
               />
+          
             );
           })}
         </>

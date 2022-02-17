@@ -1,0 +1,131 @@
+.cases {
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 150px;
+  padding-top: 160px;
+  box-sizing: border-box;
+  
+}
+
+.cases__title {
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    font-weight: 700;
+    padding-bottom: 32px;
+}
+
+.cases__subtitle {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    max-width: 900px;
+    
+}
+
+.case_wrapper {
+    position: relative;
+    width: 100%; 
+    min-height: 500px; 
+    display: flex; 
+    align-items: flex-end;
+    
+}
+
+.case {
+    position: absolute; 
+    top: 100px;
+    left: -50px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    transition: opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.case_active {
+    opacity: 1;
+    
+}
+
+.case__text-wrapper {
+    min-width: 80%;
+    background-color: #013658;
+    height: 400px;
+    
+}
+
+.case__text {
+    max-width: 800px;
+    color: white;
+    font-size: 32px;
+    padding-left: 50px;
+    font-weight: 700;
+    margin:0;
+    padding: 30px 50px;
+}
+
+.case__image {
+    width: 700px;
+    position: absolute;
+    right: 0px;
+    bottom: -10%;
+    object-fit: cover;  
+}
+
+.case__button {
+    width: 150px;
+    height: 60px;
+    border: none;
+    outline: none;
+    justify-self: end;
+    z-index: 5;
+    margin: 0;
+    margin-bottom: 34px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    
+}
+
+.case__button:hover {
+    cursor: pointer;
+}
+
+.case__button_next {
+  margin-left: 6%;
+  width: 450px;
+  padding: 0;
+}
+
+.case__button_about {
+    border: 2px solid #12abdb;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.case__button_about:hover {
+    background-color: #12abdb;
+    
+}
+
+.case__button_next:hover {
+    color: #12abdb;
+    
+}
+
+.next_ico {
+    color: #fff; 
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    z-index: 5;
+    
+    vertical-align: middle;
+  
+}

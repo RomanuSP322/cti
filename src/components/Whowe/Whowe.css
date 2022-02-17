@@ -1,12 +1,8 @@
 .whowe {
   width: 100%;  
   background-color: #f4f5f8;
-
-  
-  padding: 100px 80px;
-
-  
-  box-sizing: border-box;
+   padding: 100px 80px;
+   box-sizing: border-box;
 }
 
 .whowe__title-wrapper {
@@ -23,7 +19,7 @@
 
 }
 .whowe__span {
-  border-top: 6px solid #0050ff;
+  border-top: 6px solid #12abdb;
 }
 .whowe__message {
   max-width: 950px;

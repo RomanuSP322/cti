@@ -30,10 +30,6 @@
  width: 100%;
 }
 
-.slider {
-  position: relative;
-}
-
 .slider__title{
   position: absolute;
   top: 220px;
@@ -61,25 +57,8 @@
 
 
 
-.slide__title {  
-  font-size: 90px;
-  line-height: 1.5;
-  font-weight: 700;
-  margin: 0;
-  padding-bottom: 300px;
-  text-shadow: 0 0 60px #444;
-}
-
 .slide__title_span {
-  border-top: 8px solid #0050ff
-}
-
-
-.slide__subtitle{
-  font-size: 40px;  
-  font-weight: 300;  
-  margin: 0;
-  text-shadow: 0 0 60px #444;
+  border-top: 8px solid #12abdb;
 }
 
 
@@ -87,8 +66,14 @@
 .main__accordion {
   background: linear-gradient(225deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%);
   width: 100%;
+  padding-top: 100px;
 }
 
+
+.main__cases {
+  background: linear-gradient(315deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%);
+  height: 1050px;
+}
 @media screen and (max-width: 768px) {
   .main__section {
     padding-left: 50px;
