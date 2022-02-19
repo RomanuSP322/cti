@@ -12,7 +12,7 @@ class Panel extends React.Component {
 
   componentDidMount() {
     window.setTimeout(() => {
-      const width = (window.innerWidth / 100) * 50;
+      const width = (window.innerWidth - 940) ;
       this.setState({
         width,
       });
@@ -34,7 +34,7 @@ class Panel extends React.Component {
     const { width } = this.state;
     const isActive = activeTab === index;
     const innerStyle = {
-      width: `${isActive ? `${width}px` : `400px`}`,
+      width: `${isActive ? `${width}px` : `280px`}`,
       backgroundImage: `url(${imgurl})`,
       color: text_color,
     };
@@ -46,11 +46,11 @@ class Panel extends React.Component {
           style={innerStyle}
           aria-hidden={!isActive}
         >
-          <div className='panel__content-wrapper'>
+          {/* <div className='panel__content-wrapper'>
             <h2 className='panel__subtitle'>{subtitle}</h2>
             <h2 className='panel__content-title'>{content_title}</h2>
             <p className='panel__content'>{content}</p>
-          </div>
+          </div> */}
           <button className='panel__label' role='tab' onClick={activateTab}>
             <h3 className='panel__title'>{label}</h3>
           </button>

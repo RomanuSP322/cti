@@ -196,6 +196,7 @@ const events = [
 function Main() {
   return (
     <div className='main'>
+      
       <Header />
 
 
@@ -206,7 +207,6 @@ function Main() {
         </h2>
         <h3 className='slider__subtitle'><span className='slide__title_span'>Надежный партнер на пути</span><br></br> к цифровому будущему</h3>
         <Slider slides={slides} />
-      
 
       </div>
 
@@ -217,7 +217,13 @@ function Main() {
         <Cases cases={cases} />
       </div>
 
-   
+      {/* <div>
+      <Timeline events={events} />
+      </div>
+
+      <div className='whoweare'>
+        <Whowe />
+      </div> */}
 
     </div>
   );

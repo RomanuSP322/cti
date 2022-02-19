@@ -1,17 +1,29 @@
 .header {
-  display: flex;
- 
-  
+  display: flex; 
+  position: relative;
   align-items: center;
-  max-width: calc(100% - 2*80px);
+  width: 100%;
   background-color: transparent;
-  padding: 14px 150px;
-  top: 10px;
+  padding: 14px 150px;  
   gap: 44px;
-
   height: 44px;
   margin: 0 auto;
   z-index: 10;
+  min-height: 70px;
+  box-sizing: border-box
+  ;
+}
+
+
+.header_sticky {
+
+  background:  rgb(3, 85, 137, 0.85) ;
+  position: sticky;
+  min-height: 50px;
+  top:0;
+ 
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -25,3 +37,6 @@
     padding: 14px 14px;
   }
 }
+
+
+
