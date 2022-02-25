@@ -2,24 +2,25 @@
   width: 100%;
   padding-left: 150px;
   padding-right: 150px;
-  padding-bottom: 150px;
-  padding-top: 160px;
+  padding-bottom: 100px;
+  padding-top: 100px;
   box-sizing: border-box;
   
 }
 
 .cases__title {
-    color: white;
+    color: black;
     font-size: 60px;
     margin: 0;
     font-weight: 700;
-    padding-bottom: 32px;
+    padding-bottom: 42px;
 }
 
 .cases__subtitle {
     font-size: 24px;
+    line-height: 34px;
     margin: 0;
-    color: white;
+    color: black;
     font-weight: 400;
     max-width: 900px;
     
@@ -54,7 +55,7 @@
 
 .case__text-wrapper {
     min-width: 80%;
-    background-color: #013658;
+     background: linear-gradient(315deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%); 
     height: 400px;
     
 }
@@ -62,7 +63,8 @@
 .case__text {
     max-width: 800px;
     color: white;
-    font-size: 32px;
+    font-size: 40px;
+    line-height: 50px;
     padding-left: 50px;
     font-weight: 700;
     margin:0;
@@ -70,16 +72,16 @@
 }
 
 .case__image {
-    width: 700px;
+    height: 700px;
     position: absolute;
-    right: 0px;
+    right: -140px;
     bottom: -10%;
     object-fit: cover;  
 }
 
 .case__button {
     width: 150px;
-    height: 60px;
+    height: 50px;
     border: none;
     outline: none;
     justify-self: end;
@@ -90,7 +92,9 @@
     background-color: transparent;
     color: white;
     font-size: 16px;
-    
+    border-radius: 25px;
+    font-weight: 700;
+    border: 2px solid #12abdb;
 }
 
 .case__button:hover {
@@ -98,15 +102,14 @@
 }
 
 .case__button_next {
-  margin-left: 6%;
-  width: 450px;
+  margin-left: 20px;
+  width: 150px;
   padding: 0;
+  border: none;
 }
 
 .case__button_about {
-    border: 2px solid #12abdb;
-    border-radius: 10px;
-    font-size: 18px;
+   
 }
 
 .case__button_about:hover {
@@ -118,6 +121,19 @@
     color: #12abdb;
     
 }
+
+.case__button_projects {
+    color:#12abdb;
+    margin-top: 20px;   
+    width: 300px;   
+}
+
+.case__button_projects:hover {
+    background-color: #12abdb;
+    color: white;
+}
+
+
 
 .next_ico {
     color: #fff; 

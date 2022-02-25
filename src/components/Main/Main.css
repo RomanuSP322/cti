@@ -1,7 +1,7 @@
 .main {
   margin: 0, auto;
   /* background: linear-gradient(315deg, rgb(5, 36, 82) 76%, rgb(3, 85, 137) 97%); */
-  background: linear-gradient(315deg, rgb(5, 36, 82) 63%, rgb(3, 85, 137) 93%);
+  background: linear-gradient(283deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%);
   position: relative;
   z-index: 1;
 }
@@ -13,6 +13,7 @@
   padding-left: 70px;
   padding-right: 70px;
 }
+
 
 .noselect {	
 	-webkit-touch-callout: none;
@@ -55,7 +56,10 @@
 }
 
 
-
+.img {
+  width: 1920px;
+  height: 400px;
+}
 
 
 .slide__title_span {
@@ -65,15 +69,48 @@
 
 
 .main__accordion {
-  background: linear-gradient(225deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%);
+  background: linear-gradient(235deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%);
   width: 100%;
   padding-top: 100px;
+  
+}
+.main_accordion_bg{
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.main__bg1{
+  z-index: 3;
+  position: absolute;
+  left:0;
+  top:0;
+  overflow: hidden;
+}
+.main__bg2{
+ position: absolute;
+ top: -25px;
+ z-index: 2;
+ left: 0;
+ transform: rotate(2deg);
+ overflow: hidden;
 }
 
+.main__bg3{
+  position: absolute;
+  top: -60px;
+  left: 0;
+  transform: rotate(4deg);
+  z-index: 1;
+}
+
+.main__solutions {
+  background-color: #eef9ff;
+}
 
 .main__cases {
-  background: linear-gradient(315deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%);
-  height: 1050px;
+  
+  background-color: #eef9ff;
+  height: 1000px;
 }
 @media screen and (max-width: 768px) {
   .main__section {

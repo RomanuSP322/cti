@@ -1,8 +1,9 @@
 .whowe {
   width: 100%;  
-  background-color: #f4f5f8;
-   padding: 100px 80px;
+  background-color: #eef9ff;
+   padding: 0 150px 80px;
    box-sizing: border-box;
+ 
 }
 
 .whowe__title-wrapper {
@@ -34,16 +35,16 @@
 
 .whowe__parters {
   margin: 0 auto;
-  padding-top: 70px;
+  
   max-width: 80%;
  
 }
 
 .whowe__partners_title {
   align-items: center;
-  font-size: 24px;  
-  color:#4d4d4d;
-  font-weight: 400;
+  font-size: 40px;  
+  color:black;
+  font-weight: 700;
   text-align: center;
   padding-bottom: 60px;
   margin: 0;

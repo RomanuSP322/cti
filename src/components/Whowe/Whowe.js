@@ -9,7 +9,7 @@ import partner5 from '../../images/partner5.png';
 function Whowe() {
   return (
     <div className='whowe'>
-    <div className='whowe__title-wrapper'>
+    {/* <div className='whowe__title-wrapper'>
       <h2 className='whowe__title'>Кто <span className='whowe__span'>мы</span></h2>
       <p className='whowe__message'>
         Четверть века мы разрабатываем комплексное программное обеспечение для
@@ -21,9 +21,9 @@ function Whowe() {
         деятельности мы накопили богатый опыт по техническому аудиту, системной
         интеграции, разработке персональных IT-решений.
       </p>
-    </div>
+    </div> */}
     <div className='whowe__parters'>
-      <h2 className='whowe__partners_title'>Нам доверяют</h2>
+      {/* <h2 className='whowe__partners_title'>Нам доверяют крупнейшие транспортные предприятия</h2> */}
       <div className='partners'>
       <img className='partners__img ' src={partner1} alt="" draggable="false"/>
       <img className='partners__img partner__tmh' src={partner2} alt="" draggable="false"/>

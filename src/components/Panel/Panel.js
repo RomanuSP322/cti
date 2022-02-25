@@ -34,7 +34,7 @@ class Panel extends React.Component {
     const { width } = this.state;
     const isActive = activeTab === index;
     const innerStyle = {
-      width: `${isActive ? `${width}px` : `280px`}`,
+      width: `${isActive ? `${window.innerWidth - 940}px` : `280px`}`,
       backgroundImage: `url(${imgurl})`,
       color: text_color,
     };
