@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 
 
 import Header from '../Header/Header';
@@ -8,6 +8,7 @@ import Accordion from '../Accordion/Accordion';
 import Cases from '../Cases/Cases'
 import Timeline from '../Timeline/Timeline';
 import Solutions from '../Solutions/Solutions';
+import Advantages from '../Adnantages/Advantages';
 import './Main.css';
 
 
@@ -36,6 +37,14 @@ import solutionIcoThirdActive from '../../images/vractive.png';
 import solutionFourth from '../../images/dataImg.png';
 import solutionIcoFourth from '../../images/server.png';
 import solutionIcoFourthtActive from '../../images/serverActive.png';
+
+
+import icoDevice from '../../images/device.png';
+import icoCode from '../../images/code.png';
+import icoIntegrate from '../../images/distribute.png';
+import icoMultiformat from '../../images/filter.png';
+import icoUniversal from '../../images/recruitmentrdy.png';
+import icoShield from '../../images/encrypte.png';
 
 
 const panels = [
@@ -75,7 +84,7 @@ const panels = [
     content_title: "Ремонт",
     text_color: "#ffd900",
     content:
-      "Четверть века мы разрабатываем комплексное программное обеспечение для предприятий транспорта. За годы успешной проектно-внедренческой деятельности мы накопили богатый опыт по техническому аудиту, системной интеграции, разработке персональных IT-решений.",
+      "Внедрение программной цифровой системы, включающей в себя единую базу данных с актуальной информацией для ремонта, высокую скорость передачи информации и принятия решений. Предоставление виртуальных анимационных моделей технического обслуживания и ремонта изделия, включая меры безопасности, порядок технического обслуживания, внешний осмотр, проверку функционирования и др.",
     imgurl: accordionImg4,
 
   },
@@ -118,6 +127,10 @@ const slides = [
 
 const cases = [
   {
+    text: "Система технологического управления пригородным пассажирским комплексом для ОАО «РЖД»",
+    image: casethird,
+  },
+  {
     text: "Интерактивный электронный каталог сборочных единиц, деталей и узлов подвижного состава «Иволга», разработанный для ОАО «ТВЗ» ",
     image: casefirst,
   },
@@ -125,10 +138,7 @@ const cases = [
     text: "Комплексаня система предоставления технологических процессов обслуживания и ремонта дизель-генератора 18-9ДГ",
     image: casesecond,
   },
-  {
-    text: "Система технологического управления пригородным пассажирским комплексом для ОАО «РЖД»",
-    image: casethird,
-  },
+
 ];
 
 const events = [
@@ -232,11 +242,11 @@ const solutions = [
     title: "Инновационные Системы Обучения",
     ico: solutionIcoThird,
     activeico: solutionIcoThirdActive,
-    text: "Интерактивная система обучения представляет собой программный комплекс, который объединяет в себе нормативную, технологическую и проектно-конструкторскую документацию, на основании которой созданы 3D-модели деталей и узлов.",
+    text: "Современные инструменты и средства для обучения персонала на базе трехмерного интерактивного контента: электронные учебные пособия, модуль интерактивного контроля знаний, VR-тренажеры, различные виды полиграфических макетов для печати.",
     image: solutionThird,
   },
   {
-    title: "Корпоративные Базы Данных",
+    title: "Корпоративные Базы \nДанных",
     ico: solutionIcoFourth,
     activeico: solutionIcoFourthtActive,
     text: "ЦТИ разрабатывает крупные программные комплексы, которые объединяют в себе большое количество разнородной информации. Решение подобных задач требует особенно тщательного подхода к вопросам надежности хранения данных, систематизации и удобства доступа к ним.",
@@ -245,14 +255,51 @@ const solutions = [
 
 ];
 
+
+const advantages = [
+  {
+    title: "Интеграция",
+    ico: icoIntegrate,    
+    text: "Возможность встраивания в существующие рабочие процессы и системы  ERP, PLM, IIoT, SCADA и т. д.",   
+  },
+  {
+    title: "Адаптивность",
+    ico: icoDevice,    
+    text: "Настольный компьютер, мобильный телефон, интернет, локальный сервер, частное или общедоступное облако",   
+  },
+  {
+    title: "Технологическая независимость",
+    ico: icoCode,    
+    text: "Использование отечественного или свободно распространяемого программного обеспечения",   
+  },
+
+  {
+    title: "Универсальность",
+    ico: icoUniversal,    
+    text: "Разработка персоональных решений с учетом особых требований каждой отрасли промышленности",   
+  },
+  {
+    title: "Мультиформатность",
+    ico: icoMultiformat,    
+    text: "Поддержка различных источников 3D и вспомогательных данных. Импорт файлов из сторонних CAD-систем ",   
+  },
+  {
+    title: "Конфиденциальность",
+    ico: icoShield,    
+    text: "Обеспечение надежной безопасности для технической и коммерческой информации",   
+  },
+
+];
+
+
+
+
 function Main() {
   return (
     <div className='main'>
       
       <Header />
-
-
-      <div className='main__slider'>
+      <div className='main__slider' >
         <h2 className='slider__title noselect'>
           Центр Транспортных <br></br> Исследований
           <span className='slider__title_span noselect'></span>{' '}
@@ -262,7 +309,7 @@ function Main() {
 
       </div>
 
-      <div className='main__accordion'>
+      <div className='main__accordion' >
         <Accordion panels={panels} />
         <div className='main_accordion_bg' >
      <svg className='main__bg1' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#eef9ff" fill-opacity="1" d="M0,160L60,154.7C120,149,240,139,360,138.7C480,139,600,149,720,170.7C840,192,960,224,1080,224C1200,224,1320,192,1380,176L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
@@ -271,7 +318,7 @@ function Main() {
      </div>
        
       </div>
-      <div className='main__solutions'>
+      <div className='main__solutions' >
       < Solutions solutions={solutions}/>
       </div>
 
@@ -279,9 +326,18 @@ function Main() {
       <div className='main__cases'>
         <Cases cases={cases} />
       </div>
-      <div className='main__whoweare'>
-        <Whowe />
+      <div className='main__whoweare' >
+        <Whowe />   
+        <div className='main__whoweare_bg' >
+      <svg className='main__bg4' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#eef9ff" fill-opacity="1" d="M0,224L80,218.7C160,213,320,203,480,218.7C640,235,800,277,960,293.3C1120,309,1280,299,1360,293.3L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+      <svg className='main__bg5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="" fill-opacity="0.2" d="M0,224L80,218.7C160,213,320,203,480,218.7C640,235,800,277,960,293.3C1120,309,1280,299,1360,293.3L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+      <svg className='main__bg6' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="" fill-opacity="0.1" d="M0,224L80,218.7C160,213,320,203,480,218.7C640,235,800,277,960,293.3C1120,309,1280,299,1360,293.3L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+     </div>     
       </div>
+
+      <div className='main__advantages'>
+        <Advantages items={advantages} />
+        </div>
 
       {/* <div>
       <Timeline events={events} />

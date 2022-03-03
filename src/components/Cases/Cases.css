@@ -2,8 +2,8 @@
   width: 100%;
   padding-left: 150px;
   padding-right: 150px;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 150px;
+  padding-top: 50px;
   box-sizing: border-box;
   
 }
@@ -13,7 +13,7 @@
     font-size: 60px;
     margin: 0;
     font-weight: 700;
-    padding-bottom: 42px;
+    padding-bottom: 50px;
 }
 
 .cases__subtitle {
@@ -29,7 +29,7 @@
 .case_wrapper {
     position: relative;
     width: 100%; 
-    min-height: 500px; 
+    min-height: 450px; 
     display: flex; 
     align-items: flex-end;
     
@@ -37,7 +37,7 @@
 
 .case {
     position: absolute; 
-    top: 100px;
+    top: 50px;
     left: -50px;
     opacity: 0;
     display: flex;
@@ -54,14 +54,14 @@
 }
 
 .case__text-wrapper {
-    min-width: 80%;
+    min-width: 90%;
      background: linear-gradient(315deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%); 
     height: 400px;
     
 }
 
 .case__text {
-    max-width: 800px;
+    max-width: 900px;
     color: white;
     font-size: 40px;
     line-height: 50px;

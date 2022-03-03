@@ -83,6 +83,8 @@
     font-size: 40px;
     line-height: 50px;
     font-weight: 700;
+    white-space: pre-wrap;
+    
    }
 
 .solution__image {

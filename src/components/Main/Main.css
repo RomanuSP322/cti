@@ -4,6 +4,9 @@
   background: linear-gradient(283deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%);
   position: relative;
   z-index: 1;
+  scroll-snap-type: y proximity;
+  
+  
 }
 
 .main__section {
@@ -76,7 +79,7 @@
 }
 .main_accordion_bg{
   position: relative;
-  height: 300px;
+  height: 400px;
   overflow: hidden;
 }
 .main__bg1{
@@ -101,6 +104,40 @@
   left: 0;
   transform: rotate(4deg);
   z-index: 1;
+}
+
+.main__whoweare {
+
+}
+
+.main__whoweare_bg{
+  position: relative;
+  height: 250px;
+  overflow: hidden;  
+  z-index: 4;  
+  
+}
+
+.main__bg4{
+  position: absolute;
+  top: -250px;
+  left: 0;  
+  z-index: 3;
+ 
+}
+.main__bg5{
+  position: absolute;
+  top: -230px;
+  left: 0;
+  transform: rotate(1deg);
+  z-index: 2;
+}
+.main__bg6{
+  position: absolute;  
+  top: -210px;
+  left: 0;  
+  z-index: 1;
+  transform: rotate(2deg);
 }
 
 .main__solutions {

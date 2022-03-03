@@ -5,6 +5,7 @@ import partner2 from '../../images/partner2.png';
 import partner3 from '../../images/partner3.png';
 import partner4 from '../../images/partner4.png';
 import partner5 from '../../images/partner5.png';
+import partner6 from '../../images/partner6.png';
 
 function Whowe() {
   return (
@@ -23,13 +24,14 @@ function Whowe() {
       </p>
     </div> */}
     <div className='whowe__parters'>
-      {/* <h2 className='whowe__partners_title'>Нам доверяют крупнейшие транспортные предприятия</h2> */}
+       <h2 className='whowe__partners_title'>Нам доверяют </h2> 
       <div className='partners'>
       <img className='partners__img ' src={partner1} alt="" draggable="false"/>
       <img className='partners__img partner__tmh' src={partner2} alt="" draggable="false"/>
       <img className='partners__img partner__tvz' src={partner3} alt="" draggable="false"/>
       <img className='partners__img partner__ovk' src={partner4} alt="" draggable="false"/>
       <img className='partners__img' src={partner5} alt="" draggable="false"/>
+      <img className='partners__img partner__ovk' src={partner6} alt="" draggable="false"/>
       </div>
     </div>
    </div>

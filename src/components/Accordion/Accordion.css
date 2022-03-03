@@ -27,15 +27,13 @@
   width: 2px;
   height: 95%;
   opacity: .5;
-  background: #12abdb;
-  
+  background: #12abdb;  
 }
 
 
 
 .panel[aria-expanded='false'] {
-  padding-left: 0;
-  
+  padding-left: 0;  
 }
 
 
@@ -65,8 +63,7 @@
 
 .panel[aria-expanded='true'] .panel__label {
   height: 0;
-  opacity: 0;
- 
+  opacity: 0; 
 }
 
 .panel__title { 

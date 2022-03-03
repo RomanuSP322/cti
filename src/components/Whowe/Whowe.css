@@ -3,6 +3,7 @@
   background-color: #eef9ff;
    padding: 0 150px 80px;
    box-sizing: border-box;
+   z-index: 3;
  
 }
 
@@ -36,17 +37,17 @@
 .whowe__parters {
   margin: 0 auto;
   
-  max-width: 80%;
  
 }
 
 .whowe__partners_title {
   align-items: center;
-  font-size: 40px;  
-  color:black;
-  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  color:black;  
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   margin: 0;
 }
 
