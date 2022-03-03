@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cti/static/css/main.90ae659a.css",
-    "main.js": "/cti/static/js/main.5a3c19da.js",
+    "main.css": "/cti/static/css/main.565cd713.css",
+    "main.js": "/cti/static/js/main.55584618.js",
     "static/js/787.86190c3d.chunk.js": "/cti/static/js/787.86190c3d.chunk.js",
     "static/media/diselImg.png": "/cti/static/media/diselImg.16ad0fe3b73b23646124.png",
     "static/media/tm18dm.png": "/cti/static/media/tm18dm.fb129785acc8b290e817.png",
@@ -27,22 +27,25 @@
     "static/media/serverActive.png": "/cti/static/media/serverActive.d7482c8760a6367b6137.png",
     "static/media/partner2.png": "/cti/static/media/partner2.1bddf0134744fc870f14.png",
     "static/media/partner1.png": "/cti/static/media/partner1.0e2a63fe13e7bfcf20ea.png",
+    "static/media/recruitmentrdy.png": "/cti/static/media/recruitmentrdy.3307d76ff3e130ab8ab2.png",
+    "static/media/partner6.png": "/cti/static/media/partner6.2ec391586d134cb857d2.png",
     "static/media/vr.png": "/cti/static/media/vr.079f9ddb239cc49f0d00.png",
     "static/media/server.png": "/cti/static/media/server.1fd17777f88efe384aed.png",
     "static/media/vractive.png": "/cti/static/media/vractive.6fb80798e9cf6b77a616.png",
     "static/media/partner3.png": "/cti/static/media/partner3.8834eb65521a490ebafa.png",
+    "static/media/device.png": "/cti/static/media/device.27d049cd9b3c32711f90.png",
     "static/media/3dsoftware.png": "/cti/static/media/3dsoftware.c7a516d7a2dd4ed7aa82.png",
     "static/media/3dsofrwareactive.png": "/cti/static/media/3dsofrwareactive.d1f1f76d7a5855200396.png",
     "index.html": "/cti/index.html",
     "static/media/menu__icon.svg": "/cti/static/media/menu__icon.bc3f6448b5d51ce28967.svg",
     "static/media/close__icon.svg": "/cti/static/media/close__icon.4828fddbd650ab863f28.svg",
     "static/media/profile__icon.svg": "/cti/static/media/profile__icon.1e89084646dbd273ed8f.svg",
-    "main.90ae659a.css.map": "/cti/static/css/main.90ae659a.css.map",
-    "main.5a3c19da.js.map": "/cti/static/js/main.5a3c19da.js.map",
+    "main.565cd713.css.map": "/cti/static/css/main.565cd713.css.map",
+    "main.55584618.js.map": "/cti/static/js/main.55584618.js.map",
     "787.86190c3d.chunk.js.map": "/cti/static/js/787.86190c3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90ae659a.css",
-    "static/js/main.5a3c19da.js"
+    "static/css/main.565cd713.css",
+    "static/js/main.55584618.js"
   ]
 }
