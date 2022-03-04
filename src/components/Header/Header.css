@@ -3,7 +3,7 @@
   position: relative;
   align-items: center;
   width: 100%;
-  background-color: transparent;
+  background: linear-gradient(285deg, rgb(5, 36, 82) 8%, rgb(3, 85, 137) 90%);
   padding: 14px 150px;  
   gap: 44px;
   height: 44px;

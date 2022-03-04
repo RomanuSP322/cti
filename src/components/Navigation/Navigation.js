@@ -80,7 +80,7 @@ function Navigation({ loggedIn }) {
                     to='/profile'
                     className='navigation__link navigation__link_type_profile'
                   >
-                    Аккаунт
+                    Клиентам
                   </NavLink>
                 </li>
               </ul>

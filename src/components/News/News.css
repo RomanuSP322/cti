@@ -1,0 +1,38 @@
+.news__cards-list{
+
+  padding: 180px 150px;
+}
+
+.news__title{
+  color: white;
+    font-size: 60px;
+    margin: 0;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.news_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.news__button_all{   
+  color: white;
+  background: transparent;
+  border: none;  
+  outline: none; 
+  margin: 0;   
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 25px;
+  padding: 0;  
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.news__button_all:hover{
+  color: #12abdb;
+  cursor: pointer;
+}

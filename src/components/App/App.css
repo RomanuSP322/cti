@@ -1,7 +1,11 @@
+
 .app {
   font-family: 'Montserrat', 'Arial', sans-serif;
   position: relative;
   z-index: 1;
+
+  
+  
 }
 
 .app__preloader {
