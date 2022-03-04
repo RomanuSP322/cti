@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cti/static/css/main.4cf69133.css",
-    "main.js": "/cti/static/js/main.65785ded.js",
+    "main.js": "/cti/static/js/main.c335fa12.js",
     "static/js/787.86190c3d.chunk.js": "/cti/static/js/787.86190c3d.chunk.js",
     "static/media/newsIvolga.png": "/cti/static/media/newsIvolga.508098f952a7269ec12e.png",
     "static/media/diselImg.png": "/cti/static/media/diselImg.16ad0fe3b73b23646124.png",
@@ -42,11 +42,11 @@
     "static/media/close__icon.svg": "/cti/static/media/close__icon.4828fddbd650ab863f28.svg",
     "static/media/profile__icon.svg": "/cti/static/media/profile__icon.1e89084646dbd273ed8f.svg",
     "main.4cf69133.css.map": "/cti/static/css/main.4cf69133.css.map",
-    "main.65785ded.js.map": "/cti/static/js/main.65785ded.js.map",
+    "main.c335fa12.js.map": "/cti/static/js/main.c335fa12.js.map",
     "787.86190c3d.chunk.js.map": "/cti/static/js/787.86190c3d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4cf69133.css",
-    "static/js/main.65785ded.js"
+    "static/js/main.c335fa12.js"
   ]
 }
