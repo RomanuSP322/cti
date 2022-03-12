@@ -76,19 +76,20 @@ const EventItem = (props) => {
   useScrollPosition(({ currPos }) => {
     setIsVisible(checkElement(timeItem.current));
   });
-  const { date, content, role, company, location } = props;
+  const { date, content, role, company, location, image } = props;
   return (
     <li ref={timeItem} className={isVisible ? "inView" : null}>
-      <div>
+      <div className='event'>        
         <time>
-          {date.from} - {date.to}
+          {date} 
         </time>
         <h4 className="title">{role}</h4>
-        <h3 className="company">{company}</h3>
+        <h3 className="event__company">{company}</h3>
         <p>
-          <i>{location}</i>
+          {location}
         </p>
         <p className="description">{content}</p>
+        <img src={image} alt='img' className="event__image" draggable='false' />
       </div>
     </li>
   );
@@ -108,6 +109,7 @@ const Timeline = ({events}) => {
           company={item.company}
           location={item.location}
           key={`${item.time}`}
+          image={item.image}
         />
       );
     });
@@ -115,11 +117,11 @@ const Timeline = ({events}) => {
   };
 
   return (
-    <div className="wrapper" ref={scrollArea}>
-      <section className="header">
-        <div className="container">
-          <h1>Atomic Discoveries</h1>
-          <p>Timeline of discoveries though the Atomic Age</p>
+    <div className="timeline__wrapper" ref={scrollArea}>
+      <section className="timeline__header">
+        <div className="timeline__container">
+          <h3 className='timeline__title'>История компании</h3>
+          <p className='timeline__subtitle'>Таймлайн проектов ЦТИ</p>
         </div>
       </section>
 

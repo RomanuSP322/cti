@@ -1,11 +1,13 @@
 .navigation {
   width: 100%;
+ 
 }
 
 .navigation__menu {
   display: flex;
   justify-content: flex-end;
   height: 44px;
+  z-index: 5;
 }
 
 

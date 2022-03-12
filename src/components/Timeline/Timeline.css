@@ -1,3 +1,18 @@
+.timeline__header{
+  padding: 20px 150px;
+}
+
+.timeline__container{
+  color: #fff;
+}
+.timeline__title{
+  font-size: 60px;
+}
+
+.timeline__subtitle{
+  font-size: 30px
+}
+
 .timeline ul {
     background: linear-gradient(270deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%);
   
@@ -31,7 +46,8 @@
     color: #020024;
     position: relative;
     padding: 10px 15px 15px;
-    width: 600px;
+    width: 700px;
+    
   }
   .timeline ul li:nth-child(even) div::after,
   .timeline ul li div::before {
@@ -44,21 +60,21 @@
   }
   .timeline ul li:nth-child(odd) div {
     left: 45px;
+    box-shadow: 10px 16px 18px 22px rgba(18, 171, 219, 0.15);
+    
   }
   .timeline ul li:nth-child(odd) div::before {
     border-width: 8px 16px 8px 0;
     border-color: transparent #fff transparent transparent;
     left: -15px;
+    
   }
   .timeline ul li:nth-child(even) div {
-    left: -650px;
+    left: -780px;
+    box-shadow: -10px 16px 18px 22px rgba(18, 171, 219, 0.15);
+
   }
-  .timeline ul li:nth-child(even) div::before {
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #12abdb;
-    right: -25px;
-    bottom: -1px;
-  }
+
   .timeline ul li:nth-child(even) div::after {
     border-width: 8px 0 8px 16px;
     border-color: transparent transparent transparent #fff;
@@ -76,18 +92,28 @@
    
     margin-bottom: 5px;
   }
-  .company {
+  .event__company {
    
-    margin-bottom: -1px;
+    line-height: 1.5;
+    
   }
+
+  .event__image{
+    width: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+  }
+  
   .location {
    
     font-size: 14px;
     margin-bottom: 4px;
   }
   .description {
-   
-    font-size: 14px;
+    max-width: 320px;
+    font-size: 16px;
   }
   .timeline ul li::after {
     transition: background 0.5s ease-in-out;
@@ -100,10 +126,10 @@
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
   .timeline ul li:nth-child(odd) div {
-    transform: translate3d(200px, 0, 0);
+    transform: translate3d(150px, 0, 0);
   }
   .timeline ul li:nth-child(even) div {
-    transform: translate3d(-200px, 0, 0);
+    transform: translate3d(-150px, 0, 0);
   }
   .timeline ul li.inView div {
     opacity: 1;

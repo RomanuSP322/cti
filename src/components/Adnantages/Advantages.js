@@ -12,7 +12,7 @@ const Advantage = ({ ico, title, text }) => (
 const Advantages = ({ items }) => {
   return (
     <section className='advantages'>
-       <h2 className='advantages__title'>Функциональные возможности</h2>
+       <h2 className='advantages__title'>Отраслевые решения на основе интеллектуальных технологий и лучших практик</h2>
        <div className='advantages-list'>
       {!items || items.length === 0
         ? null

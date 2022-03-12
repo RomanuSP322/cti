@@ -1,0 +1,67 @@
+.about-us{
+
+background-color: #eef9ff;
+display: flex;
+justify-content: space-between;
+padding: 0 150px;
+height: 100%;
+position: relative;
+padding-bottom: 150px;
+}
+
+.about-us__title-wrapper{
+  max-width: 800px;
+  position: sticky;
+  top: 80px;
+  height: 100%;
+}
+
+.about-us__title{
+ font-size: 60px;
+ color: #12abdb; 
+ font-weight: 700;
+ margin:0;
+ padding-bottom: 32px;
+}
+
+
+.about-us__subtitle{
+    font-size: 32px;
+    font-weight: 400;
+    margin:0;
+}
+
+
+.about-us__list{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  
+}
+
+
+.about-us__item{
+    padding-top: 40px;
+    display: flex;
+}
+
+
+.about-us__item_ico{
+    height: 100px;
+    object-fit: cover;
+    padding-right: 40px;
+}
+
+
+.about-us__item_title{
+    font-size: 32px;
+    color: #12abdb;
+    padding-bottom: 16px;
+    margin:0; 
+}
+
+.about-us__item_content{
+    font-size: 20px;
+    margin:0;
+}

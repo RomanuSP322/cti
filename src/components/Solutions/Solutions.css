@@ -1,47 +1,62 @@
 .solutions{
- height: 900px;
+ min-height: 900px;
  position: relative;
  color: black;
  padding: 0 150px;
 }
 
+
 .solutions__title {
-    font-size: 60px;
-    margin: 0;
-    padding-bottom: 40px;
+  font-size: 60px;
+  margin: 0;
+  padding-bottom: 70px;
 }
+
 
 .solutions__indicators{
  display: flex;
+ flex-direction: column;
  justify-content: space-between;
- width: 320px;
- 
+ max-width: 700px;
+ height: 600px;
+ padding-top: 20px;
 }
 
 .solutions__indicator{
     cursor: pointer;
     border: none;
+    display: flex;
+    align-items: center;
     z-index: 2;
-    width: 60px;
-    height: 100px;
-    opacity: 0.7;
+    padding: 30px 0; 
+    box-sizing: border-box;       
     background-color: transparent;
     transition: width 0.3s ease-in-out;
 }
 
+.solutions__indicator:not(.solutions__indicator_active){
+
+  
+}
+
+
 .solutions__indicator:not(.solutions__indicator_active):hover {
-    width: 75px;
-    opacity: 1;
+ opacity: .75;
+ 
+  
 }
 
 .solutions__indicator_active {
-   width: 100px;
+  color: #12abdb;
    opacity: 1;
+   
 }
 
+
 .solution__ico{
-  width: 100%;
+  width: 90px;
   object-fit: cover;
+ 
 }
 
 
@@ -50,13 +65,12 @@
   opacity: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  display: flex;
-  height: 100%;
+  right: 50px;
+  display: flex;  
   transition: opacity 0.6s ease-in-out;
   z-index: 1;
-  padding-top: 20px;
-  padding-left: 150px;
+  
+  
 }
 
 .solution_active {
@@ -69,28 +83,31 @@
   font-size: 26px;
   font-weight: 400;  
   line-height: 36px;
-  padding-top: 200px;
-  height: 600px;
+  padding-top: 80px;
+  
   
 }
 
 .solution__text {
-    min-height: 450px;
+    max-width: 800px;
 }
 
 .solution__title {
-    max-width: 700px;
-    font-size: 40px;
-    line-height: 50px;
+    padding-left: 40px;
+    font-size: 32px;
+    line-height: 38px;
     font-weight: 700;
     white-space: pre-wrap;
+    text-align: left;
+    margin: 0;
     
    }
 
 .solution__image {
     object-fit: cover;
-    width: 1000px;
+    width: 800px;
     align-self: center;
+    box-shadow:         15px -15px 56px 20px rgba(50, 50, 50, 0.3);
 }
 
 .solution__button {

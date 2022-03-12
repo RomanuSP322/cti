@@ -1,0 +1,90 @@
+.company{
+    background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%); 
+}
+
+.company__intro{
+    
+    height: 96vh;
+     
+    padding: 0 150px;
+   position: relative;
+   overflow: hidden;
+}
+
+.company__title{
+    font-size: 130px;    
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    padding-top: 620px;
+    padding-bottom: 50px;
+    text-shadow: 0 0 60px #444;
+}
+
+.company__subtitle{
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.company__image{
+    position: absolute;
+    top:-460px;
+    right: -400px;
+    height: 1700px;
+    object-fit: cover;   
+    
+}
+
+.company__waves{
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+.company__wave1{
+    z-index: 3;
+    position: absolute;
+    left:0;
+    top:40px;
+    overflow: hidden;
+}
+.company__wave2{
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    left: -5px;
+    transform: rotate(1deg);
+    overflow: hidden;
+}
+.company__wave3{
+    position: absolute;
+    top: 0;
+    left: -5px;
+    transform: rotate(2deg);
+    z-index: 1;
+}
+
+.company__wave4{
+    z-index: 3;
+    position: absolute;
+    left:0;
+    top:0;
+    overflow: hidden;
+}
+.company__wave5{
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    left: -5px;
+    transform: rotate(1deg);
+    overflow: hidden;
+}
+.company__wave6{
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    transform: rotate(2deg);
+    z-index: 1;
+}

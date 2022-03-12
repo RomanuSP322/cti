@@ -29,7 +29,7 @@ function Navigation({ loggedIn }) {
               <ul className='navigation__list  navigation__list_type_header'>
                 <li className='navigation__item_type_header'>
                   <NavLink
-                    to='/movies'
+                    to='/'
                     className='navigation__link navigation__link_type_header'
                   >
                     Главная
@@ -61,7 +61,7 @@ function Navigation({ loggedIn }) {
                 </li>
                 <li className='navigation__item_type_header'>
                   <NavLink
-                    to='/saved-movies'
+                    to='/company'
                     className='navigation__link navigation__link_type_header'
                   >
                     О компании
