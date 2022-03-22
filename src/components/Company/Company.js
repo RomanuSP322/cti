@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import Timeline from "../Timeline/Timeline";
 import AboutUs from "../AboutUs/AboutUs";
+import Waves from '../Waves/Waves';
 import "./Company.css";
 
 import company from "../../images/company.png";
@@ -121,11 +122,11 @@ function Company() {
   return (
     <div className="company">
       <Header />
-      <div>
+      
         <div className="company__intro">
           <h2 className="company__title">30 лет</h2>
-          <h3 className="company__subtitle">
-            <span className="slide__title_span">Разрабатываем актуальные</span>{" "}
+          <h3 className="company__subtitle top_span">
+          Разрабатываем актуальные
             <br></br> IT решения для транспорта
           </h3>
           <img
@@ -135,81 +136,10 @@ function Company() {
             draggable="false"
           />
         </div>
-        <div className="company__waves">
-          <svg
-            className="company__wave1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-          >
-            <path
-              fill="#eef9ff"
-              fill-opacity="1"
-              d="M0,96L60,80C120,64,240,32,360,37.3C480,43,600,85,720,106.7C840,128,960,128,1080,133.3C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-            ></path>
-          </svg>
-
-          <svg
-            className="company__wave2"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-          >
-            <path
-              fill=""
-              fill-opacity="0.2"
-              d="M0,96L60,80C120,64,240,32,360,37.3C480,43,600,85,720,106.7C840,128,960,128,1080,133.3C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-            ></path>
-          </svg>
-          <svg
-            className="company__wave3"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-          >
-            <path
-              fill=""
-              fill-opacity="0.1"
-              d="M0,96L60,80C120,64,240,32,360,37.3C480,43,600,85,720,106.7C840,128,960,128,1080,133.3C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-      <div>
-        <AboutUs items={abouts} />
-      </div>
-      <div className="company__waves">
-        <svg
-          className="company__wave4"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-        >
-          <path
-            fill="#eef9ff"
-            fill-opacity="1"
-            d="M0,96L60,80C120,64,240,32,360,37.3C480,43,600,85,720,112C840,139,960,149,1080,133.3C1200,117,1320,75,1380,53.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-          ></path>
-        </svg>
-        <svg
-          className="company__wave5"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-        >
-          <path
-            fill=""
-            fill-opacity="0.2"
-            d="M0,96L60,80C120,64,240,32,360,37.3C480,43,600,85,720,112C840,139,960,149,1080,133.3C1200,117,1320,75,1380,53.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-          ></path>
-        </svg>
-        <svg
-          className="company__wave6"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-        >
-          <path
-            fill=""
-            fill-opacity="0.1"
-            d="M0,96L60,80C120,64,240,32,360,37.3C480,43,600,85,720,112C840,139,960,149,1080,133.3C1200,117,1320,75,1380,53.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-          ></path>
-        </svg>
-      </div>
+        <Waves pos={'up'} svg={"M0,96L60,80C120,64,240,32,360,37.3C480,43,600,85,720,106.7C840,128,960,128,1080,133.3C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"} />
+      <AboutUs items={abouts} />
+      <Waves pos={'down'} svg={'M0,96L60,80C120,64,240,32,360,37.3C480,43,600,85,720,112C840,139,960,149,1080,133.3C1200,117,1320,75,1380,53.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'} />
+      
       <div>
         <Timeline events={events} />
       </div>
