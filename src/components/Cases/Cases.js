@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Cases.css';
 import nextico from '../../images/nextico.png';
 
-const Slider = ({ cases }) => {
+const Cases = ({ cases }) => {
   const [cur, setCur] = React.useState(0);
 
   const nextMoving = () => {
@@ -69,4 +69,4 @@ const Slider = ({ cases }) => {
   );
 };
 
-export default Slider;
+export default Cases;

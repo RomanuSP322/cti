@@ -5,6 +5,7 @@
   width: 100%;
   height: 1000px;
   
+  
 }
 
 .slide {
@@ -21,10 +22,11 @@
   flex-direction: column;  
   overflow: hidden;
 }
+
 .slide.active {
-  opacity: 1;
-  
+  opacity: 1;  
 }
+
 .slide.active .slide__title,.slide.active .slide__subtitle {
   transform: translateY(0%);
 }

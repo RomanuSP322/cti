@@ -5,7 +5,7 @@ import Navigation from '../Navigation/Navigation';
 
 function Header() {
   const ref = useRef();  
-  const sticky = useStickyHeader( 70 );
+  const sticky = useStickyHeader( 10 );
   const headerClasses = `header ${(sticky) ? 'header_sticky' : ''}`  
 
   return (

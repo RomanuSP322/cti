@@ -3,12 +3,10 @@
 }
 
 .company__intro{
-    
-    height: 96vh;
-     
-    padding: 0 150px;
-   position: relative;
-   overflow: hidden;
+
+  padding: 70px 150px 150px;
+  position: relative;
+  
 }
 
 .company__title{
@@ -16,7 +14,7 @@
     font-weight: 700;
     color: white;
     margin: 0;
-    padding-top: 620px;
+    padding-top: 200px;
     padding-bottom: 50px;
     text-shadow: 0 0 60px #444;
 }
@@ -28,13 +26,16 @@
     color: white;
     padding: 0;
     margin: 0;
+    max-width: 580px;
+    padding-bottom: 270px;
 }
 .company__image{
     position: absolute;
-    top:-460px;
-    right: -400px;
-    height: 1700px;
-    object-fit: cover;   
+    top: 0px;
+    right: 0;
+    height: 1000px;
+    object-fit: cover; 
+    overflow-x: hidden;
     
 }
 
