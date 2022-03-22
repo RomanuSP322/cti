@@ -45,7 +45,7 @@ function Navigation({ loggedIn }) {
                 </li>
                 <li className='navigation__item_type_header'>
                   <NavLink
-                    to='/IETR'
+                    to='/saved-movies'
                     className='navigation__link navigation__link_type_header'
                   >
                     Решения
