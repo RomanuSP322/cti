@@ -5,6 +5,7 @@ import './App.css';
 import Company from '../Company/Company';
 import Main from '../Main/Main';
 import IETR from '../IETR/IETR';
+import Learning from '../Learning/Learning';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   
   return (
           <div className='app'>
+           
             <Switch>
             <Route path='/' exact>
              <Main />
@@ -21,6 +23,9 @@ function App() {
           </Route>
           <Route path='/ietr'  exact >
              <IETR />
+          </Route>
+          <Route path='/learning'  exact >
+             <Learning />
           </Route>
             </Switch>             
       </div>

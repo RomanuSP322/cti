@@ -1,0 +1,77 @@
+ .more__btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;   
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    width: 200px;
+    height: 48px; 
+      
+  }
+   .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 48px;
+    height: 48px;
+    background: #12abdb;
+    border-radius: 1.625rem;
+  }
+   .more__icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  .more__icon.more__arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 12px;
+    width: 1.14rem;
+    height: 2px;
+    background: none;
+  }
+  .circle .more__icon.more__arrow::before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    right: 0.0625rem;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+  }
+  .more__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    padding: 0;
+    margin: 0;
+    color: #282936;
+    font-weight: 700;
+    line-height: 48px;
+    padding: 0 0 0 50px;
+    margin:0;
+    font-size: 20px;
+    color: #12abdb;
+  }
+  .more__btn:hover .circle {
+    width: 100%;
+  }
+  .more__btn:hover .circle .more__icon.more__arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+  }
+  .more__btn:hover .more__text {
+    color: #fff;
+  }
+  

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from '../Header/Header';
 import AboutIetr from '../AboutIetr/AboutIetr';
 import Waves from '../Waves/Waves';
 import Capabilities from '../Capabilities/Capabilities';
 import ThreeDInfo from '../ThreeDInfo/ThreeDInfo';
+import ScrollDown from '../ScrollDown/ScrollDown';
+import ScrollToTopBtn from '../ScrollToTop/ScrollToTopBtn';
 
 import './IETR.css';
 
@@ -13,6 +15,7 @@ import capFirst from '../../images/animation.gif';
 import capSecond from '../../images/search.gif';
 import capThird from '../../images/print.gif';
 import capFourth from '../../images/twod.gif';
+import capFifth from '../../images/market.gif';
 
 import threeDFirst from '../../images/sofwareC.png';
 import threeDSecond from '../../images/fileC.png';
@@ -41,8 +44,8 @@ const capabilities = [
     text: 'Специально разработанное программное обеспечение реализует быстродействие на маломощных компьютерах за счет перехода в режим 2D: вся трехмерная информация преобразуется в статичную векторную графику, сохраняя при этом интерактивность и четкость изображения при масштабировании.',
   },  
   {
-    title: 'Свзяь с системами снабжения',
-    image: capFirst,
+    title: 'Связь с системами снабжения',
+    image: capFifth,
     text: 'Все элементы моделей электронного каталога снабжены подробной текстовой и графической информацией о стандарте исполнения, материале, нормах допусков, технологическом процессе обслуживания, оснастке и инструменте. Что позволяет использовать интерактивный каталог при формировании заявки на получение комплектующих.',
   },  
 ];
@@ -64,6 +67,9 @@ const info = [
 ];
 
 function IETR() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='ietr'>
       <Header />
@@ -75,6 +81,7 @@ function IETR() {
           Эффективный цифровой инструмент информационно-технической поддержки
         </h3>
         <img src={ietr} alt='img' className='ietr__image' draggable='false' />
+        < ScrollDown/>
       </section>
       <AboutIetr />
       <Waves
@@ -114,7 +121,7 @@ function IETR() {
         }
       />
       <ThreeDInfo items={info}/>
-     
+      <ScrollToTopBtn />
     </div>
   );
 }

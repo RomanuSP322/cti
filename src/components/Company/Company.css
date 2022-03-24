@@ -4,7 +4,7 @@
 
 .company__intro{
 
-  padding: 70px 150px 150px;
+  padding: 70px 150px 0;
   position: relative;
   
 }
@@ -14,8 +14,8 @@
     font-weight: 700;
     color: white;
     margin: 0;
-    padding-top: 200px;
-    padding-bottom: 50px;
+    padding-top: 220px;
+    padding-bottom: 30px;
     text-shadow: 0 0 60px #444;
 }
 
@@ -31,12 +31,18 @@
 }
 .company__image{
     position: absolute;
-    top: 0px;
+    top: 60px;
     right: 0;
-    height: 1000px;
+    height: 900px;
     object-fit: cover; 
     overflow-x: hidden;
     
+}
+
+.company__slcrolldown{
+    position: absolute;
+    left: 50%;
+    bottom: -130px;
 }
 
 .company__waves{

@@ -40,7 +40,8 @@ function ThreeDInfo({ items })  {
         <div
           className="threedinfo__column_right"
           onMouseEnter={() => {
-            setTimeout( () => setHover(true));
+            setTimeout( () => setHover(true) );
+            
             
           }}
           onMouseLeave={() => {

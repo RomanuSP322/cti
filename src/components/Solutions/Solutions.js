@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./Solutions.css";
+import MoreBtn from "../MoreBtn/MoreBtn";
 
-const Solution = ({ classy, text, image, title, nextMoving }) => (
-  <>
-    <div className={classy}>
-      <div className="solution__content">
- 
-        {/* <button className="solution__button solution__button_about">
+function Solution({ classy, text, image, path, nextMoving }) {
+
+  return (
+    <>
+      <div className={classy}>
+        <div className="solution__content">
+          {/* <button className="solution__button solution__button_about">
           Подробнее
         </button>
 
@@ -16,20 +19,24 @@ const Solution = ({ classy, text, image, title, nextMoving }) => (
         >
           Следующее решение
         </button> */}
-      
-      <img
-        src={image}
-        alt="img"
-        className="solution__image"
-        draggable="false"
-      />
-             <div className="solution__text">          
-          <p className="solution__about">{text}</p>
+
+          <img
+            src={image}
+            alt="img"
+            className="solution__image"
+            draggable="false"
+          />
+          <div className="solution__text">
+            <p className="solution__about">{text}</p>
+          </div>
+          <div className="solution__btn-more">
+            <MoreBtn direction={path} />
+          </div>
         </div>
-        </div>
-    </div>
-  </>
-);
+      </div>
+    </>
+  );
+}
 
 const Solutions = ({ solutions }) => {
   const [cur, setCur] = React.useState(0);
@@ -97,7 +104,7 @@ const Solutions = ({ solutions }) => {
                     className="solution__ico"
                     draggable="false"
                   />
-                   <p className='solution__title'>{solution.title}</p> 
+                  <p className="solution__title">{solution.title}</p>
                 </button>
               );
             })}

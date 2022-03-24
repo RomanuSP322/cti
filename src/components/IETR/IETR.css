@@ -35,8 +35,8 @@ box-sizing: border-box;
 .ietr__image{
   position: absolute;
   top: 0px;
-  right: -50px;
-  height: 1000px;
+  right: -30px;
+  height: 950px;
   object-fit: cover;   
   
 }

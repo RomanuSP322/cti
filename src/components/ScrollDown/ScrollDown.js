@@ -2,12 +2,14 @@ import React from 'react';
 import './ScrollDown.css';
 
 
-function NotFound() {
+function ScrollDown() {
   return (
     <div className='scrolldown'>
-  
+       <div className='scrolldown__ico'></div>
+       <div className='scrolldown__ico'></div>
+       <div className='scrolldown__ico'></div>
     </div>
   );
 }
 
-export default NotFound;
+export default ScrollDown;

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect } from 'react';
 
 import Header from '../Header/Header';
 import Slider from '../Slidernew/Slider';
@@ -9,6 +9,8 @@ import Timeline from '../Timeline/Timeline';
 import Solutions from '../Solutions/Solutions';
 import Advantages from '../Adnantages/Advantages';
 import News from '../News/News';
+import ScrollDown from '../ScrollDown/ScrollDown';
+import ScrollToTopBtn from '../ScrollToTop/ScrollToTopBtn';
 import './Main.css';
 
 import slide_first from '../../images/slide1.png';
@@ -145,6 +147,7 @@ const solutions = [
     activeico: solutionIcoFirstActive,
     text: 'Интерактивные электронные технические руководства - организационно-технические системы, предназначенные для автоматизированной подготовки и представления сопроводительной документации в электронном виде.',
     image: solutionFirst,
+    path : `IETR`,
   },
   {
     title: 'Управление Технологическими Процессами',
@@ -152,6 +155,7 @@ const solutions = [
     activeico: solutionIcoSecondtActive,
     text: 'Система КС ПТР предназначена для автоматизации определения неисправного узла локомотива на основе визуального представления устройства локомотива, автоматического определения потребности в запасных частях, материалах, оборудовании и инструменте при выполнении технологического процесса замены узла.',
     image: solutionSecond,
+    path : `IETR`,
   },
   {
     title: 'Инновационные Системы Обучения',
@@ -159,6 +163,7 @@ const solutions = [
     activeico: solutionIcoThirdActive,
     text: 'Современные инструменты и средства для обучения персонала на базе трехмерного интерактивного контента: электронные учебные пособия, модуль интерактивного контроля знаний, VR-тренажеры, различные виды полиграфических макетов для печати.',
     image: solutionThird,
+    path : `learning`,
   },
   {
     title: 'Корпоративные Базы \nДанных',
@@ -166,6 +171,7 @@ const solutions = [
     activeico: solutionIcoFourthtActive,
     text: 'ЦТИ разрабатывает крупные программные комплексы, которые объединяют в себе большое количество разнородной информации. Решение подобных задач требует особенно тщательного подхода к вопросам надежности хранения данных, систематизации и удобства доступа к ним.',
     image: solutionFourth,
+    path : `IETR`,
   },
 ];
 
@@ -225,6 +231,11 @@ const news = [
 ];
 
 function Main() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className='main'>
       <Header />
@@ -252,6 +263,7 @@ function Main() {
         <h4 className='main__note_title'>10 тыс</h4>
         <p className='main__note_subtitle'>пользователей</p>
       </div>
+      < ScrollDown/>
         </div>
         {/* <Slider slides={slides} /> */}
         
@@ -347,7 +359,7 @@ function Main() {
       <div className='main__news'>
         <News news={news} />
       </div>
-
+      <ScrollToTopBtn />
       {/* <div>
       <Timeline events={events} />
       </div>*/}

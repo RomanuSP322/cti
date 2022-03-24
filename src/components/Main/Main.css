@@ -30,11 +30,12 @@
 
 .main__slider { 
 
- height: 100vh; 
+ 
  padding-top: 70px;
  overflow: hidden;  
  position: relative;
  padding-left: 150px;
+ padding-bottom: 120px;
 }
 
 .main__title{
@@ -46,7 +47,7 @@
   font-weight: 700;
   color: white;
   margin: 0;
-  padding-top: 180px;
+  padding-top: 150px;
   /* text-shadow: 0 0 60px rgb(75, 74, 74); */
 }
 
@@ -65,7 +66,7 @@
   position: absolute;
   top: -00px;
   right: -250px;
-  height: 1100px;
+  height: 1000px;
   object-fit: cover;  
 
 }
@@ -74,7 +75,8 @@
   display: flex;
   justify-content: space-between;
   width: 50%;
-  padding-top: 200px;
+  padding-top: 130px;
+ 
 }
 
 .main__note {
