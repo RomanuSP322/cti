@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/cti/static/css/main.79a69ddd.css",
-    "main.js": "/cti/static/js/main.ec9f5d71.js",
+    "main.css": "/cti/static/css/main.ed964733.css",
+    "main.js": "/cti/static/js/main.32fbf95b.js",
     "static/js/787.86190c3d.chunk.js": "/cti/static/js/787.86190c3d.chunk.js",
     "static/media/animation.gif": "/cti/static/media/animation.88beba5273f2a50d2bbe.gif",
     "static/media/twod.gif": "/cti/static/media/twod.e3408b8cfdccbeb8c1a2.gif",
     "static/media/newsIvolga.png": "/cti/static/media/newsIvolga.508098f952a7269ec12e.png",
     "static/media/print.gif": "/cti/static/media/print.49b15c3acdedba5cdebc.gif",
     "static/media/real3d.png": "/cti/static/media/real3d.5148b2862944518e8f16.png",
+    "static/media/market.gif": "/cti/static/media/market.3363764f9aa5c774304d.gif",
     "static/media/case2.png": "/cti/static/media/case2.dc59188786edc8015d66.png",
     "static/media/case3.png": "/cti/static/media/case3.6b55d6e3ad698eba1f27.png",
     "static/media/slide3.png": "/cti/static/media/slide3.22675ae6aa6900a6bc52.png",
     "static/media/search.gif": "/cti/static/media/search.24e23e536a04981575c2.gif",
     "static/media/vrImg.png": "/cti/static/media/vrImg.300c30fbfa7ad0d8aa9f.png",
     "static/media/case1.png": "/cti/static/media/case1.b0349396aa5bb0a46e0a.png",
+    "static/media/vrdude.png": "/cti/static/media/vrdude.0b2aef680280bb081af8.png",
     "static/media/slide1.png": "/cti/static/media/slide1.c352fd3468d88310a02f.png",
+    "static/media/company.png": "/cti/static/media/company.1e23a00b68960c57bb3f.png",
     "static/media/diselImg.png": "/cti/static/media/diselImg.9ae245f90e4d34b29c59.png",
     "static/media/tm18dm.png": "/cti/static/media/tm18dm.3f1cb6ed3834de81fb97.png",
     "static/media/romashka.png": "/cti/static/media/romashka.c64a53162694c04fbadb.png",
     "static/media/event1.jpg": "/cti/static/media/event1.d7a172d85c9cffb7b3eb.jpg",
     "static/media/solutionIETR.png": "/cti/static/media/solutionIETR.a1d10a63af17bdfae7ba.png",
-    "static/media/company.png": "/cti/static/media/company.7fe454632c826bf29c2e.png",
     "static/media/line3d.png": "/cti/static/media/line3d.11b73cd2ce108c88d839.png",
     "static/media/techImg.png": "/cti/static/media/techImg.af624cf8b1ab8618954e.png",
     "static/media/Montserrat-Bold.ttf": "/cti/static/media/Montserrat-Bold.63fae500fdcf19ce83d4.ttf",
@@ -59,12 +61,12 @@
     "static/media/menu__icon.svg": "/cti/static/media/menu__icon.bc3f6448b5d51ce28967.svg",
     "static/media/close__icon.svg": "/cti/static/media/close__icon.4828fddbd650ab863f28.svg",
     "static/media/profile__icon.svg": "/cti/static/media/profile__icon.1e89084646dbd273ed8f.svg",
-    "main.79a69ddd.css.map": "/cti/static/css/main.79a69ddd.css.map",
-    "main.ec9f5d71.js.map": "/cti/static/js/main.ec9f5d71.js.map",
+    "main.ed964733.css.map": "/cti/static/css/main.ed964733.css.map",
+    "main.32fbf95b.js.map": "/cti/static/js/main.32fbf95b.js.map",
     "787.86190c3d.chunk.js.map": "/cti/static/js/787.86190c3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79a69ddd.css",
-    "static/js/main.ec9f5d71.js"
+    "static/css/main.ed964733.css",
+    "static/js/main.32fbf95b.js"
   ]
 }
