@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/cti/static/css/main.ed964733.css",
-    "main.js": "/cti/static/js/main.32fbf95b.js",
+    "main.css": "/cti/static/css/main.2890788b.css",
+    "main.js": "/cti/static/js/main.1c01d30f.js",
     "static/js/787.86190c3d.chunk.js": "/cti/static/js/787.86190c3d.chunk.js",
     "static/media/animation.gif": "/cti/static/media/animation.88beba5273f2a50d2bbe.gif",
+    "static/media/vrvideo.webm": "/cti/static/media/vrvideo.5d5939bf22b5224c0f43.webm",
+    "static/media/vrvideo.mp4": "/cti/static/media/vrvideo.3ed2a086e509bf46fa39.mp4",
     "static/media/twod.gif": "/cti/static/media/twod.e3408b8cfdccbeb8c1a2.gif",
     "static/media/newsIvolga.png": "/cti/static/media/newsIvolga.508098f952a7269ec12e.png",
     "static/media/print.gif": "/cti/static/media/print.49b15c3acdedba5cdebc.gif",
-    "static/media/real3d.png": "/cti/static/media/real3d.5148b2862944518e8f16.png",
     "static/media/market.gif": "/cti/static/media/market.3363764f9aa5c774304d.gif",
     "static/media/case2.png": "/cti/static/media/case2.dc59188786edc8015d66.png",
     "static/media/case3.png": "/cti/static/media/case3.6b55d6e3ad698eba1f27.png",
@@ -17,6 +18,7 @@
     "static/media/case1.png": "/cti/static/media/case1.b0349396aa5bb0a46e0a.png",
     "static/media/vrdude.png": "/cti/static/media/vrdude.0b2aef680280bb081af8.png",
     "static/media/slide1.png": "/cti/static/media/slide1.c352fd3468d88310a02f.png",
+    "static/media/real3d.png": "/cti/static/media/real3d.efa7349639f6110500a1.png",
     "static/media/company.png": "/cti/static/media/company.1e23a00b68960c57bb3f.png",
     "static/media/diselImg.png": "/cti/static/media/diselImg.9ae245f90e4d34b29c59.png",
     "static/media/tm18dm.png": "/cti/static/media/tm18dm.3f1cb6ed3834de81fb97.png",
@@ -48,6 +50,7 @@
     "static/media/certificate.png": "/cti/static/media/certificate.ae695e001f3e0d1f4048.png",
     "static/media/partner6.png": "/cti/static/media/partner6.2ec391586d134cb857d2.png",
     "static/media/vr.png": "/cti/static/media/vr.079f9ddb239cc49f0d00.png",
+    "static/media/vrHeadsetOverlay.png": "/cti/static/media/vrHeadsetOverlay.d8f3ba985511606cf3b7.png",
     "static/media/experience.png": "/cti/static/media/experience.c4c6e4a7b1720208717f.png",
     "static/media/tablet.png": "/cti/static/media/tablet.d0394254485607ffdf2e.png",
     "static/media/server.png": "/cti/static/media/server.1fd17777f88efe384aed.png",
@@ -57,16 +60,18 @@
     "static/media/device.png": "/cti/static/media/device.27d049cd9b3c32711f90.png",
     "static/media/3dsoftware.png": "/cti/static/media/3dsoftware.c7a516d7a2dd4ed7aa82.png",
     "static/media/3dsofrwareactive.png": "/cti/static/media/3dsofrwareactive.d1f1f76d7a5855200396.png",
+    "static/media/logo335.svg": "/cti/static/media/logo335.84a8f6d0680b8ccf4ff598240b881c19.svg",
+    "static/media/logoWhite.svg": "/cti/static/media/logoWhite.a60fdd5b986b76275765c10af5b9698d.svg",
     "index.html": "/cti/index.html",
     "static/media/menu__icon.svg": "/cti/static/media/menu__icon.bc3f6448b5d51ce28967.svg",
     "static/media/close__icon.svg": "/cti/static/media/close__icon.4828fddbd650ab863f28.svg",
     "static/media/profile__icon.svg": "/cti/static/media/profile__icon.1e89084646dbd273ed8f.svg",
-    "main.ed964733.css.map": "/cti/static/css/main.ed964733.css.map",
-    "main.32fbf95b.js.map": "/cti/static/js/main.32fbf95b.js.map",
+    "main.2890788b.css.map": "/cti/static/css/main.2890788b.css.map",
+    "main.1c01d30f.js.map": "/cti/static/js/main.1c01d30f.js.map",
     "787.86190c3d.chunk.js.map": "/cti/static/js/787.86190c3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed964733.css",
-    "static/js/main.32fbf95b.js"
+    "static/css/main.2890788b.css",
+    "static/js/main.1c01d30f.js"
   ]
 }
