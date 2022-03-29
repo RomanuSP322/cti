@@ -8,16 +8,20 @@ function ThreeDInfo({ items })  {
 
     const [hover, setHover] = useState(false);
 
-    const style = {  normal:{
+    const style = {  normal:{      
         backgroundImage:  `url(${line})`,        
       },
       hover: {
         backgroundImage:  `url(${real})`,  
-      }}
+      }};
 
+    
+
+      
 
 
   return (
+    
     <section className="threedinfo">
       <h2 className="threedinfo__title">Трехмерное Представление Информации</h2>
       <div className="threedinfo__content">
@@ -40,12 +44,11 @@ function ThreeDInfo({ items })  {
         <div
           className="threedinfo__column_right"
           onMouseEnter={() => {
-            setTimeout( () => setHover(true) );
-            
+             setHover(true);       
             
           }}
           onMouseLeave={() => {
-            setTimeout(() =>  setHover(false));
+             setHover(false);
           }}
           style={{
             ...style.normal,

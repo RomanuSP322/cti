@@ -17,6 +17,13 @@
   align-self: center;
 }
 
+.navigation__button {
+  outline: none;
+  border: none;
+  background: transparent; 
+  padding: 0; 
+}
+
 .navigation__menu_type_burger {
   display: flex;
   align-items: center;
@@ -31,7 +38,7 @@
 .navigation__list_type_header {
   display: grid;
   
-  grid-template-columns: max-content max-content max-content max-content max-content max-content 1fr;
+  grid-template-columns:  max-content max-content max-content max-content max-content max-content max-content 1fr;
   gap: 20px;
   padding-left: 70px;
 }
@@ -106,7 +113,8 @@
   display: block;
 	position: absolute;
   align-self: start;
-	left: 0; 
+	left: 0;
+  top:0; 
 	width: 0;
 	height: 3px; 
 	background-color: #12abdb; 
@@ -116,6 +124,10 @@
 }
 
 .navigation__link_type_header:hover:after{
+  width: 100%;
+}
+
+.navigation__link_active.navigation__link_type_header:after{
   width: 100%;
 }
 
@@ -241,4 +253,85 @@
   .navigation__sidebar_type_opened:before {
     display: none;
   }
+}
+
+
+
+.navigation__dropdown {
+  box-shadow: rgb(0 23 146 / 5%) 0px 32px 32px 0px;
+  background:   #035184;
+  transform: translate(0px, -400px);
+  display: block;
+  width: 100%;
+  height: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: transform .7s cubic-bezier(.5,0,0,1);
+}
+
+.navigation__dropdown_active {
+  transform: translate(0px, 0px);
+}
+
+.navigation__item-dropdown_wrapper {
+  position: fixed;
+  height: 0;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  padding-left: 150px;
+ 
+}
+
+.navigation__item-dropdown_wrapper_active {
+  height: 100%; 
+}
+
+.navigation__item-dropdown_content {
+ display: flex;
+ justify-content: flex-start;
+ justify-items: left;
+ flex-flow: wrap;
+ padding-top: 20px;
+ padding-left: 156px;
+ gap: 50px;
+ 
+ transform: translate(0, -200px);
+ transition: transform 0.7s cubic-bezier(.5,0,0,1);
+ 
+}
+
+.navigation__item-dropdown_content_active {
+  transform: translate(0, 0);
+ 
+}
+
+
+
+.navigation__link_type_dropdown {
+  font-weight: 500;
+  max-width: 270px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;  
+  cursor: pointer;
+  color: #ffffff;
+  transition: color .5s ease-in-out;
+}
+
+
+.navigation__link_type_dropdown:hover{
+  color: #12abdb;
+  
+}
+
+.navigation__button-ico{
+  transition: transform .6s ease-in-out;
+}
+
+.navigation__button-ico_active {
+  transform: rotate(180deg);
+  
 }

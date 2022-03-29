@@ -5,12 +5,15 @@ import Slider from '../Slidernew/Slider';
 import Whowe from '../Whowe/Whowe';
 import Accordion from '../Accordion/Accordion';
 import Cases from '../Cases/Cases';
-import Timeline from '../Timeline/Timeline';
+
 import Solutions from '../Solutions/Solutions';
 import Advantages from '../Adnantages/Advantages';
 import News from '../News/News';
 import ScrollDown from '../ScrollDown/ScrollDown';
 import ScrollToTopBtn from '../ScrollToTop/ScrollToTopBtn';
+import Waves from '../Waves/Waves';
+import Footer from '../Footer/Footer';
+
 import './Main.css';
 
 import slide_first from '../../images/slide1.png';
@@ -363,7 +366,10 @@ function Main() {
       {/* <div>
       <Timeline events={events} />
       </div>*/}
+ 
+      <Footer/>
     </div>
+
   );
 }
 

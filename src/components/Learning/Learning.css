@@ -40,3 +40,43 @@
     object-fit: cover;   
     
   }
+  .learning__vr{
+    height: 700px;
+    background-color: #eef9ff;
+    padding: 100px 0px 100px 150px;
+  }
+  
+  .learning__vr-title {
+    font-size: 60px; 
+    margin: 0;   
+    padding-bottom: 50px;
+    font-weight: 700;
+  }
+
+  .learning__vr-content{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .learning__vr-article{
+    max-width: 700px;
+    font-size: 30px; 
+    line-height: 40px;
+    margin: 0;  
+  }
+
+  .vr {
+    position: relative;
+    padding-left: 100px;
+    width: 1050px;   
+    
+  }
+
+  .vr__headset-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1050px;
+    height: 500px;
+  }

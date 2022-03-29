@@ -4,6 +4,11 @@ import "./Solutions.css";
 import MoreBtn from "../MoreBtn/MoreBtn";
 
 function Solution({ classy, text, image, path, nextMoving }) {
+  let history = useHistory();
+
+  function handleClick(path) {
+    history.push(`/${path}`);
+  }
 
   return (
     <>
@@ -30,7 +35,7 @@ function Solution({ classy, text, image, path, nextMoving }) {
             <p className="solution__about">{text}</p>
           </div>
           <div className="solution__btn-more">
-            <MoreBtn direction={path} />
+            <MoreBtn direction={path} text={`Подробнее`}/>
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import Capabilities from '../Capabilities/Capabilities';
 import ThreeDInfo from '../ThreeDInfo/ThreeDInfo';
 import ScrollDown from '../ScrollDown/ScrollDown';
 import ScrollToTopBtn from '../ScrollToTop/ScrollToTopBtn';
+import Footer from '../Footer/Footer';
 
 import './IETR.css';
 
@@ -122,6 +123,7 @@ function IETR() {
       />
       <ThreeDInfo items={info}/>
       <ScrollToTopBtn />
+      <Footer/>
     </div>
   );
 }
