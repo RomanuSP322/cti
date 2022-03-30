@@ -23,7 +23,6 @@ const Slider = ({ children }) => {
     } else if (newIndex >= React.Children.count(children)) {
       newIndex = 0;
     }
-
     setActiveIndex(newIndex);
   };
 

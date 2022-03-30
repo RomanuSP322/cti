@@ -43,14 +43,16 @@
   .learning__vr{
     height: 700px;
     background-color: #eef9ff;
-    padding: 100px 0px 100px 150px;
+    padding: 0px 0px 100px 80px;
   }
   
   .learning__vr-title {
     font-size: 60px; 
     margin: 0;   
     padding-bottom: 50px;
-    font-weight: 700;
+    font-weight: 700;    
+    
+    color: #12abdb;
   }
 
   .learning__vr-content{
@@ -61,9 +63,10 @@
 
   .learning__vr-article{
     max-width: 700px;
-    font-size: 30px; 
-    line-height: 40px;
+    font-size: 24px; 
+    line-height: 32px;
     margin: 0;  
+    padding-right: 80px;
   }
 
   .vr {
@@ -76,7 +79,50 @@
   .vr__headset-img {
     position: absolute;
     top: 0;
-    right: 0;
+    left: -0px;
     width: 1050px;
     height: 500px;
+  }
+
+ .learning__training {
+   padding-left: 150px;
+   padding-top: 100px;
+ }
+
+ .learning__training-title {
+  font-size: 50px; 
+  margin: 0;   
+  padding-bottom: 50px;
+  font-weight: 700;
+  color: #fff;
+  max-width: 900px;
+ }
+
+  .learning__training-content {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 300px;
+  }
+
+  .learning__training-article{
+    max-width: 700px;
+    font-size: 24px; 
+    line-height: 32px;
+    margin: 0; 
+    color: #fff;
+  }
+
+  .learning__training-article {
+    max-width: 800px;
+  }
+
+  .learning__training-phone-wrapper {
+    position: relative;
+  }
+
+  .learning__training-phone-img {
+    position: absolute;
+    top: -13px;
+    left: -7px;
+    width: 380px;
   }
