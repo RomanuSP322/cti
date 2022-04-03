@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Header from "../Header/Header";
 import ScrollDown from "../ScrollDown/ScrollDown";
 import ScrollToTopBtn from "../ScrollToTop/ScrollToTopBtn";
@@ -39,6 +39,9 @@ function Learning() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const next = useRef(null)
+
   return (
     <div className="learning">
       <Header />
@@ -53,7 +56,7 @@ function Learning() {
           className="learning__image"
           draggable="false"
         />
-        <ScrollDown />
+        <ScrollDown refProp={next}/>
       </section>
       <Waves
         pos={"up"}
@@ -61,7 +64,7 @@ function Learning() {
           "M0,128L80,112C160,96,320,64,480,42.7C640,21,800,11,960,10.7C1120,11,1280,21,1360,26.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
         }
       />
-      <section className="learning__vr">
+      <section className="learning__vr" ref={next}>
         
         <div className="learning__vr-content">
           <div className="vr">
@@ -114,7 +117,7 @@ function Learning() {
       </section>
       
       <Footer />
-      <ScrollToTopBtn />
+     
     </div>
   );
 }

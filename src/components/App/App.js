@@ -5,6 +5,7 @@ import './App.css';
 import Company from '../Company/Company';
 import Main from '../Main/Main';
 import IETR from '../IETR/IETR';
+import ScrollToTopBtn from '../ScrollToTop/ScrollToTopBtn';
 import Learning from '../Learning/Learning';
 
 
@@ -27,7 +28,8 @@ function App() {
           <Route path='/learning'  exact >
              <Learning />
           </Route>
-            </Switch>             
+            </Switch> 
+            <ScrollToTopBtn/>           
       </div>
   );
 }

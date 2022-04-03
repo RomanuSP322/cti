@@ -294,7 +294,7 @@
  justify-content: flex-start;
  justify-items: left;
  flex-flow: wrap;
- padding-top: 20px;
+ 
  padding-left: 156px;
  gap: 50px;
  
@@ -319,6 +319,8 @@
   cursor: pointer;
   color: #ffffff;
   transition: color .5s ease-in-out;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 

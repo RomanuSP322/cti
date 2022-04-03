@@ -15,11 +15,11 @@ function MoreBtn({direction, text}) {
 
 
   return (
-    <button class="more__btn" onClick={()=> handleClick(direction)}>
-    <span class="circle" aria-hidden="true">
-      <span class="more__icon more__arrow"></span>
+    <button className="more__btn" onClick={()=> handleClick(direction)}>
+    <span className="circle" aria-hidden="true">
+      <span className="more__icon more__arrow"></span>
     </span>
-    <p class="more__text">{text}</p>
+    <p className="more__text">{text}</p>
   </button>
   );
 }

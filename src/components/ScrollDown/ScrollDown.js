@@ -2,12 +2,18 @@ import React from 'react';
 import './ScrollDown.css';
 
 
-function ScrollDown() {
+function ScrollDown({refProp}) {
 
- 
+  const scrollDown = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
 
   return (
-    <div className='scrolldown' >
+
+    <div className='scrolldown' onClick={() =>scrollDown(refProp)}>
        <div className='scrolldown__ico'></div>
        <div className='scrolldown__ico'></div>
        <div className='scrolldown__ico'></div>

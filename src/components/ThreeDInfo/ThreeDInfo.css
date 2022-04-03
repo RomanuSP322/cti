@@ -23,9 +23,21 @@ justify-content: space-between;
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  transition: background-image .7s ease-in-out; 
+  background-image: var(--normal);
+  transition: background-image .7s .2s ease-in-out; 
   position: relative;
 }
+
+.threedinfo__column_right:hover {
+  background-image: var(--hover);
+}
+
+.threedinfo__column_right::after{
+  display: none;
+  content: var(--normal) var(--hover);
+}
+
+
 
 
 .threedinfo__column_left{

@@ -39,59 +39,13 @@
     
 }
 
+
+
 .company__slcrolldown{
     position: absolute;
     left: 50%;
     bottom: -130px;
+    z-index: 4;
 }
 
-.company__waves{
-    position: relative;
-    height: 260px;
-    overflow: hidden;
-}
-.company__wave1{
-    z-index: 3;
-    position: absolute;
-    left:0;
-    top:40px;
-    overflow: hidden;
-}
-.company__wave2{
-    position: absolute;
-    top: 20px;
-    z-index: 2;
-    left: -5px;
-    transform: rotate(1deg);
-    overflow: hidden;
-}
-.company__wave3{
-    position: absolute;
-    top: 0;
-    left: -5px;
-    transform: rotate(2deg);
-    z-index: 1;
-}
 
-.company__wave4{
-    z-index: 3;
-    position: absolute;
-    left:0;
-    top:0;
-    overflow: hidden;
-}
-.company__wave5{
-    position: absolute;
-    top: 20px;
-    z-index: 2;
-    left: -5px;
-    transform: rotate(1deg);
-    overflow: hidden;
-}
-.company__wave6{
-    position: absolute;
-    top: 40px;
-    left: -5px;
-    transform: rotate(2deg);
-    z-index: 1;
-}

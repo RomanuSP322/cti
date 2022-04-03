@@ -29,13 +29,16 @@
 
 
 .main__slider { 
-
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
  
  padding-top: 70px;
  overflow: hidden;  
  position: relative;
  padding-left: 150px;
  padding-bottom: 120px;
+ margin-bottom: 80px;
 }
 
 .main__title{
@@ -51,6 +54,12 @@
   /* text-shadow: 0 0 60px rgb(75, 74, 74); */
 }
 
+@media screen and (max-width: 1480px) {
+  .main__title { 
+    font-size: 60px;
+  }
+} 
+
 .main__subtitle {
   /* position: absolute;
   top: 450px;
@@ -62,15 +71,37 @@
   max-width: 580px;
 }
 
+@media screen and (max-width: 1480px) {
+  .main__subtitle { 
+    font-size: 30px;
+    max-width: 440px;
+  }
+} 
+
 .main__image {
   position: absolute;
   top: -00px;
   right: -250px;
-  height: 1000px;
-  object-fit: cover;  
-
+  max-height: 1000px;
+ 
+ 
 }
 
+ @media screen and (max-width: 1800px) {
+  .main__image { 
+    top: 100px; 
+    right: -200px;  
+    height: 800px;
+  }
+} 
+
+@media screen and (max-width: 1480px) {
+  .main__image { 
+    top: 100px; 
+    right: -100px;  
+    height: 700px;
+  }
+} 
 .main__notes {
   display: flex;
   justify-content: space-between;
@@ -98,83 +129,15 @@
   margin: 0;
 }
 
-.main__accordion {
-  
-  width: 100%;
-  padding-top: 100px;
-  scroll-snap-align: start;
-  
-}
-.main_accordion_bg{
-  position: relative;
-  height: 400px;
-  overflow: hidden;
-}
-.main__bg1{
-  z-index: 3;
-  position: absolute;
-  left:0;
-  top:0;
-  overflow: hidden;
-}
-.main__bg2{
- position: absolute;
- top: -25px;
- z-index: 2;
- left: 0;
- transform: rotate(2deg);
- overflow: hidden;
-}
-
-.main__bg3{
-  position: absolute;
-  top: -60px;
-  left: 0;
-  transform: rotate(4deg);
-  z-index: 1;
-}
-
-.main__whoweare {
-  scroll-snap-align: start;
-}
-
-.main__whoweare_bg{
-  position: relative;
-  height: 250px;
-  overflow: hidden;  
-  z-index: 4;  
-  
-}
-
-.main__bg4{
-  position: absolute;
-  top: -250px;
-  left: 0;  
-  z-index: 3;
- 
-}
-.main__bg5{
-  position: absolute;
-  top: -230px;
-  left: 0;
-  transform: rotate(1deg);
-  z-index: 2;
-}
-.main__bg6{
-  position: absolute;  
-  top: -210px;
-  left: 0;  
-  z-index: 1;
-  transform: rotate(2deg);
+.main__accordion {  
+  padding-top: 20px;   
 }
 
 .main__solutions {
   background-color: #eef9ff;
-  scroll-snap-align: start;
 }
 
-.main__cases {
-  scroll-snap-align: start;
+.main__cases { 
   background-color: #eef9ff;
   height: 1000px;
 }

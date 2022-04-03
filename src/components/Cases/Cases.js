@@ -26,7 +26,7 @@ const Cases = ({ cases }) => {
           <div className='case_wrapper'>
             {cases.map((item, idx) => {
               return (
-                <div className={`case ${idx === cur ? 'case_active' : ''}`}>
+                <div className={`case ${idx === cur ? 'case_active' : ''}`} key={idx}>
                   <div className='case__text-wrapper'>
                     <p className='case__text'>{item.text}</p>
                   </div>

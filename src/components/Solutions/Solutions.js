@@ -1,41 +1,34 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
-import "./Solutions.css";
 import MoreBtn from "../MoreBtn/MoreBtn";
+import "./Solutions.css";
 
-function Solution({ classy, text, image, path, nextMoving }) {
+
+function Solution({ classy, text, image, path }) {
   let history = useHistory();
 
-  function handleClick(path) {
-    history.push(`/${path}`);
-  }
+  // function handleClick(path) {
+  //   history.push(`/${path}`);
+  // }
 
   return (
     <>
       <div className={classy}>
         <div className="solution__content">
-          {/* <button className="solution__button solution__button_about">
-          Подробнее
-        </button>
-
-        <button
-          onClick={nextMoving}
-          className="solution__button solution__button_next"
-        >
-          Следующее решение
-        </button> */}
-
+       
           <img
             src={image}
             alt="img"
             className="solution__image"
             draggable="false"
+            // onClick={() => handleClick(path)}
           />
+        
           <div className="solution__text">
             <p className="solution__about">{text}</p>
           </div>
           <div className="solution__btn-more">
-            <MoreBtn direction={path} text={`Подробнее`}/>
+            <MoreBtn direction={path} text={`Подробнее`} />
           </div>
         </div>
       </div>
@@ -64,17 +57,6 @@ const Solutions = ({ solutions }) => {
     }
   };
 
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       updateIndex(cur + 1);
-  //     }, 5000);
-  //     return () => {
-  //       if (interval) {
-  //         clearInterval(interval);
-  //       }
-  //     };
-
-  //   });
   return (
     <section className="solutions">
       {!solutions || solutions.length === 0 ? null : (
@@ -96,6 +78,7 @@ const Solutions = ({ solutions }) => {
             {solutions.map((solution, index) => {
               return (
                 <button
+                key={index}
                   className={`solutions__indicator ${
                     index === cur ? "solutions__indicator_active" : ""
                   }`}

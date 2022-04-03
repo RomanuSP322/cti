@@ -33,7 +33,7 @@
 
 .capabilities__column_right{
   justify-self: right;
-  
+  width: 52%;
   position: relative;
 }
 
@@ -140,8 +140,17 @@
 
 } 
 
-.capabilities__item-gif{
-  height: 568px;
+.capabilities__gifs-wrapper{
+  overflow: hidden;
+}
+
+.capabilities__gifs{
+  height: 500px;
+  transition: transform 1s ease;
+}
+
+.capabilities__gif{
+  height: 500px;
   object-fit: cover;
   padding-right: 25px;
 }
@@ -149,8 +158,8 @@
 
 .capabilities__tablet{
   position: absolute;  
-  height: 640px;
+  height: 564px;
   left: -32px;
-  top: -35px;
+  top: -32px;
 }
 

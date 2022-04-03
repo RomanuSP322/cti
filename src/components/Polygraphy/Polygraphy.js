@@ -1,6 +1,5 @@
 import React from "react";
 import "./Polygraphy.css";
-import MoreBtn from "../MoreBtn/MoreBtn";
 
 import stand from "../../images/stand.png";
 
@@ -54,7 +53,7 @@ const Polygraphy = ({ posters }) => {
               {posters.map((item, idx) => {
                 return (
                   <img
-                 
+                   key={idx}
                     src={item.image}
                     alt="img"
                     className="polygraphy__poster"

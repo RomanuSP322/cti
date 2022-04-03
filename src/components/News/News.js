@@ -8,10 +8,7 @@ function News({news}) {
   const lastNew = news[newsIdx];
   const secondNew = news[newsIdx - 1];
   const thirdNew = news[newsIdx- 2];
-  console.log(secondNew);
-  console.log(lastNew);
-  console.log(newsIdx);
-  
+
   return (
     <section className='news__cards-list'>
       {!news || news.length === 0 ? null : (

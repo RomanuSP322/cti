@@ -1,27 +1,20 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./ThreeDInfo.css";
 
 import real from "../../images/real3d.png";
 import line from "../../images/line3d.png";
 
-function ThreeDInfo({ items })  {
+function ThreeDInfo({ items }) {
+  const [hover, setHover] = useState(false);
 
-    const [hover, setHover] = useState(false);
-
-    const style = {  normal:{      
-        backgroundImage:  `url(${line})`,        
-      },
-      hover: {
-        backgroundImage:  `url(${real})`,  
-      }};
-
+  const styles = {
+   '--normal':  `url(${line})`,
     
-
-      
+    '--hover':  `url(${real})`
+  }
 
 
   return (
-    
     <section className="threedinfo">
       <h2 className="threedinfo__title">Трехмерное Представление Информации</h2>
       <div className="threedinfo__content">
@@ -30,7 +23,7 @@ function ThreeDInfo({ items })  {
             ? null
             : items.map((item, idx) => {
                 return (
-                  <div className="threedinfo__item">
+                  <div className="threedinfo__item" key={idx}>
                     <img
                       className="threedinfo__ico"
                       alt="3dico"
@@ -43,23 +36,12 @@ function ThreeDInfo({ items })  {
         </div>
         <div
           className="threedinfo__column_right"
-          onMouseEnter={() => {
-             setHover(true);       
-            
-          }}
-          onMouseLeave={() => {
-             setHover(false);
-          }}
-          style={{
-            ...style.normal,
-            ...(hover ? style.hover : null),
-          }}
-        >
-          
-        </div>
+          style={styles}      
+         
+        ></div>
       </div>
     </section>
   );
-};
+}
 
 export default ThreeDInfo;

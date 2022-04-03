@@ -62,6 +62,7 @@ function Navigation({ loggedIn }) {
 				</svg>
                 </button>
                 <div
+                  onClick={toggleDropdown}
                   className={
                     dropdown
                       ? 'navigation__item-dropdown_wrapper navigation__item-dropdown_wrapper_active'
@@ -144,6 +145,7 @@ function Navigation({ loggedIn }) {
                     ? 'navigation__dropdown navigation__dropdown_active'
                     : 'navigation__dropdown'
                 }
+              
               ></div>
             </ul>
           </div>

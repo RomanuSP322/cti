@@ -12,7 +12,7 @@ export default function Waves({ pos, svg }) {
       >
         <path
           fill='#eef9ff'
-          fill-opacity='1'
+          fillOpacity='1'
          
           d={svg}
         ></path>
@@ -25,7 +25,7 @@ export default function Waves({ pos, svg }) {
       >
         <path
           fill=''
-          fill-opacity='0.2'
+          fillOpacity='0.2'
           d={svg}
         ></path>
       </svg>
@@ -36,7 +36,7 @@ export default function Waves({ pos, svg }) {
       >
         <path
           fill=''
-          fill-opacity='0.1'
+          fillOpacity='0.1'
           d={svg}
         ></path>
       </svg>

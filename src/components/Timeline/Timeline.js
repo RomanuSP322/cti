@@ -100,7 +100,7 @@ const Timeline = ({events}) => {
   const scrollArea = React.useRef();
 
   const makeTimeline = (events) => {
-    const evlist = events.map((item) => {
+    const evlist = events.map((item, idx) => {
       return (
         <EventItem
           date={item.date}
@@ -108,7 +108,7 @@ const Timeline = ({events}) => {
           role={item.role}
           company={item.company}
           location={item.location}
-          key={`${item.time}`}
+          key={idx}
           image={item.image}
         />
       );
