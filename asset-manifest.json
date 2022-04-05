@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cti/static/css/main.14d6ea6f.css",
-    "main.js": "/cti/static/js/main.c908b5e6.js",
+    "main.css": "/cti/static/css/main.df003800.css",
+    "main.js": "/cti/static/js/main.5d6d9286.js",
     "static/js/787.86190c3d.chunk.js": "/cti/static/js/787.86190c3d.chunk.js",
     "static/media/animation.gif": "/cti/static/media/animation.88beba5273f2a50d2bbe.gif",
     "static/media/vrvideo.webm": "/cti/static/media/vrvideo.5d5939bf22b5224c0f43.webm",
@@ -16,10 +16,8 @@
     "static/media/search.gif": "/cti/static/media/search.24e23e536a04981575c2.gif",
     "static/media/vrImg.png": "/cti/static/media/vrImg.d3752668339eb9c4e704.png",
     "static/media/case1.png": "/cti/static/media/case1.b0349396aa5bb0a46e0a.png",
-    "static/media/vrdude.png": "/cti/static/media/vrdude.0b2aef680280bb081af8.png",
     "static/media/real3d.png": "/cti/static/media/real3d.efa7349639f6110500a1.png",
     "static/media/poster3.png": "/cti/static/media/poster3.06aff1afe5ca71593d62.png",
-    "static/media/company.png": "/cti/static/media/company.1e23a00b68960c57bb3f.png",
     "static/media/diselImg.png": "/cti/static/media/diselImg.9ae245f90e4d34b29c59.png",
     "static/media/tm18dm.png": "/cti/static/media/tm18dm.3f1cb6ed3834de81fb97.png",
     "static/media/poster2.png": "/cti/static/media/poster2.9e4019d2669062a25163.png",
@@ -37,11 +35,13 @@
     "static/media/bsu.png": "/cti/static/media/bsu.33febc1d2f0816b16f45.png",
     "static/media/solutionTech.png": "/cti/static/media/solutionTech.6f58784874aaee0d6031.png",
     "static/media/event2.png": "/cti/static/media/event2.f601caaa7aa249862d5c.png",
-    "static/media/ietr.png": "/cti/static/media/ietr.3c8d0f7d42039607eff8.png",
+    "static/media/vrdude2.png": "/cti/static/media/vrdude2.11979367d0a2a8fc3bae.png",
     "static/media/techIcoactive.png": "/cti/static/media/techIcoactive.fb3debccd2e42b6d4b0e.png",
     "static/media/catalog.png": "/cti/static/media/catalog.5580eebe945716931be5.png",
     "static/media/dataImg.png": "/cti/static/media/dataImg.ef815cadab3c9a6b9f74.png",
+    "static/media/ietr2.png": "/cti/static/media/ietr2.7270c2c9b1027b890eed.png",
     "static/media/kolomnalogo.png": "/cti/static/media/kolomnalogo.66179cff560ea1fae8e1.png",
+    "static/media/company2.png": "/cti/static/media/company2.d310233c856f623373be.png",
     "static/media/techIco.png": "/cti/static/media/techIco.4b401935703858549ce5.png",
     "static/media/mosmetrologo.png": "/cti/static/media/mosmetrologo.ce31c1c5919d541debaf.png",
     "static/media/nevzlogo.png": "/cti/static/media/nevzlogo.73a87954d665da61b9d9.png",
@@ -76,12 +76,12 @@
     "static/media/menu__icon.svg": "/cti/static/media/menu__icon.bc3f6448b5d51ce28967.svg",
     "static/media/close__icon.svg": "/cti/static/media/close__icon.4828fddbd650ab863f28.svg",
     "static/media/profile__icon.svg": "/cti/static/media/profile__icon.1e89084646dbd273ed8f.svg",
-    "main.14d6ea6f.css.map": "/cti/static/css/main.14d6ea6f.css.map",
-    "main.c908b5e6.js.map": "/cti/static/js/main.c908b5e6.js.map",
+    "main.df003800.css.map": "/cti/static/css/main.df003800.css.map",
+    "main.5d6d9286.js.map": "/cti/static/js/main.5d6d9286.js.map",
     "787.86190c3d.chunk.js.map": "/cti/static/js/787.86190c3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14d6ea6f.css",
-    "static/js/main.c908b5e6.js"
+    "static/css/main.df003800.css",
+    "static/js/main.5d6d9286.js"
   ]
 }
