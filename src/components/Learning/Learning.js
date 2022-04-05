@@ -1,39 +1,19 @@
 import React, { useEffect, useRef } from "react";
+import { intro, posters } from  '../../consts/learningData.js';
 import Header from "../Header/Header";
-import ScrollDown from "../ScrollDown/ScrollDown";
-import ScrollToTopBtn from "../ScrollToTop/ScrollToTopBtn";
+import Intro from "../Intro/Intro";
 import Polygraphy from "../Polygraphy/Polygraphy";
 import Waves from "../Waves/Waves";
 import Footer from "../Footer/Footer";
 import "./Learning.css";
 
-import vrdude from "../../images/vrdude.png";
 import vrheadset from "../../images/vrHeadsetOverlay.png";
 import vrvideoMp from "../../video/vrvideo.mp4";
 import vrvideoWebm from "../../video/vrvideo.webm";
 
-import posterFirst from "../../images/poster1.png";
-import posterSecond from "../../images/poster2.png";
-import posterThird from "../../images/poster3.png";
-import posterFourth from "../../images/poster4.png";
-
 import phone from "../../images/phone.png";
 import learning from "../../images/phone.gif";
 
-const posters = [
-  {
-    image: posterSecond,
-  },
-  {
-    image: posterFirst,
-  },
-  {
-    image: posterThird,
-  },
-  {
-    image: posterFourth,
-  },
-];
 
 function Learning() {
   useEffect(() => {
@@ -45,19 +25,7 @@ function Learning() {
   return (
     <div className="learning">
       <Header />
-      <section className="learning__intro">
-        <h2 className="learning__title">Инновационные Системы Обучения</h2>
-        <h3 className="learning__subtitle top_span">
-          Современные методы взаимодействия с учебным материалом
-        </h3>
-        <img
-          src={vrdude}
-          alt="img"
-          className="learning__image"
-          draggable="false"
-        />
-        <ScrollDown refProp={next}/>
-      </section>
+      <Intro intro={intro} nextRef={next}/>
       <Waves
         pos={"up"}
         svg={

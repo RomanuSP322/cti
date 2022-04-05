@@ -1,3 +1,5 @@
+import companyBg from "../images/company2.png";
+
 import eventFirst from "../images/event1.jpg";
 import eventSecond from "../images/event2.png";
 
@@ -7,6 +9,12 @@ import expirience from "../images/experience.png";
 import innovationstech from "../images/technology.png";
 import efficiency from "../images/statistics.png";
 
+const intro ={
+  section: "company",
+  title: "30 лет",
+  bgimage: companyBg,
+  subtitle: "  Разрабатываем актуальные\n IT решения для транспорта",  
+}
 
 const events = [
     {
@@ -111,4 +119,4 @@ const events = [
     },
   ];
 
-  export {events, abouts}
+  export {intro, abouts, events}

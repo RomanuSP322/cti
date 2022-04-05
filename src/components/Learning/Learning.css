@@ -2,13 +2,9 @@
     background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%); 
   }
   
-  .learning__intro{
-  
+  .learning__intro{  
   padding: 70px 150px 100px;
-  position: relative;
-  overflow: hidden;
   height: 100vh;
-  box-sizing: border-box;
   }
   
   .learning__title{
@@ -24,22 +20,9 @@
   }
   
   .learning__subtitle{
-    font-size: 35px;
-    line-height: 1.2;
-    font-weight: 500;
-    color: white;
-    padding: 0;
-    margin: 0;
     max-width: 720px;
   }
-  .learning__image{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    height: 800px;
-    object-fit: cover;   
-    
-  }
+
   .learning__vr{
     height: 700px;
     background-color: #eef9ff;

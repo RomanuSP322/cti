@@ -1,3 +1,5 @@
+import ietrBg from '../images/ietr2.png';
+
 import capFirst from "../images/animation.gif";
 import capSecond from "../images/search.gif";
 import capThird from "../images/print.gif";
@@ -7,6 +9,13 @@ import capFifth from "../images/market.gif";
 import threeDFirst from "../images/sofwareC.png";
 import threeDSecond from "../images/fileC.png";
 import threeDThird from "../images/analyzeC.png";
+
+const intro ={
+    section: "ietr",
+    title: "Интерактивное Электронное Техническое Руководство",
+    bgimage: ietrBg,
+    subtitle: "Эффективный цифровой инструмент информационно-технической поддержки",  
+}
 
 const capabilities = [
   {
@@ -51,4 +60,4 @@ const info = [
   },
 ];
 
-export { capabilities, info };
+export { intro, capabilities, info };

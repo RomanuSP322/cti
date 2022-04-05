@@ -1,17 +1,14 @@
 import React, {useEffect, useRef} from 'react';
-import { capabilities, info} from  '../../consts/ietrData.js';
+import { intro, capabilities, info} from  '../../consts/ietrData.js';
 import Header from '../Header/Header';
+import Intro from '../Intro/Intro.js';
 import AboutIetr from '../AboutIetr/AboutIetr';
 import Waves from '../Waves/Waves';
 import Capabilities from '../Capabilities/Capabilities';
 import ThreeDInfo from '../ThreeDInfo/ThreeDInfo';
-import ScrollDown from '../ScrollDown/ScrollDown';
-import ScrollToTopBtn from '../ScrollToTop/ScrollToTopBtn';
 import Footer from '../Footer/Footer';
-
 import './IETR.css';
 
-import ietr from '../../images/ietr.png';
 import catalog from '../../images/catalog.png';
 
 
@@ -19,22 +16,13 @@ function IETR() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-
+ 
   const next = useRef(null)
 
   return (
     <div className='ietr'>
       <Header />
-      <section className='ietr__intro'>
-        <h2 className='ietr__title'>
-          Интерактивное Электронное Техническое Руководство
-        </h2>
-        <h3 className='ietr__subtitle top_span'>
-          Эффективный цифровой инструмент информационно-технической поддержки
-        </h3>
-        <img src={ietr} alt='img' className='ietr__image' draggable='false' />
-        < ScrollDown refProp={next}/>
-      </section>
+      <Intro intro={intro} nextRef={next}/>      
       <div className='ietr__about' ref={next}>
       <AboutIetr />
       </div>

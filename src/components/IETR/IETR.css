@@ -3,42 +3,13 @@
 }
 
 .ietr__intro{
-
 padding: 70px 150px 100px;
-position: relative;
-overflow: hidden;
 height: 100vh;
-box-sizing: border-box;
 }
 
-.ietr__title{
-  font-size: 72px; 
-  line-height: 86px;   
-  font-weight: 700;
-  color: white;
-  max-width: 1200px;
-  margin: 0;
-  padding-top: 200px;
-  padding-bottom: 30px;
-  text-shadow: 0 0 60px #444;
-}
 
 .ietr__subtitle{
-  font-size: 35px;
-  line-height: 1.2;
-  font-weight: 500;
-  color: white;
-  padding: 0;
-  margin: 0;
   max-width: 700px;
-}
-.ietr__image{
-  position: absolute;
-  top: 0px;
-  right: -30px;
-  height: 950px;
-  object-fit: cover;   
-  
 }
 
 .ietr__catalog {

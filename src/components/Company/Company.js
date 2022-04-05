@@ -1,14 +1,13 @@
 import React, { useEffect, useRef } from "react";
-import { events, abouts } from "../../consts/companyData.js";
+import { intro, events, abouts } from "../../consts/companyData.js";
 import Header from "../Header/Header";
+import Intro from '../Intro/Intro.js';
 import Timeline from "../Timeline/Timeline";
 import AboutUs from "../AboutUs/AboutUs";
 import Waves from "../Waves/Waves";
-import ScrollToTopBtn from "../ScrollToTop/ScrollToTopBtn";
 import "./Company.css";
 
-import company from "../../images/company.png";
-import ScrollDown from "../ScrollDown/ScrollDown";
+
 
 function Company() {
   useEffect(() => {
@@ -20,24 +19,8 @@ function Company() {
   return (
     <div className="company">
       <Header />
+      <Intro intro={intro} nextRef={next}/> 
 
-      <div className="company__intro">
-        <h2 className="company__title">30 лет</h2>
-        <h3 className="company__subtitle top_span">
-          Разрабатываем актуальные
-          <br></br> IT решения для транспорта
-        </h3>
-        <img
-          src={company}
-          alt="img"
-          className="company__image"
-          draggable="false"
-        />
-        <div className="company__slcrolldown">
-          {" "}
-          <ScrollDown refProp={next} />
-        </div>
-      </div>
       <Waves
         pos={"up"}
         svg={
