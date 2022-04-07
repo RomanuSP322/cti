@@ -1,12 +1,12 @@
 import React, {useEffect, useRef} from 'react';
-import { intro} from  '../../consts/databasesData';
+import { intro } from  '../../consts/ksptrData';
 import Header from '../Header/Header';
 import Intro from '../Intro/Intro.js';
 import Waves from '../Waves/Waves';
 import Footer from '../Footer/Footer';
-import './Databases.css';
+import './Ksptr.css';
 
-function Databases() {
+function Ksptr() {
     useEffect(() => {
       window.scrollTo(0, 0)
     }, [])
@@ -14,10 +14,10 @@ function Databases() {
     const next = useRef(null)
   
     return (
-      <div className='databases'>
+      <div className='ksptr'>
         <Header />
         <Intro intro={intro} nextRef={next}/>      
-        <div className='databases__about' ref={next}>
+        <div className='ksptr__about' ref={next}>
     
         </div>
         {/* <Waves
@@ -33,4 +33,4 @@ function Databases() {
     );
   }
   
-  export default Databases;
+  export default Ksptr;

@@ -1,17 +1,18 @@
-.databases{
+.ksptr{
     background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%); 
 }
 
-.databases__intro{  
+.ksptr__intro{  
     padding: 70px 150px 100px;
     height: 100vh;
     }
-    .databases__title{
-        font-size: 86px;
-        max-width: 560px;
+    .ksptr__title{
+        padding-top: 180px;
+        max-width: 1200px;
+        
         
     }
 
-    .databases__subtitle{
-        max-width: 700px;
+    .ksptr__subtitle{
+        max-width: 720px;
     }

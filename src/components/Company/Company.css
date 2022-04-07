@@ -4,27 +4,22 @@
 
 .company__intro{
   padding: 70px 150px 0;
+  height: 100vh;
 }
 
-.company__title{
+.company__title {
     font-size: 130px;    
     font-weight: 700;    
-    padding-top: 220px;   
+    padding-top: 220px; 
+    padding-bottom: 50px;  
 }
 
 .company__subtitle{
     font-size: 40px;    
     max-width: 580px;
-    padding-bottom: 320px;
+    
 }
-.company__image{
-    position: absolute;
-    top: 60px;
-    right: 0;
-    height: 900px;
-    object-fit: cover; 
-    overflow-x: hidden;    
-}
+
 
 
 

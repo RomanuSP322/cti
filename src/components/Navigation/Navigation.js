@@ -81,13 +81,13 @@ function Navigation({ loggedIn }) {
                       Интерактивные Электронные Технические Руководства
                     </NavLink>
                     <NavLink
-                      to='/IETR'
+                      to='/ksptr'
                       className=' navigation__link_type_dropdown'
                     >
                       Управление Технологическими Процессами
                     </NavLink>
                     <NavLink
-                      to='/IETR'
+                      to='/databases'
                       className='navigation__link_type_dropdown'
                     >
                       Корпоративные Базы<br></br> Данных
