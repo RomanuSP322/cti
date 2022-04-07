@@ -36,7 +36,7 @@ function Learning() {
         
         <div className="learning__vr-content">
           <div className="vr">
-            <img src={vrheadset} className="vr__headset-img" />
+            <img src={vrheadset} className="vr__headset-img" alt='vrimage'/>
             <video autoPlay muted loop width="853" height="480">
               <source src={vrvideoMp} type="video/mp4" />
               <source src={vrvideoWebm} type="video/webm" />.
