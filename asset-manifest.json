@@ -1,8 +1,21 @@
 {
   "files": {
-    "main.css": "/cti/static/css/main.d8c3e5b2.css",
-    "main.js": "/cti/static/js/main.4e5e42ef.js",
+    "main.css": "/cti/static/css/main.e64ff374.css",
+    "main.js": "/cti/static/js/main.5097c30f.js",
+    "static/css/115.b19d564d.chunk.css": "/cti/static/css/115.b19d564d.chunk.css",
+    "static/js/115.e00b1bd2.chunk.js": "/cti/static/js/115.e00b1bd2.chunk.js",
+    "static/css/988.715caec7.chunk.css": "/cti/static/css/988.715caec7.chunk.css",
+    "static/js/988.0c082228.chunk.js": "/cti/static/js/988.0c082228.chunk.js",
+    "static/css/227.31bb5ac6.chunk.css": "/cti/static/css/227.31bb5ac6.chunk.css",
+    "static/js/227.c68c0e07.chunk.js": "/cti/static/js/227.c68c0e07.chunk.js",
+    "static/css/177.fa00c43f.chunk.css": "/cti/static/css/177.fa00c43f.chunk.css",
+    "static/js/177.4b410dc8.chunk.js": "/cti/static/js/177.4b410dc8.chunk.js",
+    "static/css/440.c93300b7.chunk.css": "/cti/static/css/440.c93300b7.chunk.css",
+    "static/js/440.c32ff1f2.chunk.js": "/cti/static/js/440.c32ff1f2.chunk.js",
+    "static/css/116.4e8d85d1.chunk.css": "/cti/static/css/116.4e8d85d1.chunk.css",
+    "static/js/116.8979479c.chunk.js": "/cti/static/js/116.8979479c.chunk.js",
     "static/js/787.86190c3d.chunk.js": "/cti/static/js/787.86190c3d.chunk.js",
+    "static/js/838.b95f30bb.chunk.js": "/cti/static/js/838.b95f30bb.chunk.js",
     "static/media/animation.gif": "/cti/static/media/animation.88beba5273f2a50d2bbe.gif",
     "static/media/vrvideo.webm": "/cti/static/media/vrvideo.5d5939bf22b5224c0f43.webm",
     "static/media/vrvideo.mp4": "/cti/static/media/vrvideo.3ed2a086e509bf46fa39.mp4",
@@ -28,8 +41,6 @@
     "static/media/poster1.png": "/cti/static/media/poster1.6660195af61807f2cf3c.png",
     "static/media/line3d.png": "/cti/static/media/line3d.11b73cd2ce108c88d839.png",
     "static/media/techImg.png": "/cti/static/media/techImg.af624cf8b1ab8618954e.png",
-    "static/media/Montserrat-Bold.ttf": "/cti/static/media/Montserrat-Bold.63fae500fdcf19ce83d4.ttf",
-    "static/media/Montserrat-Light.ttf": "/cti/static/media/Montserrat-Light.f0963fd9968fbd54cc35.ttf",
     "static/media/Montserrat-Regular.ttf": "/cti/static/media/Montserrat-Regular.ac98a5f5ca71180fe293.ttf",
     "static/media/slide5.png": "/cti/static/media/slide5.0b46a351afb3e582ad4c.png",
     "static/media/bsu.png": "/cti/static/media/bsu.33febc1d2f0816b16f45.png",
@@ -78,12 +89,25 @@
     "static/media/menu__icon.svg": "/cti/static/media/menu__icon.bc3f6448b5d51ce28967.svg",
     "static/media/close__icon.svg": "/cti/static/media/close__icon.4828fddbd650ab863f28.svg",
     "static/media/profile__icon.svg": "/cti/static/media/profile__icon.1e89084646dbd273ed8f.svg",
-    "main.d8c3e5b2.css.map": "/cti/static/css/main.d8c3e5b2.css.map",
-    "main.4e5e42ef.js.map": "/cti/static/js/main.4e5e42ef.js.map",
-    "787.86190c3d.chunk.js.map": "/cti/static/js/787.86190c3d.chunk.js.map"
+    "main.e64ff374.css.map": "/cti/static/css/main.e64ff374.css.map",
+    "main.5097c30f.js.map": "/cti/static/js/main.5097c30f.js.map",
+    "115.b19d564d.chunk.css.map": "/cti/static/css/115.b19d564d.chunk.css.map",
+    "115.e00b1bd2.chunk.js.map": "/cti/static/js/115.e00b1bd2.chunk.js.map",
+    "988.715caec7.chunk.css.map": "/cti/static/css/988.715caec7.chunk.css.map",
+    "988.0c082228.chunk.js.map": "/cti/static/js/988.0c082228.chunk.js.map",
+    "227.31bb5ac6.chunk.css.map": "/cti/static/css/227.31bb5ac6.chunk.css.map",
+    "227.c68c0e07.chunk.js.map": "/cti/static/js/227.c68c0e07.chunk.js.map",
+    "177.fa00c43f.chunk.css.map": "/cti/static/css/177.fa00c43f.chunk.css.map",
+    "177.4b410dc8.chunk.js.map": "/cti/static/js/177.4b410dc8.chunk.js.map",
+    "440.c93300b7.chunk.css.map": "/cti/static/css/440.c93300b7.chunk.css.map",
+    "440.c32ff1f2.chunk.js.map": "/cti/static/js/440.c32ff1f2.chunk.js.map",
+    "116.4e8d85d1.chunk.css.map": "/cti/static/css/116.4e8d85d1.chunk.css.map",
+    "116.8979479c.chunk.js.map": "/cti/static/js/116.8979479c.chunk.js.map",
+    "787.86190c3d.chunk.js.map": "/cti/static/js/787.86190c3d.chunk.js.map",
+    "838.b95f30bb.chunk.js.map": "/cti/static/js/838.b95f30bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8c3e5b2.css",
-    "static/js/main.4e5e42ef.js"
+    "static/css/main.e64ff374.css",
+    "static/js/main.5097c30f.js"
   ]
 }
