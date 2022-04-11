@@ -1,0 +1,46 @@
+.project{
+    background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%); 
+   
+    box-sizing: border-box;
+}
+
+.project__card{
+   padding-top: 70px; 
+   
+   
+}
+
+.project__content{
+    background-color: #eef9ff;
+    padding-left: 150px;    
+    padding-bottom: 150px;
+}
+
+.project__column_left{
+    padding-right: 50px;
+}
+
+.project__title{
+    font-size: 34px;
+    color: #12abdb; 
+    font-weight: 700;
+    margin:0;
+    padding-bottom: 40px;
+    max-width: 900px;
+    padding-top: 40px;
+}
+
+.project__details {
+    display: flex;
+    padding-top: 60px;
+    padding-right: 56px;
+}
+
+.project__detail-wrapper{
+    display: flex;
+    align-items: baseline;
+}
+
+.project__detail-title {
+    min-width: 130px;
+}

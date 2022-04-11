@@ -1,0 +1,31 @@
+.portfolio{
+    background-image: var(--normal ), linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%);    
+    background-size: contain;    
+    background-repeat: no-repeat;
+ 
+}
+
+.portfolio__intro{  
+    padding: 0px 150px 0;
+    background-image: var(--normal);
+    
+    }
+    .portfolio__title{
+        font-size: 60px;
+        max-width: 560px;
+        padding-top: 100px;
+        padding-bottom: 14px;
+        
+    }
+
+    .portfolio__subtitle{
+        max-width: 540px;
+        font-size: 26px;
+      
+    }
+
+    .portfolio__about{        
+        background: #eef9ff;
+    }
+
+ 

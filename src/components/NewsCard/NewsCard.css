@@ -1,83 +1,62 @@
-.news-card{
- display: flex;
- align-items: flex-start;
- justify-content: left;
- width: 66%; 
+.newscard{
+background-color: #eef9ff;
+width: 360px;
+padding-bottom: 20px;
+overflow: hidden;
 }
 
-.news-card:hover{
+.newscard:hover{
   cursor: pointer;
 }
 
-.news-card:hover .news-card__title{
- color:#12abdb; 
- transition: color 0.3s ease-out;
-}
 
-
-.news-card__image{
-  height: 280px;
+.newscard__image{
+ width: 100%;
   padding-right: 32px;
   margin: 0;
   object-fit: cover;
+  transition: transform 1s ease-in-out;
+  padding-bottom: 10px;
+  
+}
+.newscard:hover .newscard__image{
+  transform: scale(1.1);
+  
 }
 
-.news-card__content{
-  color: white;
+.newscard__content{
+  color: #000;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
   
 }
 
 
-
-.news-card_right {
-  width: 420px;
-  min-height: 140px;
-  position: relative;
-  margin: 0;
- 
-}
-
-.news-card_right:last-child {
-  padding-top: 60px; 
-}
-
-.news-card_right:last-child:after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 30px;
-  z-index: 1;
-  width: 100%;
-  height: 2px;
-  opacity: .5;
-  background: #12abdb;  
-}
-
-.news-card__date{
+.newscard__date{
   font-size: 10px;
   padding-bottom: 8px;
   margin: 0;
 }
 
-.news-card__title{
-  font-size: 24px;
-  line-height: 32px;
+.newscard__title{
+  font-size: 18px;
+  line-height: 24px;
   margin: 0;
   padding-bottom: 12px;
   font-weight: 700;
 }
 
-.news-card__text{
-  font-size: 20px;
-  line-height: 24px;
+.newscard__text{
+  font-size: 14px;
+  line-height: 20px;
   margin: 0;
   padding-bottom: 32px;
 }
 
-.news-card__button_more{
+.newscard__button_more{
   color: #12abdb;
   border: none;
   outline: none;
@@ -89,7 +68,7 @@
   position: relative;
 }
 
-.news-card__button_more:after {
+.newscard__button_more:after {
   display: block;
 	position: absolute;
   align-self: start;
@@ -103,6 +82,6 @@
   
 }
 
-.news-card:hover .news-card__button_more:after{
+.newscard:hover .newscard__button_more:after{
   width: 100%;
  }

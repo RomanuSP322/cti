@@ -11,6 +11,8 @@
   justify-content: space-between;
 }
 
+
+
 .footer__logo-wrapper{
   display: flex;
   align-items: top;
@@ -34,9 +36,9 @@
 }
 
 .footer__contact{
-  padding-right: 250px;
-  color: #000;
+  padding-right: 250px;  
 }
+
 
 .footer__contact_title{
   font-size: 20px;
@@ -71,4 +73,9 @@
 }
 .footer__copyright {
   margin: 0;
+}
+
+.footer__thme_dark {
+  color:#fff;
+  background-color:transparent;
 }

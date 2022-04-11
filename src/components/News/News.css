@@ -1,14 +1,18 @@
-.news__cards-list{
+.news__cards-list_main{
 
   padding: 180px 150px 0;
 }
 
+.news__cards-list_self {
+  background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%);
+}
 .news__title{
   color: white;
     font-size: 60px;
     margin: 0;
     font-weight: 700;
     padding-bottom: 20px;
+  
 }
 
 .news_wrapper {
@@ -18,11 +22,16 @@
   position: relative;
 }
 
+.news__button_link{
+  max-width: 300px;
+}
+
 .news__button_all{   
   color: white;
   background: transparent;
   border: none;  
-  outline: none; 
+  outline: none;
+  text-decoration: none; 
   margin: 0;   
   font-size: 24px;
   font-weight: 400;
@@ -30,9 +39,123 @@
   padding: 0;  
   padding-bottom: 20px;
   text-align: left;
+   
 }
 
 .news__button_all:hover{
   color: #12abdb;
   cursor: pointer;
+
 }
+
+
+
+.news-card{
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  width: 66%; 
+ }
+ 
+ .news-card:hover{
+   cursor: pointer;
+ }
+ 
+ .news-card:hover .news-card__image{
+  color:#12abdb; 
+  transition: color 0.3s ease-out;
+ }
+ 
+ 
+ .news-card__image{
+   height: 280px;
+   padding-right: 32px;
+   margin: 0;
+   object-fit: cover;
+ }
+ 
+ .news-card__content{
+   color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   
+ }
+ 
+ 
+ 
+ .news-card_right {
+   width: 420px;
+   min-height: 140px;
+   position: relative;
+   margin: 0;
+  
+ }
+ 
+ .news-card_right:last-child {
+   padding-top: 60px; 
+ }
+ 
+ .news-card_right:last-child:after {
+   content: '';
+   position: absolute;
+   right: 0;
+   top: 30px;
+   z-index: 1;
+   width: 100%;
+   height: 2px;
+   opacity: .5;
+   background: #12abdb;  
+ }
+ 
+ .news-card__date{
+   font-size: 10px;
+   padding-bottom: 8px;
+   margin: 0;
+ }
+ 
+ .news-card__title{
+   font-size: 24px;
+   line-height: 32px;
+   margin: 0;
+   padding-bottom: 12px;
+   font-weight: 700;
+ }
+ 
+ .news-card__text{
+   font-size: 20px;
+   line-height: 24px;
+   margin: 0;
+   padding-bottom: 32px;
+ }
+ 
+ .news-card__button_more{
+   color: #12abdb;
+   border: none;
+   outline: none;
+   margin: 0;
+   padding: 0;
+   background-color: transparent;
+   padding-top: 12px;  
+   font-weight: 700;
+   position: relative;
+ }
+ 
+ .news-card__button_more:after {
+   display: block;
+   position: absolute;
+   align-self: start;
+   left: 0;
+   bottom: -5px; 
+   width: 25%;
+   height: 2px; 
+   background-color: #12abdb; 
+   content: "";
+   transition: width 0.3s ease-out;
+   
+ }
+ 
+ .news-card:hover .news-card__button_more:after{
+   width: 100%;
+  }
+ 

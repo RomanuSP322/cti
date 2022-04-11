@@ -1,0 +1,34 @@
+.projectslist-wrapper {
+    padding-left: 150px;
+}
+
+.projectslist{
+    display: flex;
+    row-gap: 50px;
+    column-gap: 40px;
+    flex-wrap: wrap;
+}
+
+.projectslist__card{
+  width: 550px;
+}
+
+.projectslist__link{
+    text-decoration: none;
+    outline: none;
+    
+}
+
+.projectslist__link:visited {
+  color: #000;
+  }
+
+  .projectslist__card-poster{
+   width: 550px;
+  }
+
+  .projectslist__card-title{
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 700;
+  }

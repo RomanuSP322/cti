@@ -4,7 +4,7 @@ import "./Intro.css";
 
 
 
-const Intro = ({ intro, nextRef }) => {
+const Intro = ({ intro, nextRef, scroller }) => {
 
     const styles = {
         '--normal':  `url(${intro.bgimage})`    
@@ -17,7 +17,7 @@ const Intro = ({ intro, nextRef }) => {
         <h3 className={`${intro.section}__subtitle top_span intro__subtitle`}>
           {intro.subtitle}
         </h3>
-        < ScrollDown refProp={nextRef}/>
+       {scroller ? null : < ScrollDown refProp={nextRef} />  }
       </section>
   );
 };

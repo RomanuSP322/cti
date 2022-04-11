@@ -103,7 +103,7 @@ function Navigation({ loggedIn }) {
               </li>
               <li className='navigation__item_type_header'>
                 <NavLink
-                  to='#'
+                  to='/projects'
                   className='navigation__link navigation__link_type_header'
                 >Проекты</NavLink>
               </li>
@@ -117,7 +117,7 @@ function Navigation({ loggedIn }) {
               </li>
               <li className='navigation__item_type_header'>
                 <NavLink
-                  to='#'
+                  to='/news'
                   className='navigation__link navigation__link_type_header'
                 >
                   Новости

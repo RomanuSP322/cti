@@ -5,9 +5,9 @@ import {
   cases,
   solutions,
   advantages,
-  news,
 } from "../../consts/mainData.js";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import Whowe from "../Whowe/Whowe";
 import Accordion from "../Accordion/Accordion";
 import Cases from "../Cases/Cases";
@@ -16,13 +16,13 @@ import Solutions from "../Solutions/Solutions";
 import Advantages from "../Adnantages/Advantages";
 import News from "../News/News";
 import ScrollDown from "../ScrollDown/ScrollDown";
-import ScrollToTopBtn from "../ScrollToTop/ScrollToTopBtn";
+
 import Waves from "../Waves/Waves";
-import Footer from "../Footer/Footer";
+
 
 import "./Main.css";
 
-import slide_second from "../../images/slide5.png";
+import slide_second from "../../images/slide5.png"; 
 
 function Main() {
   
@@ -58,7 +58,7 @@ function Main() {
           src={slide_second}
           alt="img"
           className="main__image"
-          draggable="false"
+          draggable="false"          
         />
         <div className="main__notes">
           <div className="main__note">
@@ -106,9 +106,8 @@ function Main() {
         <Advantages items={advantages} />
       </div>
       <div className="main__news">
-        <News news={news} />
-      </div>
-     
+        <News location={'mainpage'} />
+      </div>  
 
       <Footer />
     </div>

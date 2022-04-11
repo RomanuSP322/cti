@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Cases.css';
+import { useHistory } from "react-router-dom";
 import nextico from '../../images/nextico.png';
 
 const Cases = ({ cases }) => {
   const [cur, setCur] = React.useState(0);
+  let history = useHistory();
+
 
   const nextMoving = () => {
     if (cur >= cases.length - 1) {
@@ -12,6 +15,12 @@ const Cases = ({ cases }) => {
       setCur(cur + 1);
     }
   };
+
+    function handleClick(path) {
+    history.push(`/${path}`);
+  }
+
+ 
   return (
     <section className='cases'>
       {!cases || cases.length === 0 ? null : (
@@ -60,7 +69,7 @@ const Cases = ({ cases }) => {
               Далее
             </button>
           </div>
-          <button className='case__button case__button_projects'>
+          <button className='case__button case__button_projects' onClick={()=> handleClick('projects')}>
             Смотреть все проекты
           </button>
         </>
