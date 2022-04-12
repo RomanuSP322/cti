@@ -12,6 +12,7 @@ const Ksptr = React.lazy(() => import("../Ksptr/Ksptr"));
 const Portfolio = React.lazy(() => import("../Portfolio/Portfolio"));
 const News = React.lazy(() => import("../News/News"));
 const Project = React.lazy(() => import("../Project/Project"));
+const Contacts = React.lazy(() => import("../Contacts/Contacts"));
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
         </Route>
           <Route path="/news" exact>
             <News location={'selfpage'} />
+          </Route>
+          <Route path="/contacts" exact>
+            <Contacts />
           </Route>
         </Switch>
 

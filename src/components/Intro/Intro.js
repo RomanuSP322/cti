@@ -11,10 +11,10 @@ const Intro = ({ intro, nextRef, scroller }) => {
        }
   return (
 <section className={`${intro.section}__intro intro__wrapper`} style={styles}>
-        <h2 className={`${intro.section}__title intro__title`}>
+        <h2 className={`intro__title ${intro.section}__title`}>
           {intro.title}
         </h2>
-        <h3 className={`${intro.section}__subtitle top_span intro__subtitle`}>
+        <h3 className={`intro__subtitle top_span  ${intro.section}__subtitle`}>
           {intro.subtitle}
         </h3>
        {scroller ? null : < ScrollDown refProp={nextRef} />  }

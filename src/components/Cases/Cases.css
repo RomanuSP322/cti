@@ -94,10 +94,12 @@
     border-radius: 25px;
     font-weight: 700;
     border: 2px solid #12abdb;
+    transition: all .4s ease-in-out;
 }
 
 .case__button:hover {
     cursor: pointer;
+    
 }
 
 .case__button_next {

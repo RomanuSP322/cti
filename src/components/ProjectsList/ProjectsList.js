@@ -12,8 +12,12 @@ function ProjectsList({projects}) {
           {projects.map((item) =>
           <div key={item.id} className='projectslist__card'> 
         <Link to={`${path}/${item.id}`} className='projectslist__link'>
+          <div className='projectslist__image-wrapper'>
           <img src={item.poster} className='projectslist__card-poster'/>
+          <p className='projectslist__about-span'>Подробнее</p>
+          </div>          
           <h2 className='projectslist__card-title'>{item.title}</h2>
+       
           </Link>        
       
 </div>

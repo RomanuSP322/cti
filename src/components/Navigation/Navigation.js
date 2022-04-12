@@ -125,7 +125,7 @@ function Navigation({ loggedIn }) {
               </li>
               <li className='navigation__item_type_header'>
                 <NavLink
-                  to='#'
+                  to='/contacts'
                   className='navigation__link navigation__link_type_header'
                 >
                   Контакты
