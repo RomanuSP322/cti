@@ -8,9 +8,20 @@ height: 100vh;
 }
 
 
+.ietr__title {
+  font-size: 72px; 
+  line-height: 86px; 
+  max-width: 1200px; 
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
+
 .ietr__subtitle{
+  font-size: 35px;
+  line-height: 1.2;
   max-width: 700px;
 }
+
 
 .ietr__catalog {
   background-color: #eef9ff;

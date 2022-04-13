@@ -9,17 +9,21 @@
   
   .learning__title{
     font-size: 72px; 
-    line-height: 86px;   
+    line-height: 86px;
+    padding-top: 200px;
+    max-width: 1200px;
+    padding-bottom: 30px;   
     font-weight: 700;
     color: white;
-    max-width: 1200px;
+   
     margin: 0;
-    padding-top: 200px;
-    padding-bottom: 30px;
+
     text-shadow: 0 0 60px #444;
   }
   
   .learning__subtitle{
+    font-size: 35px;
+    line-height: 1.2;
     max-width: 720px;
   }
 

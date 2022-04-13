@@ -3,6 +3,7 @@
   background-image: var(--bg), linear-gradient(270deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%);
    background-position: bottom;
   background-repeat: no-repeat;
+  background-size: cover;
    height: 100vh;
 }
 
@@ -11,7 +12,7 @@
     padding-top: 100px;
     padding-left: 150px;    
     color: white;
-    display: ;     
+      
 }
 
 .contacts__title {  

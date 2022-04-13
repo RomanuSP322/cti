@@ -25,8 +25,8 @@ function News({ location }) {
             <>
                <div className="news__button_link">
               <NavLink className="news__button_all" to='/news'>
-                <h2 className="news__title">Новости</h2>
-                Смотреть все{" "}
+                <h2 className="news__main-title">Новости</h2>
+                Смотреть все
               </NavLink>
               </div>
               <div className="news_wrapper">

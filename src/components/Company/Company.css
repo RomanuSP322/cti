@@ -10,12 +10,14 @@
 .company__title {
     font-size: 130px;    
     font-weight: 700;    
-    padding-top: 220px; 
+    padding-top: 220px;
+    max-width: 1200px;  
     padding-bottom: 50px;  
 }
 
 .company__subtitle{
-    font-size: 40px;    
+    font-size: 40px;
+    line-height: 1.2;    
     max-width: 580px;
     
 }

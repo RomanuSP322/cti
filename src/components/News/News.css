@@ -6,13 +6,13 @@
 .news__cards-list_self {
   background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%);
 }
-.news__title{
+.news__main-title{
   color: white;
-    font-size: 60px;
-    margin: 0;
+    font-size: 60px;   
     font-weight: 700;
     padding-bottom: 20px;
-  
+    margin: 0;
+    transition: color .4 ease-in-out;
 }
 
 .news_wrapper {
@@ -39,13 +39,16 @@
   padding: 0;  
   padding-bottom: 20px;
   text-align: left;
-   
+  transition: color .4 ease-in-out;
 }
 
 .news__button_all:hover{
   color: #12abdb;
   cursor: pointer;
+}
 
+.news__button_all:hover .news__main-title {
+  color: #12abdb;
 }
 
 
