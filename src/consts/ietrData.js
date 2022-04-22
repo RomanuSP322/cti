@@ -1,4 +1,15 @@
-import ietrBg from '../images/ietr2.png';
+import ietrBg from "../images/ietr2.png";
+
+import views from "../video/views.webm";
+import vector from "../video/vector.webm";
+import print from "../video/print.webm";
+import search from "../video/search.webm";
+import animation from "../video/animation.webm";
+import figures from "../video/figure.webm";
+import language from "../video/language.webm";
+import animationsok from "../video/animationsok.webm";
+import figuressok from "../video/figuresok.webm";
+
 
 import capFirst from "../images/animation.gif";
 import capSecond from "../images/search.gif";
@@ -10,12 +21,62 @@ import threeDFirst from "../images/sofwareC.png";
 import threeDSecond from "../images/fileC.png";
 import threeDThird from "../images/analyzeC.png";
 
-const intro ={
-    section: "ietr",
-    title: "Интерактивное Электронное Техническое Руководство",
-    bgimage: ietrBg,
-    subtitle: "Эффективный цифровой инструмент информационно-технической поддержки",  
-}
+const intro = {
+  section: "ietr",
+  title: "Интерактивное Электронное Техническое Руководство",
+  bgimage: ietrBg,
+  subtitle:
+    "Эффективный цифровой инструмент информационно-технической поддержки",
+};
+
+const catalogdata = [
+  {
+    title: "Виды с разнесенными частями",
+    webm: views,
+  },
+  {
+    title: "Режим векторной графики",
+    webm: vector,
+  },
+  {
+    title: "Печать отдельных положений, разделов",
+    webm: print,
+  },
+  {
+    title: "Поиск по ключевым словам",
+    webm: search,
+  },
+];
+
+const manualdata = [
+  {
+    title: "Пошаговая анимация технологических процессов",
+    webm: animation,
+  },
+  {
+    title: "Интерактивные технические 3D иллюстрации",
+    webm: figures,
+  },
+  {
+    title: "Мультиязычный контент",
+    webm: language,
+  },
+];
+
+const isokdata = [
+  {
+    title: "Интерактивная анимация технологического процесса",
+    webm: animationsok,
+  },
+  {
+    title: "Представление информации в виде 3D иллюстраций",
+    webm: figuressok,
+  },
+  {
+    title: "Доступ к вспомогательной нормативной документации",
+    webm: animationsok,
+  },
+];
 
 const capabilities = [
   {
@@ -60,4 +121,4 @@ const info = [
   },
 ];
 
-export { intro, capabilities, info };
+export { intro, capabilities, info, catalogdata, manualdata, isokdata };

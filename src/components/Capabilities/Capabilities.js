@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Capabilities.css";
-
+import vrvideoWebm from "../../video/catalog.webm";
 import tablet from "../../images/tablet.png";
 
 function Capabilities({ capabilities }) {
@@ -12,10 +12,6 @@ function Capabilities({ capabilities }) {
     setCur(idx);    
    };
 
-
-
- 
-
   return (
     <section className="capabilities">
       <h2 className="capabilities__title">Функциональные возможности</h2>
@@ -23,6 +19,7 @@ function Capabilities({ capabilities }) {
         <div className="capabilities__column_left">
           {!capabilities || capabilities.length === 0 ? null : (
             <>
+                 
               {capabilities.map((item, idx) => {
                 return (
                   <div className="capabilities__item" key={idx}>
@@ -70,6 +67,7 @@ function Capabilities({ capabilities }) {
                   />
                 );
               })}
+         
             </div>
           </div>
         </div>

@@ -20,6 +20,16 @@
 @font-face {
   font-family: 'Montserrat';
   font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("Montserrat-Regular.ttf");
+  /* src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style:  normal;
   font-weight: 700;
   font-display: swap;
   /* src: url("Montserrat-Bold.ttf"); */

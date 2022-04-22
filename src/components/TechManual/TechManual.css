@@ -1,0 +1,151 @@
+.manual {
+    background-color: hsl(201, 100%, 97%);
+    padding: 100px 50px 100px 150px;
+    min-height: 1000px;
+    box-sizing: border-box;
+}
+
+.manual__title {
+    font-size: 60px; 
+    line-height: 70px;   
+    font-weight: 700;
+    color: #12abdb;
+    margin: 0;
+    max-width: 1000px;
+    padding-bottom: 50px;
+}
+
+.manual__container {
+    display: flex;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.manual__column_left {
+    justify-self: right;
+}
+
+
+
+.manual__video-content {
+    background-image: var(--normal);
+    background-repeat: no-repeat;    
+    background-size: contain;
+    filter: drop-shadow(10px 0 14px rgba(0,0,0,0.3));
+    background-position: left;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+  
+}
+
+.manual__video-wrapper {
+    overflow: hidden;
+    
+}
+
+.manual__videos {
+   
+    display: flex;
+    width: 778px;
+    height: 466px;
+    transition: transform 1s ease;
+}
+
+.manual__video {
+    width: 778px;
+    
+}
+
+.manual__monitor-img{
+    position: absolute;  
+    height: 564px;
+    left: -32px;
+    top: -32px;
+}
+
+.manual__column_right {
+    padding-left: 100px;
+}
+
+.manual__discription {
+    font-size: 24px; 
+    line-height: 32px;   
+    font-weight: 500;
+    color: #000;
+    max-width: 650px;
+    margin: 0;    
+    padding-bottom: 40px; 
+    /* border-bottom: 1px solid rgb(18, 171, 219, 0.4);    */
+}
+
+.manual__button { 
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.manual__button:hover {
+    cursor: pointer;
+}
+
+
+
+.manual__capabilities-title {    
+    font-size: 28px;  
+    font-weight: 700;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    color: #12abdb;
+    
+}
+
+.manual__button:not(.manual__button_active):hover .manual__item-title {
+    text-shadow: 0 0 15px #12abdb;   
+}
+
+.manual__button_active {
+    font-weight: 700;
+}
+
+.manual__item {
+    padding-bottom: 12px;
+}
+
+.manual__chekbox {
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb(18, 171, 219, 0.4);
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 6px #12abdb;   
+}
+
+.manual__chekbox_active {
+    background-color: #12abdb;
+    border: 1px solid #12abdb;
+    box-shadow: none;
+}
+
+.manual__item-title{
+    margin: 0;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 20px; 
+    transition: color,text-shadow 0.5s ease-in-out;
+
+}
+
+.manual__item-title_active {
+    font-weight: 700;
+    color: #12abdb;
+    
+}
+
+

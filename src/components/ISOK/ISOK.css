@@ -1,0 +1,157 @@
+.isok {
+   
+    padding: 100px 50px 100px 150px;
+    min-height: 1000px;
+    box-sizing: border-box;
+}
+
+.isok__title {
+    font-size: 60px; 
+    line-height: 70px;   
+    font-weight: 700;
+    color: #12abdb;
+    margin: 0;
+    max-width: 1000px;
+    padding-bottom: 50px;
+}
+
+.isok__container {
+    display: flex;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.isok__column_left {
+    justify-self: right;
+}
+
+
+
+.isok__video-content {
+
+    position: relative;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 65px;
+  
+}
+
+.isok__phone-img {
+    filter: drop-shadow(10px 0 14px rgba(0,0,0,0.3));
+  position: absolute;
+  height: 760px;
+  width: 430px;
+  top: 14px;
+  left: 0;
+}
+
+.isok__video-wrapper {
+    overflow: hidden;
+    
+}
+
+.isok__videos {
+   
+    display: flex;
+    width: 400px;
+    height: 705px;
+    transition: transform 1s ease;
+}
+
+.isok__video {
+    width: 400px;
+    
+}
+
+.isok__monitor-img{
+    position: absolute;  
+    height: 705px;
+    left: -32px;
+    top: -32px;
+}
+
+.isok__column_right {
+    padding-left: 150px;
+}
+
+.isok__discription {
+    font-size: 24px; 
+    line-height: 32px;   
+    font-weight: 500;
+    color: #fff;
+    max-width: 650px;
+    margin: 0;    
+    padding-bottom: 40px; 
+    /* border-bottom: 1px solid rgb(18, 171, 219, 0.4);    */
+}
+
+.isok__button { 
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.isok__button:hover {
+    cursor: pointer;
+}
+
+
+
+.isok__capabilities-title {    
+    font-size: 28px;  
+    font-weight: 700;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    color: #12abdb;
+    
+}
+
+.isok__button:not(.isok__button_active):hover .isok__item-title {
+    text-shadow: 0 0 15px #12abdb;   
+}
+
+.isok__button_active {
+    font-weight: 700;
+}
+
+.isok__item {
+    padding-bottom: 12px;
+}
+
+.isok__chekbox {
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb(18, 171, 219, 0.4);
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 6px #12abdb;   
+}
+
+.isok__chekbox_active {
+    background-color: #12abdb;
+    border: 1px solid #12abdb;
+    box-shadow: none;
+}
+
+.isok__item-title{
+    margin: 0;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 20px; 
+    transition: color,text-shadow 0.5s ease-in-out;
+    color: #FFF;
+
+}
+
+.isok__item-title_active {
+    font-weight: 700;
+    color: #12abdb;
+    
+}
+
+

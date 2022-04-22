@@ -48,7 +48,7 @@ const Cases = ({ cases }) => {
                 </div>
               );
             })}
-            <button className='case__button case__button_about' onClick={()=>handleClick('projects')}>
+            <button className='case__button case__button_about'>
               Подробнее
             </button>
 

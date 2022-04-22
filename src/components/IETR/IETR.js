@@ -1,8 +1,11 @@
 import React, {useEffect, useRef} from 'react';
-import { intro, capabilities, info} from  '../../consts/ietrData.js';
+import { intro, capabilities, info, catalogdata, manualdata, isokdata} from  '../../consts/ietrData.js';
 import Header from '../Header/Header';
 import Intro from '../Intro/Intro.js';
+import TechManual from '../TechManual/TechManual.js';
 import AboutIetr from '../AboutIetr/AboutIetr';
+import Catalog from '../Catalog/Catalog.js';
+import ISOK from '../ISOK/ISOK.js';
 import Waves from '../Waves/Waves';
 import Capabilities from '../Capabilities/Capabilities';
 import ThreeDInfo from '../ThreeDInfo/ThreeDInfo';
@@ -26,6 +29,7 @@ function IETR() {
       <div className='ietr__about' ref={next}>
       <AboutIetr />
       </div>
+      <ThreeDInfo items={info}/>
       <Waves
         pos={'up'}
         svg={
@@ -33,36 +37,19 @@ function IETR() {
         }
       />
 
-      <section className='ietr__catalog' >
-        <h2 className='ietr__catalog-title'>
-          Интерактивные Электронные Каталоги
-        </h2>
-        <div className='ietr__catalog-content'>
-          <img
-            src={catalog}
-            alt='img'
-            className='ietr__catalog-image'
-            draggable='false'
-          />
-          <p className='ietr__catalog-article'>
-            Интерактивный электронный каталог сборочных единиц, деталей и узлов,
-            создаваемый ЦТИ, представляет собой интерактивную иерархическую
-            модель конструкции. Элементы модели снабжены подробной текстовой и
-            графической информацией о стандартах исполнения, материалах и нормах
-            допусков. Разработанное ЦТИ отраслевое решение объединяет
-            существующие объекты информации, сопровождающие весь жизненный цикл
-            изделия, в единый Информационно-технический ресурс.
-          </p>
-        </div>
-      </section>
-      <Capabilities  capabilities={ capabilities}/>
+      
+      <Catalog catalogdata={catalogdata}/>
+      <TechManual manualdata={manualdata}/>
+      {/* <Capabilities  capabilities={ capabilities}/> */}
       <Waves
         pos={'down'}
         svg={
           'M0,64L80,96C160,128,320,192,480,202.7C640,213,800,171,960,149.3C1120,128,1280,128,1360,128L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z'
         }
       />
-      <ThreeDInfo items={info}/>
+      <ISOK isokdata={isokdata}/>
+      
+   
  
       <Footer/>
     </div>
