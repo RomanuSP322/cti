@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cti/static/css/main.3b6e4dcf.css",
-    "main.js": "/cti/static/js/main.e8f6a08a.js",
+    "main.js": "/cti/static/js/main.d8f5bfb9.js",
     "static/css/601.b0a1e9e4.chunk.css": "/cti/static/css/601.b0a1e9e4.chunk.css",
     "static/js/601.9bec72d7.chunk.js": "/cti/static/js/601.9bec72d7.chunk.js",
     "static/css/256.e8249e39.chunk.css": "/cti/static/css/256.e8249e39.chunk.css",
     "static/js/256.a2d98fbe.chunk.js": "/cti/static/js/256.a2d98fbe.chunk.js",
-    "static/css/938.38c10e76.chunk.css": "/cti/static/css/938.38c10e76.chunk.css",
-    "static/js/938.bc6d1ad6.chunk.js": "/cti/static/js/938.bc6d1ad6.chunk.js",
+    "static/css/938.de059b2e.chunk.css": "/cti/static/css/938.de059b2e.chunk.css",
+    "static/js/938.21902e7f.chunk.js": "/cti/static/js/938.21902e7f.chunk.js",
     "static/css/534.c68e4e48.chunk.css": "/cti/static/css/534.c68e4e48.chunk.css",
     "static/js/534.fd296358.chunk.js": "/cti/static/js/534.fd296358.chunk.js",
     "static/css/559.136fab89.chunk.css": "/cti/static/css/559.136fab89.chunk.css",
@@ -104,6 +104,7 @@
     "static/media/placeholder.png": "/cti/static/media/placeholder.aeba7da7a7ad69642eff.png",
     "static/media/certificate.png": "/cti/static/media/certificate.ae695e001f3e0d1f4048.png",
     "static/media/lokotehlogo.png": "/cti/static/media/lokotehlogo.2ec391586d134cb857d2.png",
+    "static/media/refresh.png": "/cti/static/media/refresh.322be3f41b90d6e7985b.png",
     "static/media/vr.png": "/cti/static/media/vr.079f9ddb239cc49f0d00.png",
     "static/media/monitor.png": "/cti/static/media/monitor.c17972c3916f1183a960.png",
     "static/media/vrHeadsetOverlay.png": "/cti/static/media/vrHeadsetOverlay.d8f3ba985511606cf3b7.png",
@@ -127,13 +128,13 @@
     "static/media/close__icon.svg": "/cti/static/media/close__icon.4828fddbd650ab863f28.svg",
     "static/media/profile__icon.svg": "/cti/static/media/profile__icon.1e89084646dbd273ed8f.svg",
     "main.3b6e4dcf.css.map": "/cti/static/css/main.3b6e4dcf.css.map",
-    "main.e8f6a08a.js.map": "/cti/static/js/main.e8f6a08a.js.map",
+    "main.d8f5bfb9.js.map": "/cti/static/js/main.d8f5bfb9.js.map",
     "601.b0a1e9e4.chunk.css.map": "/cti/static/css/601.b0a1e9e4.chunk.css.map",
     "601.9bec72d7.chunk.js.map": "/cti/static/js/601.9bec72d7.chunk.js.map",
     "256.e8249e39.chunk.css.map": "/cti/static/css/256.e8249e39.chunk.css.map",
     "256.a2d98fbe.chunk.js.map": "/cti/static/js/256.a2d98fbe.chunk.js.map",
-    "938.38c10e76.chunk.css.map": "/cti/static/css/938.38c10e76.chunk.css.map",
-    "938.bc6d1ad6.chunk.js.map": "/cti/static/js/938.bc6d1ad6.chunk.js.map",
+    "938.de059b2e.chunk.css.map": "/cti/static/css/938.de059b2e.chunk.css.map",
+    "938.21902e7f.chunk.js.map": "/cti/static/js/938.21902e7f.chunk.js.map",
     "534.c68e4e48.chunk.css.map": "/cti/static/css/534.c68e4e48.chunk.css.map",
     "534.fd296358.chunk.js.map": "/cti/static/js/534.fd296358.chunk.js.map",
     "559.136fab89.chunk.css.map": "/cti/static/css/559.136fab89.chunk.css.map",
@@ -153,6 +154,6 @@
   },
   "entrypoints": [
     "static/css/main.3b6e4dcf.css",
-    "static/js/main.e8f6a08a.js"
+    "static/js/main.d8f5bfb9.js"
   ]
 }
