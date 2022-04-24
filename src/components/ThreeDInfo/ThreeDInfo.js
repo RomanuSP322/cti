@@ -16,7 +16,7 @@ function ThreeDInfo({ items }) {
 
   return (
     <section className="threedinfo">
-      <h2 className="threedinfo__title">Цифровая трансформация технической информации</h2>
+      <h2 className="threedinfo__title">Цифровая трансформация технической документации</h2>
       <div className="threedinfo__content">
         <div className="threedinfo__column_left">
           {!items || items.length === 0

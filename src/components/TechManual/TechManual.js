@@ -31,7 +31,7 @@ function TechManual({ manualdata }) {
           {!manualdata || manualdata.length === 0 ? null : (
             <>
               <h2 className="manual__capabilities-title">
-                Функциональные возможности:
+                Функциональность
               </h2>
               {manualdata.map((item, idx) => {
                 return (

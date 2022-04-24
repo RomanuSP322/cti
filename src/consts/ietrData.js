@@ -20,6 +20,7 @@ import capFifth from "../images/market.gif";
 import threeDFirst from "../images/sofwareC.png";
 import threeDSecond from "../images/fileC.png";
 import threeDThird from "../images/analyzeC.png";
+import threeDFourth from "../images/refresh.png"
 
 const intro = {
   section: "ietr",
@@ -31,7 +32,7 @@ const intro = {
 
 const catalogdata = [
   {
-    title: "Виды с разнесенными частями",
+    title: "Технологические виды для каждой сборочной еденицы",
     webm: views,
   },
   {
@@ -118,6 +119,10 @@ const info = [
   {
     ico: threeDThird,
     text: "Реалистичность виртуальной модели предоставляет возможность предпроизводственного анализа изделия и проектной документации",
+  },
+  {
+    ico: threeDFourth,
+    text: "Сквозной подход к проектированию моделей позволяет опреативно актуализировать контент",
   },
 ];
 

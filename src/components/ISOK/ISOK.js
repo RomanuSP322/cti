@@ -49,7 +49,7 @@ function Isok({ isokdata }) {
           {!isokdata || isokdata.length === 0 ? null : (
             <>
               <h2 className="isok__capabilities-title">
-                Функциональные возможности:
+                Функциональность
               </h2>
               {isokdata.map((item, idx) => {
                 return (

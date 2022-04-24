@@ -48,7 +48,7 @@ function Catalog({ catalogdata }) {
           {!catalogdata || catalogdata.length === 0 ? null : (
             <>
               <h2 className="catalog__capabilities-title">
-                Функциональные возможности:
+              Функциональность
               </h2>
               {catalogdata.map((item, idx) => {
                 return (
