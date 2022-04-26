@@ -6,13 +6,15 @@
 .news__cards-list_self {
   background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%);
 }
+
+
 .news__main-title{
   color: white;
     font-size: 60px;   
     font-weight: 700;
     padding-bottom: 20px;
     margin: 0;
-    transition: color .4 ease-in-out;
+    transition: color .4s ease-in-out;
 }
 
 .news_wrapper {
@@ -22,8 +24,9 @@
   position: relative;
 }
 
-.news__button_link{
+.news__button_link {
   max-width: 300px;
+  
 }
 
 .news__button_all{   
@@ -39,9 +42,9 @@
   padding: 0;  
   padding-bottom: 20px;
   text-align: left;
-  transition: color .4 ease-in-out;
+  transition: all .4s ease-in-out;
+ 
 }
-
 .news__button_all:hover{
   color: #12abdb;
   cursor: pointer;
@@ -59,10 +62,7 @@
   justify-content: left;
   width: 66%; 
  }
- 
- .news-card:hover{
-   cursor: pointer;
- }
+
  
  .news-card:hover .news-card__image{
   color:#12abdb; 

@@ -4,16 +4,20 @@ import catalogintro from "../../video/catalog.webm";
 import monitor from "../../images/monitor.png";
 
 function Catalog({ catalogdata }) {
-  const [cur, setCur] = useState(-1);
-  const position = { transform: `translateX(-${cur * 778}px)` };
+  const [cur, setCur] = useState(0);
+ 
   const styles = {
     "--normal": `url(${monitor})`,
   };
 
   const onClick = (idx) => {
-    setCur(idx + 1);
-    console.log(idx);
+   (idx+1 === cur) ?
+    setCur(0) :
+    setCur(idx + 1) 
+ 
   };
+
+  const position = { transform: `translateX(-${cur * 778}px)` };
 
   return (
     <section className="catalog">
@@ -28,7 +32,7 @@ function Catalog({ catalogdata }) {
                 </video>
                 {catalogdata.map((item, idx) => {
                   return (
-                    <video autoPlay muted loop className="catalog__video">
+                    <video autoPlay muted loop className="catalog__video" key={idx}>
                       <source src={item.webm} type="video/webm" />
                     </video>
                   );
@@ -46,13 +50,53 @@ function Catalog({ catalogdata }) {
             информацией о стандартах исполнения, материалах и нормах допусков.
           </p>
           {!catalogdata || catalogdata.length === 0 ? null : (
-            <>
-              <h2 className="catalog__capabilities-title">
+            <div className="catalog__capabilities">
+              <h2 className= {`catalog__capabilities-title ${
+                      cur === 0 ? "catalog__capabilities-title_active" : ""
+                    }`}>
               Функциональность
               </h2>
               {catalogdata.map((item, idx) => {
                 return (
-                  <div className="catalog__item" key={idx}>
+       
+                  <div className="capabilities__item" key={idx}>
+                  <button
+                    onClick={() => onClick(idx)}
+                    className={`capabilities__button ${
+                      idx + 1 === cur ? "capabilities__button_active" : ""
+                    }`}
+                  >
+                    <h3 className={`capabilities__item-title ${
+                          idx + 1 === cur ? "capabilities__item-title_active" : ""
+                        }`}>{item.title}</h3>
+                    <div
+                      className={`capabilities__arrow ${
+                        idx + 1 === cur ? "capabilities__arrow_active" : ""
+                      }`}
+                    ></div>
+                  </button>
+                  <p
+                    className={`capabilities__dropdown ${
+                      idx + 1 === cur ? "capabilities__dropdown_active" : ""
+                    }`}
+                  >
+                    {item.description}
+                  </p>
+                </div>
+                            
+                );
+              })}
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Catalog;
+
+           {/* <div className="catalog__item" key={idx}>
                     <button
                       onClick={() => onClick(idx)}
                       className={`catalog__button ${
@@ -72,15 +116,4 @@ function Catalog({ catalogdata }) {
                         {item.title}
                       </h3>
                     </button>
-                  </div>
-                );
-              })}
-            </>
-          )}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export default Catalog;
+                  </div> */}

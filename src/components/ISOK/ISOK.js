@@ -8,9 +8,10 @@ function Isok({ isokdata }) {
   const position = { transform: `translateX(-${cur * 400}px)` };
 
   const onClick = (idx) => {
-    setCur(idx + 1);
-    console.log(idx);
-  };
+    (idx+1 === cur) ?
+     setCur(0) :
+     setCur(idx + 1)   
+   };
 
   return (
     <section className="isok">   
@@ -47,36 +48,41 @@ function Isok({ isokdata }) {
             выполняются в технологии 3D моделирования.
           </p>
           {!isokdata || isokdata.length === 0 ? null : (
-            <>
-              <h2 className="isok__capabilities-title">
+            <div className="isok__capabilities">
+              <h2 className={`isok__capabilities-title ${
+                      cur === 0 ? "isok__capabilities-title_active" : ""
+                    }`}>
                 Функциональность
               </h2>
               {isokdata.map((item, idx) => {
                 return (
-                  <div className="isok__item" key={idx}>
-                    <button
-                      onClick={() => onClick(idx)}
-                      className={`isok__button ${
-                        idx + 1 === cur ? "isok__button_active" : ""
+                  <div className="capabilities__item" key={idx}>
+                  <button
+                    onClick={() => onClick(idx)}
+                    className={`capabilities__button isok__button ${
+                      idx + 1 === cur ? "capabilities__button_active" : ""
+                    }`}
+                  >
+                    <h3 className={`capabilities__item-title isok__item-title ${
+                          idx + 1 === cur ? "capabilities__item-title_active" : ""
+                        }`}>{item.title}</h3>
+                    <div
+                      className={`capabilities__arrow ${
+                        idx + 1 === cur ? "capabilities__arrow_active" : ""
                       }`}
-                    >
-                      <span
-                        className={`isok__chekbox ${
-                          idx + 1 === cur ? "isok__chekbox_active" : ""
-                        }`}
-                      ></span>
-                      <h3
-                        className={`isok__item-title ${
-                          idx + 1 === cur ? "isok__item-title_active" : ""
-                        }`}
-                      >
-                        {item.title}
-                      </h3>
-                    </button>
-                  </div>
+                    ></div>
+                  </button>
+                  <p
+                    className={`capabilities__dropdown ${
+                      idx + 1 === cur ? "capabilities__dropdown_active" : ""
+                    }`}
+                  >
+                    {item.description}
+                  </p>
+                </div>
                 );
               })}
-            </>
+            </div>
           )}
         </div>
       </div>

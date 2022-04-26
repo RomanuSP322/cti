@@ -7,7 +7,7 @@ import AboutIetr from '../AboutIetr/AboutIetr';
 import Catalog from '../Catalog/Catalog.js';
 import ISOK from '../ISOK/ISOK.js';
 import Waves from '../Waves/Waves';
-import Capabilities from '../Capabilities/Capabilities';
+//  import Capabilities from '../Capabilities/Capabilities';
 import ThreeDInfo from '../ThreeDInfo/ThreeDInfo';
 import Footer from '../Footer/Footer';
 import './IETR.css';

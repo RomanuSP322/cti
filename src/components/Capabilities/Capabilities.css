@@ -84,7 +84,6 @@
 }
 
 
-
 .capabilities__button:hover .capabilities__item-title{
   color:#12abdb;
   transition: color 0.3s ease-in-out;
@@ -137,7 +136,6 @@
  .capabilities__dropdown_active{
   max-height: 1000px;
   transition: 0.5s max-height  ease-in;
-
 } 
 
 .capabilities__gifs-wrapper{

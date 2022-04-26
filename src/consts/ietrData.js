@@ -3,13 +3,12 @@ import ietrBg from "../images/ietr2.png";
 import views from "../video/views.webm";
 import vector from "../video/vector.webm";
 import print from "../video/print.webm";
-import search from "../video/search.webm";
+import erp from "../video/erp.webm";
 import animation from "../video/animation.webm";
 import figures from "../video/figure.webm";
 import language from "../video/language.webm";
 import animationsok from "../video/animationsok.webm";
 import figuressok from "../video/figuresok.webm";
-
 
 import capFirst from "../images/animation.gif";
 import capSecond from "../images/search.gif";
@@ -20,7 +19,7 @@ import capFifth from "../images/market.gif";
 import threeDFirst from "../images/sofwareC.png";
 import threeDSecond from "../images/fileC.png";
 import threeDThird from "../images/analyzeC.png";
-import threeDFourth from "../images/refresh.png"
+import threeDFourth from "../images/refresh.png";
 
 const intro = {
   section: "ietr",
@@ -32,35 +31,43 @@ const intro = {
 
 const catalogdata = [
   {
-    title: "Технологические виды для каждой сборочной еденицы",
+    title: "Технологические виды",
     webm: views,
+    description:
+      "Для каждой сборочной единицы в каталоге представлена интерактивная взрыв-схема с ассоциативными позициями спецификации",
   },
   {
     title: "Режим векторной графики",
     webm: vector,
+    description: "Реализует быстродействие на маломощных компьютерах: вся трехмерная информация преобразуется в статичную векторную графику, сохраняя интерактивность и четкость изображения",
   },
   {
-    title: "Печать отдельных положений, разделов",
+    title: "Вывод каталога на печать",
     webm: print,
+    description: "Пользовательский интерфейс позволяет выводить на печать данные любого уровня без предварительной обработки",
   },
   {
-    title: "Поиск по ключевым словам",
-    webm: search,
+    title: "Интеграция с ERP системами",
+    webm: erp,
+    description: "Позволяет службам материально-технического снабжения предприятий сервиса планировать и осуществлять заказ запасных частей для обслуживания и ремонта в точном соответствии с конструкторской и технологической документацией",
   },
 ];
 
 const manualdata = [
   {
-    title: "Пошаговая анимация технологических процессов",
+    title: "Анимация технологических процессов",
     webm: animation,
+    description: "Интерактивная анимация с контролируемым положением, ракурсом и видимостью учавствующих моделей, сопровождающая текстовое описание каждго шага техпроцесса",
   },
   {
-    title: "Интерактивные технические 3D иллюстрации",
+    title: "Интерактивные иллюстрации",
     webm: figures,
+    description: "Визуально доступное представление информации в виде интерактивной 3D схемы",
   },
   {
     title: "Мультиязычный контент",
     webm: language,
+    description: "Сквозная структура системы позволяет оперативно адаптировать контент для пользователей из разных стран",
   },
 ];
 
@@ -68,14 +75,17 @@ const isokdata = [
   {
     title: "Интерактивная анимация технологического процесса",
     webm: animationsok,
+    description: "Интерактивная анимация с контролируемым положением, ракурсом и видимостью учавствующих моделей, сопровождающая текстовое описание каждой операции техпроцесса",
   },
   {
     title: "Представление информации в виде 3D иллюстраций",
     webm: figuressok,
+    description: "Визуально доступное представление информации в виде интерактивного 3D вида",
   },
   {
     title: "Доступ к вспомогательной нормативной документации",
     webm: animationsok,
+    description: "Снабжение пользователя вспомогательной документацией, требующейся в процессе",
   },
 ];
 

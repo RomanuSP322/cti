@@ -24,8 +24,9 @@ function News({ location }) {
           {!news || news.length === 0 ? null : (
             <>
                <div className="news__button_link">
-              <NavLink className="news__button_all" to='/news'>
-                <h2 className="news__main-title">Новости</h2>
+               
+              <NavLink className="news__button_all" to='/news'> 
+              <h2 className="news__main-title">Новости</h2>               
                 Смотреть все
               </NavLink>
               </div>
