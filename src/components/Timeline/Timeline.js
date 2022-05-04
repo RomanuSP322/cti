@@ -79,16 +79,14 @@ const EventItem = (props) => {
   const { date, content, role, company, location, image } = props;
   return (
     <li ref={timeItem} className={isVisible ? "inView" : null}>
-      <div className='event'>        
-        <time>
+      <div className='event'>  
+              
+        <p className="description">
+        <time className='event__year'>
           {date} 
-        </time>
-        <h4 className="title">{role}</h4>
-        <h3 className="event__company">{company}</h3>
-        <p>
-          {location}
+        </time> 
+        <p className="description_content">{content}</p>
         </p>
-        <p className="description">{content}</p>
         <img src={image} alt='img' className="event__image" draggable='false' />
       </div>
     </li>
@@ -121,7 +119,7 @@ const Timeline = ({events}) => {
       <section className="timeline__header">
         <div className="timeline__container">
           <h3 className='timeline__title'>История компании</h3>
-          <p className='timeline__subtitle'>Таймлайн проектов ЦТИ</p>
+          <p className='timeline__subtitle'>Центр Транспортных Исследований был основан в 1992 году группой специалистов – выпускников МИИТа, инженеров и научных работников предприятий железнодорожного транспорта</p>
         </div>
       </section>
 

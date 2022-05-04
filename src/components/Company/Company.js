@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import { intro, events, abouts } from "../../consts/companyData.js";
 import Header from "../Header/Header";
+
 import Intro from '../Intro/Intro.js';
 import Timeline from "../Timeline/Timeline";
 import AboutUs from "../AboutUs/AboutUs";
 import Waves from "../Waves/Waves";
+import Footer from "../Footer/Footer";
 import "./Company.css";
 
 
@@ -40,7 +42,7 @@ function Company() {
       <div>
        <Timeline events={events} /> 
       </div>
-   
+   <Footer/>
     </div>
   );
 }

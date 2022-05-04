@@ -28,7 +28,7 @@
   }
 
   .learning__vr{
-    height: 700px;
+    
     background-color: #eef9ff;
     padding: 100px 0px 100px 80px;
   }
@@ -77,11 +77,11 @@
  }
 
  .learning__training-title {
-  font-size: 50px; 
+  font-size: 60px; 
   margin: 0;   
   padding-bottom: 50px;
   font-weight: 700;
-  color: #fff;
+  color:#12abdb;
   max-width: 900px;
  }
 
@@ -113,3 +113,38 @@
     left: -7px;
     width: 380px;
   }
+
+  .learning__test {
+    padding: 100px 0px 150px 100px;
+  }
+
+  .learning__test-content {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+   
+  }
+
+  .learning__test-title {
+    color:#12abdb;
+    max-width: 780px;
+    font-size: 60px;
+    line-height: 68px;
+    padding-left: 50px;
+  }
+
+  .learning__test-wrapper {
+    position: relative;
+    padding-top: 25px;
+    padding-left: 36px;
+    padding-right: 40px;
+  }
+
+  .learning__laptop-img {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 580px;
+   
+  }
+  
