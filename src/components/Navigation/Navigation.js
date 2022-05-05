@@ -90,7 +90,7 @@ function Navigation({ loggedIn }) {
                       to='/databases'
                       className='navigation__link_type_dropdown'
                     >
-                      Корпоративные Базы<br></br> Данных
+                      Корпоративные IT <br></br> решения
                     </NavLink>
                     <NavLink
                       to='/learning'

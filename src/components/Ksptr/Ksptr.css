@@ -22,3 +22,111 @@
         font-size: 35px;
         line-height: 1.2;
     }
+
+
+    .ksptr__problem {
+        padding: 70px 100px 0 150px; 
+    }
+
+
+    .ksptr__problem-title {
+        font-size: 50px;
+  line-height: 58px;
+  font-weight: 700;
+  color: #12abdb;
+  margin: 0;
+  max-width: 900px;
+  padding-bottom: 50px;
+    }
+
+    .ksptr__section-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ksptr__problem-image {
+        height: 652px;
+        padding-right: 50px;
+    }
+
+    .ksptr__problem-article {
+        font-size: 24px;
+        color: #FFF;
+        max-width: 700px;
+        padding-right: 80px;
+        font-weight: 500;
+    }
+
+
+    .ksptr__about {
+        background-color: hsl(201, 100%, 97%);
+        padding: 0px 100px 0 150px; 
+    }
+
+    .ksptr__about-title {
+        font-size: 70px;
+        font-weight: 700;
+        color: #12abdb;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .ksptr__about-subtitle {
+        font-size: 35px;
+        font-weight: 700;
+        color: #12abdb;
+        margin: 0;
+        max-width: 800px;
+       
+    }
+
+    .ksptr__about-article {
+        font-size: 24px;
+        color: #000;
+        max-width: 700px;
+        padding-right: 80px;
+        font-weight: 500;
+    }
+
+    .ksptr__about-span {
+        color: #12abdb;
+        font-weight: 700;
+    }
+
+    .ksptr__about-image {
+        height: 650px;
+        padding-right: 150px;
+    }
+
+
+    .ksptr__constructor {
+        padding: 70px 100px 0 150px;  
+    }
+
+    .ksptr__capabilities {
+        display: flex;
+        padding: 160px 100px 0 150px; 
+        position: relative;
+        
+    }
+
+    .ksptr__capabilities-title {
+        max-width: 900px;
+        font-size: 35px;
+        line-height: 43px;
+        font-weight: 700;
+        color: #12abdb;
+        margin: 0;
+        position: sticky;
+         top: 80px;
+         height: 100%;
+    }
+
+    .ksptr__capabilities-table {
+        font-size: 24px;
+        color: #fff;
+        max-width: 700px;
+        padding-right: 80px;
+        font-weight: 500;
+    }

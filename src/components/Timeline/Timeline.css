@@ -102,14 +102,14 @@
     filter: drop-shadow(8px 0 14px rgba(0, 0, 0, 0.3));
     overflow: hidden;
     z-index: 2; 
-    transition: all .4s ease;   
+    transition: all .6s ease;   
   }
  
   .event__image:hover {
     filter: drop-shadow(0px 30px 124px rgba(0, 0, 0, 0.9));
     transform: scale(1.9) translateX(-65px);
     cursor: pointer;
-    transition: all .6s .4s ease;  
+    transition: all 1.5s .5s ease;  
   } 
  
 
