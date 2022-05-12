@@ -111,6 +111,19 @@
         
     }
 
+.ksptr__capabilities-column_left {
+    position: sticky;
+    top: 80px;
+    height: 100%;
+   
+}
+
+.ksptr__solution-image {
+    height: 720px;
+    padding-left: 50px;
+    
+}
+
     .ksptr__capabilities-title {
         max-width: 900px;
         font-size: 35px;
@@ -118,9 +131,11 @@
         font-weight: 700;
         color: #12abdb;
         margin: 0;
-        position: sticky;
-         top: 80px;
-         height: 100%;
+        padding-bottom: 20px;
+     
+
+        
+
     }
 
     .ksptr__capabilities-table {
