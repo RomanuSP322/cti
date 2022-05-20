@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./TechManual.css";
+import "../Capabilities/Capabilities.css"
 import manualintro from "../../video/manual.webm";
 import tablet from "../../images/tablet.png";
 
 function TechManual({ manualdata }) {
-  const [cur, setCur] = useState(-1);
-  const position = { transform: `translateX(-${cur * 778}px)` };
+  const [cur, setCur] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const styles = {
     "--normal": `url(${tablet})`,
   };
@@ -13,6 +14,27 @@ function TechManual({ manualdata }) {
   const onClick = (idx) => {
     idx + 1 === cur ? setCur(0) : setCur(idx + 1);
   };
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+ 
+  const videoWidth = (width) => {
+    if (width > 1595) {
+      return 778;
+    } else if (width > 1195) {
+      return 520;
+    } else if (width > 1020) {
+      return 389;
+    }   else 
+    return 389;
+  };
+  const position = { transform: `translateX(-${cur * videoWidth(windowWidth)}px)` };
 
   return (
     <section className="manual">
@@ -31,8 +53,8 @@ function TechManual({ manualdata }) {
           {!manualdata || manualdata.length === 0 ? null : (
             <div className="manual__capabilities">
               <h2
-                className={`manual__capabilities-title ${
-                  cur === 0 ? "manual__capabilities-title_active" : ""
+                className={`capabilities-title ${
+                  cur === 0 ? "" : "capabilities-title_active"
                 }`}
               >
                 Функциональность

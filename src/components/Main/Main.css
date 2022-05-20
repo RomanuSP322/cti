@@ -82,13 +82,7 @@
   max-height: 1000px;
 }
 
-@media screen and (max-width: 1800px) {
-  .main__image {
-    top: 100px;
-    right: -200px;
-    height: 800px;
-  }
-}
+
 
 @media screen and (max-width: 1480px) {
   .main__image {
@@ -116,11 +110,23 @@
   padding-bottom: 6px;
 }
 
+@media screen and (max-width: 1480px) {
+  .main__note_title{
+    font-size: 36px;
+  }
+}
+
 .main__note_subtitle {
   font-size: 20px;
   font-weight: 700;
   min-width: 200px;
   margin: 0;
+}
+
+@media screen and (max-width: 1480px) {
+  .main__note_subtitle{
+    font-size: 16px;
+  }
 }
 
 .main__accordion {

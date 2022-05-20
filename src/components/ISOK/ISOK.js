@@ -4,14 +4,38 @@ import isokintro from "../../video/isok.webm";
 import phone from "../../images/phone.png";
 
 function Isok({ isokdata }) {
-  const [cur, setCur] = useState(-1);
-  const position = { transform: `translateX(-${cur * 400}px)` };
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [cur, setCur] = useState(0);
+ 
 
   const onClick = (idx) => {
     (idx+1 === cur) ?
      setCur(0) :
      setCur(idx + 1)   
    };
+
+   useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+ 
+  const videoWidth = (width) => {
+    if (width > 1595) {
+      return 400;
+    } else if (width > 1195) {
+      return 300;
+    }  else if (width > 1195) {
+      return 200;
+    }    else 
+      return 200
+    
+     
+  };
+  const position = { transform: `translateX(-${cur * videoWidth(windowWidth)}px)` };
 
   return (
     <section className="isok">   
@@ -49,8 +73,8 @@ function Isok({ isokdata }) {
           </p>
           {!isokdata || isokdata.length === 0 ? null : (
             <div className="isok__capabilities">
-              <h2 className={`isok__capabilities-title ${
-                      cur === 0 ? "isok__capabilities-title_active" : ""
+              <h2 className={`capabilities-title ${
+                      cur === 0 ? "" : "isok__capabilities-title_active"
                     }`}>
                 Функциональность
               </h2>

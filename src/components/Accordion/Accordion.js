@@ -2,6 +2,8 @@ import React from "react";
 import Panel from "../Panel/Panel";
 import "./Accordion.css";
 
+// {` ${type === 'horizontal' ? '' : ''}`}
+
 class Accordion extends React.Component {
   constructor(props) {
     super(props);
@@ -10,8 +12,15 @@ class Accordion extends React.Component {
       activeTab: 0,
     };
 
+   
     this.activateTab = this.activateTab.bind(this);
+    
   }
+
+
+
+
+ 
 
   activateTab(index) {
     this.setState((prev) => ({
@@ -19,33 +28,66 @@ class Accordion extends React.Component {
     }));
   }
 
+
+
   render() {
     const { panels } = this.props;
+    const { type }  = this.props;
     const { activeTab } = this.state;
+    const sum =  panels.length ;  
+    const openedWidth = ((window.innerWidth)/2+50) ;
+    const closedWidth = ((openedWidth)/(sum)+20);
+    console.log (openedWidth, closedWidth)
 
     return (
-      <div className="accordion" role="tablist">
+      <div
+        className={`accordion ${
+          type === "horizontal" ? "accordion__type_horizontal" : ""
+        }`}
+        role="tablist"
+      >
         {panels.map((panel, index) => (
           <React.Fragment key={index}>
-            <Panel            
+            <Panel
               activeTab={activeTab}
               index={index}
-			  
+              orientation={type}             
+              openedWidth = {openedWidth}
+              closedWidth = {closedWidth}
               {...panel}
               activateTab={this.activateTab.bind(null, index)}
             />
             <div
-			   
-              className="panel__content-wrapper"
+              className={`panel__content-wrapper ${
+                type === "horizontal" ? "panel__content-wrapper_horizontal" : ""
+              }`}
               style={{
                 opacity: `${activeTab === index ? `1` : `0`}`,
                 color: `${panel.text_color}`,
-                transform: `translateX(${activeTab * 280}px)`,
+                transform: `${
+                  type === "horizontal"
+                    ? `translateY(${activeTab * 200}px)`
+                    : `translateX(${activeTab * closedWidth}px)`
+                }`,
               }}
             >
-              <h2 className="panel__subtitle">{panel.subtitle}</h2>
-              <h2 className="panel__content-title">{panel.content_title}</h2>
-              <p className="panel__content">{panel.content}</p>
+              <h2
+                className={`panel__subtitle ${type === "horizontal"  ? "panel__subtitle_disable" : ""}`}
+              >
+                {panel.subtitle}
+              </h2>
+              <h2
+                className={`panel__content-title ${
+                  type === "horizontal" ? "" : ""
+                }`}
+              >
+                {panel.content_title}
+              </h2>
+              <p
+                className={`panel__content ${type === "horizontal" ? "panel__content_horizontal" : ""}`}
+              >
+                {panel.content}
+              </p>
             </div>
           </React.Fragment>
         ))}

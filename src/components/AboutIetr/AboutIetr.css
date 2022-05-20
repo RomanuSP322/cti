@@ -1,7 +1,25 @@
 .about-ietr{
  
   box-sizing: border-box;
-  padding: 80px 150px 0;
+  padding: 80px 350px 150px;
+}
+
+@media screen and (max-width: 1920px) {
+  .about-ietr{
+    padding: 80px 150px 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-ietr{
+    padding: 80px 50px 0 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-ietr{
+    padding: 80px 20px 0 60px;
+  }
 }
 
 .about-ietr__title{
@@ -14,6 +32,20 @@
   padding-bottom: 45px;
 }
 
+@media screen and (max-width: 1600px) {
+  .about-ietr__title{
+    font-size: 36px;
+    line-height: 44px; 
+    max-width: 900px; 
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-ietr__title{
+    padding-bottom: 25px;
+  }
+}
+
 .about-ietr__subtitle{
   font-size: 44px; 
   line-height: 52px;   
@@ -23,16 +55,66 @@
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 1600px) {
+  .about-ietr__subtitle{
+    font-size: 30px;   
+    max-width: 900px; 
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-ietr__subtitle{
+    padding-bottom: 15px;
+  
+  }
+}
+
+
 .about-ietr__content{
  display: flex;
  width: 100%;
  justify-content: space-between;
 }
 
+@media screen and (max-width: 1024px) {
+  .about-ietr__content{
+    flex-direction: column;
+    
+  }
+}
+
+
 .about-ietr__image{
   padding-top: 40px;
-  height: 520px;
+  height: 620px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1920px) {
+  .about-ietr__image{
+    height: 520px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .about-ietr__image{
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-ietr__image{
+    height: 320px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-ietr__image{
+    height: 380px;
+    width: 600px;
+    padding-bottom: 50px;
+  }
 }
 
 .about-ietr__article-wrapper{
@@ -43,6 +125,28 @@
   max-width: 650px;
   width: 100%;
 }
+
+@media screen and (max-width: 1600px) {
+  .about-ietr__article-wrapper{
+    font-size: 18px; 
+    line-height: 26px;
+    padding-left: 40px;  
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-ietr__article-wrapper{
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-ietr__article-wrapper{
+    padding-left: 0;
+    max-width: 850px;
+  }
+}
+
 
 .about-ietr__article{
   margin: 0;

@@ -1,20 +1,43 @@
 import React, { useEffect, useState } from "react";
 import "./Catalog.css";
+import "../Capabilities/Capabilities.css";
+
 import catalogintro from "../../video/catalog.webm";
 import monitor from "../../images/monitor.png";
 
 function Catalog({ catalogdata }) {
-  const [cur, setCur] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const styles = {
     "--normal": `url(${monitor})`,
   };
 
+  const [cur, setCur] = useState(0);
+
   const onClick = (idx) => {
     idx + 1 === cur ? setCur(0) : setCur(idx + 1);
   };
 
-  const position = { transform: `translateX(-${cur * 778}px)` };
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+ 
+  const videoWidth = (width) => {
+    if (width > 1595) {
+      return 778;
+    } else if (width > 1195) {
+      return 520;
+    }  else if (width > 1020) {
+      return 389;
+    }   else 
+    return 389;
+  };
+  const position = { transform: `translateX(-${cur * videoWidth(windowWidth)}px)` };
 
   return (
     <section className="catalog">
@@ -56,8 +79,8 @@ function Catalog({ catalogdata }) {
           {!catalogdata || catalogdata.length === 0 ? null : (
             <div className="catalog__capabilities">
               <h2
-                className={`catalog__capabilities-title ${
-                  cur === 0 ? "catalog__capabilities-title_active" : ""
+                className={`capabilities-title ${
+                  cur === 0 ? "" : "capabilities-title_active"
                 }`}
               >
                 Функциональность

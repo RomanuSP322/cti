@@ -1,9 +1,38 @@
 .manual {
   background-color: hsl(201, 100%, 97%);
-  padding: 100px 50px 100px 150px;
+  padding: 100px 350px 100px 350px;
   min-height: 1000px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1920px) {
+  .manual{
+    padding: 100px 50px 100px 150px;
+ 
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .manual{
+    padding: 50px 50px 50px 150px;
+    min-height: 700px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .manual{
+    padding: 50px 50px 50px 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .manual{
+    padding: 50px 50px 50px 60px;
+  }
+}
+
+
+
 
 .manual__title {
   font-size: 60px;
@@ -13,6 +42,15 @@
   margin: 0;
   max-width: 1000px;
   padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1600px) {
+  .manual__title{
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 840px;
+    padding-bottom: 30px;
+  }
 }
 
 .manual__container {
@@ -40,6 +78,26 @@
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 1600px) {
+  .manual__video-content{
+    padding-top: 25px;
+  padding-left: 18px;
+  padding-right: 34px;
+  padding-bottom: 25px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .manual__video-content{
+    padding-top: 22px;
+  padding-left: 14px;
+  padding-right: 24px;
+  padding-bottom: 22px;
+  }
+}
+
+
 .manual__video-wrapper {
   overflow: hidden;
 }
@@ -51,9 +109,20 @@
   transition: transform 1s ease;
 }
 
-.manual__video {
-  width: 778px;
+@media screen and (max-width: 1600px) {
+  .manual__videos{
+    width: 520px;
+    height: 312px;
+  }
 }
+
+@media screen and (max-width: 1024px) {
+  .manual__videos{
+    width: 389px;
+    height: 233px;
+  }
+}
+
 
 .manual__monitor-img {
   position: absolute;
@@ -66,6 +135,18 @@
   padding-left: 100px;
 }
 
+@media screen and (max-width: 1200px) {
+  .manual__column_right{
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .manual__column_right{
+    padding-left: 50px;
+  }
+}
+
 .manual__discription {
   font-size: 24px;
   line-height: 32px;
@@ -73,7 +154,14 @@
   color: #000;  
   margin: 0;
   padding-bottom: 40px;
-  /* border-bottom: 1px solid rgb(18, 171, 219, 0.4);    */
+ 
+}
+
+@media screen and (max-width: 1600px) {
+  .manual__discription{
+    font-size: 18px;
+    line-height: 24px;  
+  }
 }
 
 .manual__capabilities {
@@ -100,7 +188,7 @@
 
 
 
-.capabilities__button {
+/* .capabilities__button {
   margin: 0;
   outline: none;
   border: none;
@@ -198,4 +286,4 @@
 .capabilities__item-title_active {
   font-weight: 700;
   color: #12abdb;
-}
+} */
