@@ -1,33 +1,24 @@
-import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
-import MoreBtn from "../MoreBtn/MoreBtn";
-import "./Solutions.css";
+import React from 'react';
 
+import MoreBtn from '../MoreBtn/MoreBtn';
+import './Solutions.css';
 
 function Solution({ classy, text, image, path }) {
-  let history = useHistory();
-
-  // function handleClick(path) {
-  //   history.push(`/${path}`);
-  // }
-
   return (
     <>
       <div className={classy}>
-        <div className="solution__content">
-       
+        <div className='solution__content'>
           <img
             src={image}
-            alt="img"
-            className="solution__image"
-            draggable="false"
-            // onClick={() => handleClick(path)}
+            alt='img'
+            className='solution__image'
+            draggable='false'          
           />
-        
-          <div className="solution__text">
-            <p className="solution__about">{text}</p>
+
+          <div className='solution__text'>
+            <p className='solution__about'>{text}</p>
           </div>
-          <div className="solution__btn-more">
+          <div className='solution__btn-more'>
             <MoreBtn direction={path} text={`Подробнее`} />
           </div>
         </div>
@@ -58,15 +49,15 @@ const Solutions = ({ solutions }) => {
   };
 
   return (
-    <section className="solutions">
+    <section className='solutions'>
       {!solutions || solutions.length === 0 ? null : (
         <>
-          <h2 className="solutions__title">Решения</h2>
+          <h2 className='solutions__title'>Решения</h2>
 
           {solutions.map((solution, idx) => {
             return (
               <Solution
-                classy={idx === cur ? "solution solution_active" : "solution"}
+                classy={idx === cur ? 'solution solution_active' : 'solution'}
                 key={idx}
                 {...solution}
                 nextMoving={nextMoving}
@@ -74,13 +65,13 @@ const Solutions = ({ solutions }) => {
             );
           })}
 
-          <div className="solutions__indicators">
+          <div className='solutions__indicators'>
             {solutions.map((solution, index) => {
               return (
                 <button
-                key={index}
+                  key={index}
                   className={`solutions__indicator ${
-                    index === cur ? "solutions__indicator_active" : ""
+                    index === cur ? 'solutions__indicator_active' : ''
                   }`}
                   onClick={() => {
                     updateIndex(index);
@@ -88,11 +79,11 @@ const Solutions = ({ solutions }) => {
                 >
                   <img
                     src={`${index === cur ? solution.activeico : solution.ico}`}
-                    alt="img"
-                    className="solution__ico"
-                    draggable="false"
+                    alt='img'
+                    className='solution__ico'
+                    draggable='false'
                   />
-                  <p className="solution__title">{solution.title}</p>
+                  <p className='solution__title'>{solution.title}</p>
                 </button>
               );
             })}

@@ -41,7 +41,7 @@ function Contacts() {
                   className="contacts_detail-info contacts__link"
                   target="_blank"
                 >
-                  Москва ул. Каланчевская д.20 стр.7
+                  Москва ул. Каланчевская д. 20 стр. 7
                 </a>
               </div>
             </div>

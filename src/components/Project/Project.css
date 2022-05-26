@@ -30,10 +30,22 @@
     padding-top: 40px;
 }
 
+
+.project__image_wide {
+    width: 1700px;
+    
+
+}
+
+
+.project__image_notebook {
+    width: 836px;
+}
 .project__details {
     display: flex;
     padding-top: 60px;
     padding-right: 56px;
+    white-space: pre-wrap;
 }
 
 .project__detail-wrapper{

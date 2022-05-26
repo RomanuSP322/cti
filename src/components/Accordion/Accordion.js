@@ -37,7 +37,7 @@ class Accordion extends React.Component {
     const sum =  panels.length ;  
     const openedWidth = ((window.innerWidth)/2+50) ;
     const closedWidth = ((openedWidth)/(sum)+20);
-    console.log (openedWidth, closedWidth)
+    
 
     return (
       <div

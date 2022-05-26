@@ -35,6 +35,7 @@ const Cases = ({ cases }) => {
           <div className='case_wrapper'>
             {cases.map((item, idx) => {
               return (
+             
                 <div className={`case ${idx === cur ? 'case_active' : ''}`} key={idx}>
                   <div className='case__text-wrapper'>
                     <p className='case__text'>{item.text}</p>
@@ -45,12 +46,15 @@ const Cases = ({ cases }) => {
                     className='case__image'
                     draggable='false'
                   />
-                </div>
-              );
-            })}
-            <button className='case__button case__button_about'>
+                     <button className='case__button case__button_about'  onClick={()=> handleClick(item.path)}>
               Подробнее
             </button>
+                </div>
+          
+              
+              );
+            })}
+       
 
             <button
               onClick={nextMoving}

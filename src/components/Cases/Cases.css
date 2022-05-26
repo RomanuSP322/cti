@@ -103,12 +103,18 @@
 }
 
 .case__button_next {
-  margin-left: 20px;
-  width: 150px;
+ 
+  width: 90px;
   padding: 0;
   border: none;
 }
 
+.case__button_about{
+   position: absolute;
+   left: 50px;
+   top: 250px;
+    
+}
 
 
 .case__button_about:hover {
