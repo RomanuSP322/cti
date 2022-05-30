@@ -45,12 +45,18 @@
     display: flex;
     padding-top: 60px;
     padding-right: 56px;
+    align-items: center;
     white-space: pre-wrap;
 }
 
 .project__detail-wrapper{
     display: flex;
     align-items: baseline;
+    font-weight: 500;
+}
+
+.project__details-solution {
+    display: block;
 }
 
 .project__detail-title {

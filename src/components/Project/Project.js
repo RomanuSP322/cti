@@ -37,11 +37,12 @@ function Project() {
                 <p className="project__detail-info">{project.client}</p>
                 </div>
                 <div className="project__detail-wrapper">
-                <h3 className="project__detail-title">Цель</h3>
+                {/* <h3 className="project__detail-title">Цель</h3> */}
                 <p className="project__detail-info">{project.mission}</p>
                 </div>
-                <div className="project__detail-wrapper">
-                <h3 className="project__detail-title">Решение</h3>
+                <div className="project__detail-wrapper project__details-solution">
+                  { project.solutiontitle ? <h3 className="project.solutiontitle">{project.solutiontitle}</h3> : null }
+                {/*  */}
                 <p className="project__detail-info">{project.solution}</p>
                 </div>
             </div>
