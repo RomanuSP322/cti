@@ -83,7 +83,7 @@ justify-content: space-between;
 
 @media screen and (max-width: 768px) {
   .threedinfo__column_right{
-    width: 720px;
+    width: 705px;
     height: 560px;
   }
 }
