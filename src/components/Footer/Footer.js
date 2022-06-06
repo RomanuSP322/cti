@@ -1,10 +1,18 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Waves from "../Waves/Waves";
 import logo from "../../images/logoWhite.svg";
 import logoDark from "../../images/logo335.svg";
 import "./Footer.css";
 
 function Footer({ theme }) {
+  let history = useHistory();
+
+  function handleClick(path) {
+    history.push(`/${path}`);
+  }
+
+
   return (
     <>
       {theme === "dark" ? (
@@ -44,7 +52,7 @@ function Footer({ theme }) {
             <h3 className="footer__contact_title">Контакты</h3>
             <p className="footer__contact_item">(+7) 495-984-80-69</p>
             <p className="footer__contact_item">info@m-cti.ru</p>
-            <button className="footer__contact_button">Связаться с нами</button>
+            <button className="footer__contact_button" onClick={()=> handleClick('contacts')}>Связаться с нами</button>
           </div>
         </div>
         <p className="footer__copyright">© 2022 ООО ЦТИ</p>

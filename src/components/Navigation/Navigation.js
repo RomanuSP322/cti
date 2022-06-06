@@ -27,7 +27,7 @@ function Navigation({ loggedIn }) {
   return (
     <div className='navigation'>
       <nav className='navigation__menu'>
-        {windowWidth > 768 ? (
+        {windowWidth > 1200 ? (
           <div className='navigation__menu_type_header'>
             <ul className='navigation__list  navigation__list_type_header'>
               <li className='navigation__item_type_header'>
@@ -133,7 +133,7 @@ function Navigation({ loggedIn }) {
               </li>
               <li className='navigation__item_type_header navigation__item_type_profile navigation__item_position_right'>
                 <NavLink
-                  to='/profile'
+                  to='#'
                   className='navigation__link navigation__link_type_profile'
                 >
                   Клиентам

@@ -1,0 +1,120 @@
+/* Styling */
+.hoverme-wrapper {
+    height: 80%;
+    width: 90%;  
+    z-index: 6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hoverme {
+    height: 200px;
+    width: 200px;   
+    position: relative;
+    padding-left: 200px;
+    
+  
+  }
+
+.hoverme__circle {
+    position: absolute;
+    border-radius: 50%;
+  
+  }
+  .hoverme__circle:nth-of-type(1) {
+    height: 15px;
+    width: 15px;
+    top: calc(50% - (15px / 2));
+    left: calc(50% - (15px / 2));
+    opacity: 0.9;
+    z-index: 1;
+  }
+.hoverme__circle:nth-of-type(2) {
+    height: 40px;
+    width: 40px;
+    top: calc(50% - (40px / 2));
+    left: calc(50% - (40px / 2));
+    opacity: 0.8;
+    z-index: 2;
+  }
+
+ .hoverme__circle:nth-of-type(3) {
+    height: 60px;
+    width: 60px;
+    top: calc(50% - (60px / 2));
+    left: calc(50% - (60px / 2));
+    opacity: 0.75;
+    z-index: 3;
+  }
+
+  .hoverme__circle:nth-of-type(4) {
+    height: 80px;
+    width: 80px;
+    top: calc(50% - (80px / 2));
+    left: calc(50% - (80px / 2));
+    opacity: 0.7;
+    z-index: 4;
+  }
+
+
+  /* Animation */
+  @keyframes ripple {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(1.1);
+    }
+  }
+  @keyframes colors {
+    0%,
+    100% {
+        /* background: #12abdb; */
+      border: 3px solid #12abdb;
+    }
+    25% {
+      /* background: #a6e4f8; */
+      border:3px solid #a6e4f8;
+    }
+    75% {
+      /* background: #1279db; */
+      border: 3px solid #09b0e4;
+    }
+  }
+
+ .hoverme__circle:nth-of-type(1) {
+    -webkit-animation: ripple ease-in 2s infinite, colors ease-in 10s infinite;
+    -moz-animation: ripple ease-in 2s infinite, colors ease-in 10s infinite;
+    animation: ripple ease-in 2s infinite, colors ease-in 10s infinite;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  .hoverme__circle:nth-of-type(2) {
+    -webkit-animation: ripple ease-in 2s infinite, colors ease-in 14s infinite;
+    -moz-animation: ripple ease-in 2s infinite, colors ease-in 14s infinite;
+    animation: ripple ease-in 2s infinite, colors ease-in 14s infinite;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+
+
+ .hoverme__circle:nth-of-type(3) {
+    -webkit-animation: ripple ease-in 2s infinite, colors ease-in 14s infinite;
+    -moz-animation: ripple ease-in 2s infinite, colors ease-in 14s infinite;
+    animation: ripple ease-in 2s infinite, colors ease-in 14s infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  .hoverme__circle:nth-of-type(4) {
+    -webkit-animation: ripple ease-in 2s infinite, colors ease-in 14s infinite;
+    -moz-animation: ripple ease-in 2s infinite, colors ease-in 14s infinite;
+    animation: ripple ease-in 2s infinite, colors ease-in 14s infinite;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+  }
+
+  

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ThreeDInfo.css";
+import HoverMe from "../HoverMe/HoverMe";
 
 import real from "../../images/real3d.png";
 import line from "../../images/line3d.png";
@@ -16,6 +17,8 @@ function ThreeDInfo({ items }) {
 
   return (
     <section className="threedinfo">
+
+    
       <h2 className="threedinfo__title">Цифровая трансформация технической документации</h2>
       <div className="threedinfo__content">
         <div className="threedinfo__column_left">
@@ -38,8 +41,10 @@ function ThreeDInfo({ items }) {
           className="threedinfo__column_right"
           style={styles}      
          
-        ></div>
-      </div>
+        >
+        <HoverMe />
+        </div>
+      </div>      
     </section>
   );
 }

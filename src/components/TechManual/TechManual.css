@@ -55,15 +55,33 @@
 
 .manual__container {
   display: flex;
-
   height: 100%;
   width: 100%;
 }
+
+
+@media screen and (max-width: 768px) {
+  .manual__container{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
 
 .manual__column_left {
   justify-self: right;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .manual__column_left{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px
+  }
+}
+
 
 .manual__video-content {
   background-image: var(--normal);
