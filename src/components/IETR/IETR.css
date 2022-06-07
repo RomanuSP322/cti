@@ -20,7 +20,7 @@ height: 100vh;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
   .ietr__intro{
     padding: 80px 20px 0 60px;
     background-position: bottom 120px right;
@@ -29,7 +29,7 @@ height: 100vh;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .ietr__intro{
     background-position: bottom right;
     background-size: 165% auto;
@@ -59,7 +59,7 @@ height: 100vh;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
   .ietr__title{
     padding-top: 150px;
     font-size: 40px;
@@ -89,7 +89,7 @@ height: 100vh;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
   .ietr__subtitle{
     font-size: 20px;     
     max-width: 390px; 

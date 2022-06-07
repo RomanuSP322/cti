@@ -32,6 +32,9 @@
   }
 }
 
+
+
+
 .isok__title {
     font-size: 60px; 
     line-height: 70px;   
@@ -56,6 +59,13 @@
     
     height: 100%;
     width: 100%;
+}
+
+@media screen and (max-width: 930px) {
+  .isok__container{
+   flex-direction: column-reverse;
+   gap: 30px;
+  }
 }
 
 .isok__column_left {
@@ -172,6 +182,13 @@
     padding-left: 70px;
   }
 }
+
+@media screen and (max-width: 930px) {
+  .isok__column_right{
+    padding-left: 0px;
+  }
+}
+
 
 .isok__discription {
     font-size: 24px; 

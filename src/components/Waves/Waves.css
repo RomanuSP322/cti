@@ -11,9 +11,21 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .waves{
+    height: 250px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .waves{
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .waves{
+    height: 150px;
   }
 }
 

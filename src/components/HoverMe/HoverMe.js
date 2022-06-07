@@ -9,10 +9,10 @@ function HoverMe() {
   return (
       <div className='hoverme-wrapper' onMouseEnter={() => setHover(true)}>
      { hover ? null :<div className='hoverme'>
-	<div className='hoverme__circle'></div>
-	<div className='hoverme__circle'></div>
-	<div className='hoverme__circle'></div>
-    <div className='hoverme__circle'></div>
+
+   <span className='hoverme__circle'></span>
+  <span className='hoverme__circle'></span>
+
 </div>
 }
 </div> 
