@@ -17,3 +17,9 @@
 .top_span {
   border-top: 5px solid #12abdb;
 }
+
+@media screen and (max-width: 700px) {
+  .top_span{
+    border-top: 3px solid #12abdb;  
+  }
+}

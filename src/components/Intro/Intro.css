@@ -8,11 +8,6 @@ background-size: contain;
 }
 
 .intro__title {
-    /* font-size: 72px; 
-    line-height: 86px; 
-    max-width: 1200px; 
-    padding-top: 200px;
-    padding-bottom: 30px;  */
     font-weight: 700;
     color: white;   
     margin: 0;    
@@ -20,8 +15,7 @@ background-size: contain;
 }
 
 .intro__subtitle {
-    /* font-size: 35px;
-    line-height: 1.2; */
+
     font-weight: 400;
     color: white;
     padding: 0;

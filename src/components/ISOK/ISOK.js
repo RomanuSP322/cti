@@ -30,8 +30,10 @@ function Isok({ isokdata }) {
       return 300;
     }  else if (width > 1195) {
       return 200;
-    }    else 
-      return 200
+    }    else if (width > 645) {
+      return 300;
+    } else 
+      return 150
     
      
   };

@@ -31,6 +31,12 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .manual{
+    padding: 20px 18px 20px 18px;
+  }
+}
+
 
 
 
@@ -49,6 +55,15 @@
     font-size: 40px;
     line-height: 48px;
     max-width: 840px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .manual__title{
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 360px;
     padding-bottom: 30px;
   }
 }
@@ -117,10 +132,30 @@
 
 @media screen and (max-width: 930px) {
   .manual__video-content{
-
+    padding-top: 25px;
+  padding-left: 18px;
+  padding-right: 34px;
+  padding-bottom: 25px;
   }
 }
 
+@media screen and (max-width: 930px) {
+  .manual__video-content{
+    padding-top: 25px;
+  padding-left: 18px;
+  padding-right: 34px;
+  padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .manual__video-content{
+    padding-top: 12px;
+  padding-left: 9px;
+  padding-right: 17px;
+  padding-bottom: 12px;
+  }
+}
 
 .manual__video-wrapper {
   overflow: hidden;
@@ -144,6 +179,20 @@
   .manual__videos{
     width: 389px;
     height: 233px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .manual__videos{
+    width: 520px;
+    height: 312px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .manual__videos{
+    width: 260px;
+    height: 156px;
   }
 }
 
@@ -191,6 +240,14 @@
   .manual__discription{
     font-size: 18px;
     line-height: 24px;  
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .manual__discription{
+    font-size: 14px;
+    line-height: 18px;  
+    padding-bottom: 10px;
   }
 }
 

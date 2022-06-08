@@ -28,6 +28,11 @@
     height: 150px;
   }
 }
+@media screen and (max-width: 650px) {
+  .waves{
+    height: 100px;
+  }
+}
 
 .wave1{
   z-index: 3;

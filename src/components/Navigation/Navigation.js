@@ -27,7 +27,7 @@ function Navigation({ loggedIn }) {
   return (
     <div className='navigation'>
       <nav className='navigation__menu'>
-        {windowWidth > 1200 ? (
+        {windowWidth > 1270 ? (
           <div className='navigation__menu_type_header'>
             <ul className='navigation__list  navigation__list_type_header'>
               <li className='navigation__item_type_header'>
@@ -38,12 +38,7 @@ function Navigation({ loggedIn }) {
                   Главная
                 </NavLink>
               </li>
-              <li className='navigation__item_type_header'>
-                <NavLink
-                  to='/saved-movies'
-                  className='navigation__link navigation__link_type_header'
-                ></NavLink>
-              </li>
+              
               <li className='navigation__item_type_header'>
                 <button
                   className={`navigation__link_type_header navigation__button ${dropdown ? `navigation__link_active` : ``}`}
@@ -186,11 +181,11 @@ function Navigation({ loggedIn }) {
                   onClick={showSidebar}
                 >
                   <NavLink
-                    to='/movies'
+                    to='/IETR'
                     activeClassName='navigation__link_type_active'
                     className='navigation__link navigation__link_type_burger'
                   >
-                    Фильмы
+                    Интерактивные Электронные Технические Руководства
                   </NavLink>
                 </li>
                 <li
@@ -198,11 +193,83 @@ function Navigation({ loggedIn }) {
                   onClick={showSidebar}
                 >
                   <NavLink
-                    to='/saved-movies'
+                    to='/ksptr'
                     activeClassName='navigation__link_type_active'
                     className='navigation__link navigation__link_type_burger'
                   >
-                    Сохранённые фильмы
+                    Управление Технологическими Процессами
+                  </NavLink>
+                </li>
+                <li
+                  className='navigation__item_type_burger'
+                  onClick={showSidebar}
+                >
+                  <NavLink
+                    to='/databases'
+                    activeClassName='navigation__link_type_active'
+                    className='navigation__link navigation__link_type_burger'
+                  >
+                     Корпоративные IT Решения
+                  </NavLink>
+                </li>
+                <li
+                  className='navigation__item_type_burger'
+                  onClick={showSidebar}
+                >
+                  <NavLink
+                    to='/learning'
+                    activeClassName='navigation__link_type_active'
+                    className='navigation__link navigation__link_type_burger'
+                  >
+                    Инновационные Системы Обучения
+                  </NavLink>
+                </li>
+                <li
+                  className='navigation__item_type_burger'
+                  onClick={showSidebar}
+                >
+                  <NavLink
+                    to='/projects'
+                    activeClassName='navigation__link_type_active'
+                    className='navigation__link navigation__link_type_burger'
+                  >
+                    Проекты
+                  </NavLink>
+                </li>
+                <li
+                  className='navigation__item_type_burger'
+                  onClick={showSidebar}
+                >
+                  <NavLink
+                    to='/company'
+                    activeClassName='navigation__link_type_active'
+                    className='navigation__link navigation__link_type_burger'
+                  >
+                     О компании
+                  </NavLink>
+                </li>
+                <li
+                  className='navigation__item_type_burger'
+                  onClick={showSidebar}
+                >
+                  <NavLink
+                    to='/news'
+                    activeClassName='navigation__link_type_active'
+                    className='navigation__link navigation__link_type_burger'
+                  >
+                    Новости
+                  </NavLink>
+                </li>
+                <li
+                  className='navigation__item_type_burger'
+                  onClick={showSidebar}
+                >
+                  <NavLink
+                    to='/contacts'
+                    activeClassName='navigation__link_type_active'
+                    className='navigation__link navigation__link_type_burger'
+                  >
+                    Контакты
                   </NavLink>
                 </li>
                 <li
@@ -210,10 +277,10 @@ function Navigation({ loggedIn }) {
                   onClick={showSidebar}
                 >
                   <NavLink
-                    to='/profile'
+                    to='#'
                     className='navigation__link navigation__link_type_profile'
                   >
-                    Аккаунт
+                    Клиентам
                   </NavLink>
                 </li>
               </ul>

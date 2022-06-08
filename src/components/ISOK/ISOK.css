@@ -32,6 +32,13 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .isok{
+    padding: 20px 18px 18px 18px;   
+  }
+}
+
+
 
 
 
@@ -51,6 +58,16 @@
     line-height: 48px;
     max-width: 700px;
     padding-bottom: 30px;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .isok__title{
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 350px;
+    padding-bottom: 20px;
   }
 }
 
@@ -107,6 +124,24 @@
   }
 }
 
+@media screen and (max-width: 930px) {
+  .isok__video-content{
+    padding-top: 25px;
+    padding-left: 12px;
+    padding-right: 10px;
+   
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .isok__video-content{
+    padding-top: 20px;
+    padding-left: 6px;
+    padding-right: 5px;
+   
+  }
+}
+
 .isok__phone-img {
     filter: drop-shadow(10px 0 14px rgba(0,0,0,0.3));
   position: absolute;
@@ -127,6 +162,21 @@
   .isok__phone-img{
     height: 380px;
     width: 214px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .isok__phone-img{
+    height: 570px;
+    width: 322px;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .isok__phone-img{
+    height: 285px;
+    width: 161px;
   }
 }
 
@@ -154,6 +204,20 @@
   .isok__videos{
     width: 200px;
     height: 352px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .isok__videos{
+    width: 300px;
+    height: 529px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .isok__videos{
+    width: 150px;
+    height: 264px;
   }
 }
 
@@ -204,6 +268,15 @@
   .isok__discription{
     font-size: 18px;
     line-height: 24px;  
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .isok__discription{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;   
   }
 }
 
