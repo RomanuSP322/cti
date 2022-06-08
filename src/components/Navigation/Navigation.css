@@ -51,6 +51,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -87,6 +88,8 @@
 @media screen and (max-width: 600px) {
   .navigation__item_type_burger {
     margin-top: 15px;
+  
+
   }
 }
 
@@ -145,6 +148,8 @@
     padding-bottom: 5px;
     font-size: 14px;
     line-height: 18px;
+    max-width: 270px;
+    text-align: center;
   }
 }
 
@@ -232,6 +237,14 @@
 @media screen and (max-width: 780px) {
   .navigation__sidebar {
     width: 100%;
+    
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navigation__sidebar {
+   
+    height: 92vh;
   }
 }
 
