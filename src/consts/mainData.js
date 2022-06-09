@@ -4,9 +4,9 @@ import accordionImg1 from "../images/diselImg.png";
 import accordionImg2 from "../images/techImg.png";
 import accordionImg3 from "../images/tm18dm.png";
 import accordionImg4 from "../images/bsu.png";
-import casefirst from "../images/case1.png";
-import casesecond from "../images/case2.png";
-import casethird from "../images/case3.png";
+import casefirst from "../images/case3.png";
+import casesecond from "../images/caseenzd.png";
+import casethird from "../images/casediesel.png";
 
 import solutionFirst from "../images/solutionIETR.png";
 import solutionIcoFirst from "../images/3dsoftware.png";

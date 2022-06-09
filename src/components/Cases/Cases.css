@@ -72,10 +72,10 @@
 }
 
 .case__image {
-    height: 700px;
+    width: 900px;
     position: absolute;
-    right: -140px;
-    bottom: -10%;
+    right: -150px;
+    bottom: -8%;
     object-fit: cover;  
 }
 
