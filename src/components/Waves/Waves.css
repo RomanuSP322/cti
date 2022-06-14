@@ -25,12 +25,12 @@
 
 @media screen and (max-width: 720px) {
   .waves{
-    height: 150px;
+    height: 160px;
   }
 }
 @media screen and (max-width: 650px) {
   .waves{
-    height: 100px;
+    height: 120px;
   }
 }
 

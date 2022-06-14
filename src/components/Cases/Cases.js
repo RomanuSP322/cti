@@ -46,15 +46,15 @@ const Cases = ({ cases }) => {
                     className='case__image'
                     draggable='false'
                   />
-                     <button className='case__button case__button_about'  onClick={()=> handleClick(item.path)}>
-              Подробнее
-            </button>
+                    
                 </div>
           
               
               );
             })}
-       
+        <button className='case__button case__button_about'  onClick={()=> handleClick(cases[cur].path)}>
+              Подробнее
+            </button>
 
             <button
               onClick={nextMoving}

@@ -39,7 +39,7 @@ height: 100vh;
 
 @media screen and (max-width: 650px) {
   .ietr__intro{
-    background-position: bottom right;
+    background-position: bottom 20px right;
     background-size: 180% auto;
     padding: 60px 18px 0 18px;
     height: 94vh;

@@ -171,7 +171,9 @@
 }
 
 .navigation__link_type_active {
-  border-top: 2px solid #12abdb;
+  /* border-top: 2px solid #12abdb; */
+  color: #12abdb;
+  font-weight: 700;
 }
 
 .navigation__button_type_burger {
@@ -287,6 +289,7 @@
   transition: transform .7s cubic-bezier(.5,0,0,1);
 }
 
+
 .navigation__dropdown_active {
   transform: translate(0px, 0px);
 }
@@ -299,6 +302,13 @@
   width: 100%;
   padding-left: 150px;
  
+}
+
+
+@media screen and (max-width: 1400px) {
+  .navigation__item-dropdown_wrapper  {
+    padding-left: 60px;
+  }
 }
 
 .navigation__item-dropdown_wrapper_active {

@@ -8,6 +8,33 @@
   
 }
 
+
+@media screen and (max-width: 1600px) {
+    .cases {
+        padding-right: 50px;
+        padding-bottom: 100px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .cases {
+        padding-left: 100px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .cases {
+        padding-left: 60px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .cases {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+  }
+
 .cases__title {
     color: black;
     font-size: 60px;
@@ -15,6 +42,23 @@
     font-weight: 700;
     padding-bottom: 50px;
 }
+
+@media screen and (max-width: 1600px) {
+    .cases__title {
+      font-size: 48px;
+      padding-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .cases__title {
+      font-size: 32px;
+      padding-bottom: 20px;
+      padding-right: 100px;
+      text-align: center;
+    }
+  }
+  
 
 .cases__subtitle {
     font-size: 24px;
@@ -26,25 +70,81 @@
     
 }
 
+
+@media screen and (max-width: 1600px) {
+    .cases__subtitle {
+      font-size: 18px;
+      line-height: 24px;
+      max-width: 700px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .cases__subtitle {
+      font-size: 14px;
+      line-height: 20px;
+      max-width: 450px;
+    }
+  }
+
 .case_wrapper {
     position: relative;
     width: 100%; 
     min-height: 450px; 
     display: flex; 
-    align-items: flex-end;
+    align-items: flex-end;    
+    column-gap: 50px;
     
 }
 
+@media screen and (max-width: 1600px) {
+    .case_wrapper {
+        min-height: 370px;
+        column-gap: 30px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .case_wrapper {
+        min-height: 300px; 
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .case_wrapper {
+   
+     min-height: 270px; 
+    
+     
+    }
+  }
+
 .case {
-    position: absolute; 
-    top: 50px;
-    left: -50px;
+  position: absolute; 
+  top: 50px;
+  left: -50px;
     opacity: 0;
     display: flex;
     align-items: center;
     justify-content: left;
     width: 100%;
     transition: opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+@media screen and (max-width: 900px) {
+  .case {
+    left: -60px; 
+   
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .case {
+    left: -18px; 
+   
+  }
 }
 
 
@@ -56,33 +156,123 @@
 .case__text-wrapper {
     min-width: 90%;
      background: linear-gradient(315deg, rgb(5, 36, 82) 39%, rgb(3, 85, 137) 95%); 
-    height: 400px;
-    
+    height: 400px; 
+       
 }
 
+@media screen and (max-width: 1600px) {
+    .case__text-wrapper {
+        height: 310px; 
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .case__text-wrapper {
+        height: 420px;
+         
+     
+    }
+  }
+
+
+
+
+
 .case__text {
-    max-width: 900px;
+    max-width: 800px;
     color: white;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
     padding-left: 50px;
     font-weight: 700;
     margin:0;
     padding: 30px 50px;
+  
 }
 
+@media screen and (max-width: 1600px) {
+    .case__text {
+        font-size: 30px;
+        line-height: 38px; 
+        max-width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .case__text {
+        font-size: 24px;
+        line-height: 30px; 
+        max-width: 580px;
+    }
+  }
+
+  
+  @media screen and (max-width: 900px) {
+    .case__text {
+      padding: 30px 30px 0 60px;
+      max-width: 700px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .case__text {
+        font-size: 18px;
+        line-height: 24px; 
+        max-width: 580px;
+        
+        padding-left: 18px;
+    }
+  }
+
+
+
+
 .case__image {
-    width: 900px;
+    width: 920px;
     position: absolute;
     right: -150px;
-    bottom: -8%;
-    object-fit: cover;  
+    bottom: -40px;
+    object-fit: cover;
+    
 }
+
+@media screen and (max-width: 1600px) {
+    .case__image {
+        width: 650px;
+        right: -70px;
+        bottom: -20px;
+    }
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    .case__image {
+        width: 500px;
+        right: -70px;
+        bottom: -20px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .case__image {
+        width: 500px;
+        right: -100px;
+        bottom: -20px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .case__image {
+        width: 95%;
+        left: -100px;
+        bottom: -20px;
+        overflow: hidden;
+    }
+  }
 
 .case__button {
     width: 150px;
-    height: 50px;
-    border: none;
+    height: 50px;    
     outline: none;
     justify-self: end;
     z-index: 5;
@@ -97,24 +287,62 @@
     transition: all .4s ease-in-out;
 }
 
+@media screen and (max-width: 1600px) {
+    .case__button {
+      transform: scale(0.8);
+      margin-bottom: 20px;  
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .case__button {
+      transform: scale(0.8) translateX(-20px);
+      margin-bottom: 20px;  
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .case__button {
+      transform: scale(0.7) translateX(-30px);
+      margin-bottom: 20px;  
+    }
+  }
+
+
+
 .case__button:hover {
     cursor: pointer;
     
 }
 
-.case__button_next {
- 
+.case__button_next { 
   width: 90px;
   padding: 0;
-  border: none;
+  border: none; 
+  justify-self: left;
+
 }
 
-.case__button_about{
-   position: absolute;
-   left: 50px;
-   top: 250px;
-    
+
+@media screen and (max-width: 650px) {
+  .case__button_next {
+  
+ 
+  }
 }
+
+
+.case__button_about {
+  justify-self: left;
+ 
+}
+
+@media screen and (max-width: 650px) {
+  .case__button_about {
+ 
+  }
+}
+
 
 
 .case__button_about:hover {
@@ -132,6 +360,33 @@
     margin-top: 20px;   
     width: 300px;   
 }
+
+@media screen and (max-width: 1600px) {
+    .case__button_projects {
+        margin-top: 0px; 
+        width: 250px;   
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .case__button_projects {
+        margin-top: 0px; 
+        width: 250px; 
+        color: #FFF;  
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .case__button_projects {   
+    
+       margin-top: 210px;
+     
+       color:#12abdb;
+    }
+  }
+
+
+
 
 .case__button_projects:hover {
     background-color: #12abdb;

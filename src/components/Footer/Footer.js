@@ -1,8 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import Waves from "../Waves/Waves";
-import logo from "../../images/logoWhite.svg";
-import logoDark from "../../images/logo335.svg";
+import logo from "../../images/logoolddark.png";
+import logoDark from "../../images/logoold.png";
 import "./Footer.css";
 
 function Footer({ theme }) {

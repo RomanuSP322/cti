@@ -25,6 +25,16 @@ import "./Main.css";
 import slide_second from "../../images/slide5.png"; 
 
 function Main() {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -78,7 +88,7 @@ function Main() {
       </div>
 
       <div className="main__accordion" ref={next}>
-        <Accordion panels={panels} />
+        <Accordion panels={panels} type={windowWidth < 901 ? "horizontal" : "vertical"} />
       </div>
       <Waves
           pos={"up"}
@@ -95,7 +105,7 @@ function Main() {
       </div>
       <div className="main__whoweare">
         <Whowe />
-      </div>
+      </div> 
       <Waves
         pos={"down"}
         svg={
@@ -104,8 +114,8 @@ function Main() {
       />
       <div className="main__advantages">
         <Advantages items={advantages} />
-      </div>
-      <div className="main__news">
+      </div> 
+       <div className="main__news">
         <News location={'mainpage'} />
       </div>  
 

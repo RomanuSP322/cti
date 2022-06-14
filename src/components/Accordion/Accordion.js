@@ -47,13 +47,14 @@ class Accordion extends React.Component {
         role="tablist"
       >
         {panels.map((panel, index) => (
-          <React.Fragment key={index}>
+          <React.Fragment key={index} >
             <Panel
               activeTab={activeTab}
               index={index}
               orientation={type}             
               openedWidth = {openedWidth}
               closedWidth = {closedWidth}
+              length = {sum}
               {...panel}
               activateTab={this.activateTab.bind(null, index)}
             />
@@ -72,7 +73,7 @@ class Accordion extends React.Component {
               }}
             >
               <h2
-                className={`panel__subtitle ${type === "horizontal"  ? "panel__subtitle_disable" : ""}`}
+                className={`panel__subtitle ${type === "horizosntal"  ? "panel__subtitle_disable" : ""}`}
               >
                 {panel.subtitle}
               </h2>

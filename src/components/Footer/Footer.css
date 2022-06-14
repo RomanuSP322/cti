@@ -14,12 +14,12 @@
 
 @media screen and (max-width: 1200px) {
   .footer {
-    padding-left: 60px;
+    padding-left: 100px;
     padding-right: 50px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .footer {
     padding-left: 60px;
     padding-right: 0;
@@ -64,6 +64,12 @@
   align-self: baseline;
 }
 
+@media screen and (max-width: 1600px) {
+  .footer__logo {
+    width: 100px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .footer__logo {
     align-self: center;
@@ -91,6 +97,14 @@
   line-height: 32px;
   max-width: 300px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1600px) {
+  .footer__tagline {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 260px;
+  }
 }
 
 @media screen and (max-width: 1024px) {

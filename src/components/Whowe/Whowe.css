@@ -7,12 +7,34 @@
  padding-right: 100px;
    box-sizing: border-box;
    z-index: 3;
- 
+  
+}
+
+@media screen and (max-width: 1300px) {
+  .whowe{
+      padding-left: 100px;
+  }
 }
 
 
+@media screen and (max-width: 900px) {
+  .whowe{
+      padding-left: 60px;
+      padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .whowe{
+      padding-left: 18px;
+      padding-right: 18px;
+      
+  }
+}
+
 .whowe__parters {
-  margin: 0 auto;  
+  margin: 0 auto; 
+   
 }
 
 .whowe__partners_title {
@@ -26,17 +48,41 @@
   margin: 0;
 }
 
+@media screen and (max-width: 650px) {
+  .whowe__partners_title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .partners__row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-flow: wrap;    
+  flex-flow: wrap; 
+  
+    
 }
+
+@media screen and (max-width: 650px) {
+  .partners__row{
+column-gap: 50px;
+row-gap: 20px;
+  }
+}
+
 
 .partners__row_top {
 
  padding-bottom: 40px;
 
+}
+
+
+@media screen and (max-width: 650px) {
+  .partners__row_top{
+    padding-bottom: 20px;;
+  }
 }
 
 .partners__img {
@@ -48,25 +94,88 @@
   filter: grayscale(70%);
   filter: gray; /* IE 6-9 */
   
-  transition: filter 0.3s ease-in-out;
- 
+  transition: filter 0.3s ease-in-out; 
 }
+
+@media screen and (max-width: 1200px) {
+  .partners__img{
+    height: 30px;
+  }
+}
+
+
 .partner__circle-ico {
   height:60px
+}
+
+@media screen and (max-width: 1200px) {
+  .partner__circle-ico{
+    height: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .partner__circle-ico{
+    height: 30px;
+  }
 }
 
 .partner__rectangle-ico {
   height: 40px
 }
 
+@media screen and (max-width: 1200px) {
+  .partner__rectangle-ico{
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .partner__rectangle-ico{
+    height: 25px;
+  }
+}
+
 .partner__rzd-ico {  
   height: 50px;
 }
+
+@media screen and (max-width: 1200px) {
+  .partner__rzd-ico{
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .partner__rzd-ico{
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .partner__rzd-ico{
+    height: 30px;
+  }
+}
+
 
 .partner__pkbct-ico {
   height: 65px;
   padding-right: 15px;
 }
+
+@media screen and (max-width: 1200px) {
+  .partner__pkbct-ico{
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .partner__pkbct-ico{
+    padding-right: 0px;
+    height: 35px;
+  }
+}
+
 .partners__img:hover {
   
     -webkit-filter: grayscale(0);
