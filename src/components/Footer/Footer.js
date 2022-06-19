@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import Waves from "../Waves/Waves";
-import logo from "../../images/logoolddark.png";
+import logo from "../../images/logoolddark.svg";
 import logoDark from "../../images/logoold.png";
 import "./Footer.css";
 

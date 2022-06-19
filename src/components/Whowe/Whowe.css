@@ -1,13 +1,20 @@
 .whowe {
   width: 100%;  
   background-color: #eef9ff;
- padding-left: 150px;
+ padding-left: 350px;
 
  padding-bottom: 60px;
- padding-right: 100px;
+ padding-right: 350px;
    box-sizing: border-box;
    z-index: 3;
   
+}
+
+@media screen and (max-width: 1920px) {
+  .whowe{
+    padding-left: 150px;
+    padding-right: 100px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -28,6 +35,13 @@
   .whowe{
       padding-left: 18px;
       padding-right: 18px;
+      
+  }
+}
+
+@media screen and (max-width:380px) {
+  .whowe{
+     padding-top: 50px;
       
   }
 }

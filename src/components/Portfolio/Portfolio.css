@@ -1,14 +1,48 @@
 .portfolio {
   background-image: var(--normal),
     linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%);
-  background-size: contain;
-  background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 110% auto;
 }
 
+
+
 .portfolio__intro {
-  padding: 0px 150px 0;
-  background-image: var(--normal);
+  padding: 0px 350px 0;
+
 }
+
+
+@media screen and (max-width: 1920px) {
+  .portfolio__intro{
+    padding: 0px 150px 0;
+ 
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio__intro{
+    padding: 0px 100px 0;
+ 
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .portfolio__intro{
+    padding: 0px 18px 0 60px;    
+    
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .portfolio__intro{
+    padding: 0px 18px 0 18px;    
+    
+  }
+}
+
+
 .portfolio__title {
   font-size: 60px;
   max-width: 560px;
@@ -16,11 +50,68 @@
   padding-bottom: 14px;
 }
 
+@media screen and (max-width: 1600px) {
+  .portfolio__title{
+    font-size: 40px;
+  max-width: 460px;
+  padding-top: 80px;
+  padding-bottom: 12px;
+ 
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio__title{
+    font-size: 30px;
+  max-width: 460px;
+  padding-top: 80px;
+  padding-bottom: 10px;
+ 
+  }
+}
+
 .portfolio__subtitle {
   font-size: 24px;
   line-height: 1.3;
   max-width: 620px;
   
+}
+
+@media screen and (max-width: 1600px) {
+  .portfolio__subtitle{
+    font-size: 18px;
+  max-width: 466px;
+ 
+ 
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio__subtitle{
+    font-size: 14px;
+  max-width: 366px;
+ 
+ 
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .portfolio__subtitle{
+    font-size: 12px;
+  max-width: 310px;
+ 
+ 
+  }
+}
+
+
+@media screen and (max-width: 340px) {
+  .portfolio__subtitle{
+    font-size: 12px;
+  max-width: 250px;
+ 
+ 
+  }
 }
 
 .portfolio__about {

@@ -41,8 +41,8 @@ function Project() {
                 <p className="project__detail-info">{project.mission}</p>
                 </div>
                 <div className="project__detail-wrapper project__details-solution">
-                  { project.solutiontitle ? <h3 className="project.solutiontitle">{project.solutiontitle}</h3> : null }
-                {/*  */}
+                  { project.solutiontitle ? <h3 className="project__detail-title">{project.solutiontitle}</h3> : null }
+               
                 <p className="project__detail-info">{project.solution}</p>
                 </div>
             </div>

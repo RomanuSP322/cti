@@ -1,11 +1,18 @@
 .cases {
   width: 100%;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 350px;
+  padding-right: 350px;
   padding-bottom: 150px;
   padding-top: 50px;
   box-sizing: border-box;
   
+}
+
+@media screen and (max-width: 1920px) {
+  .cases {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 
@@ -119,6 +126,24 @@
     }
   }
 
+  @media screen and (max-width: 380px) {
+    .case_wrapper {
+   
+     min-height: 280px; 
+    
+     
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .case_wrapper {
+   
+     min-height: 280px; 
+    
+     
+    }
+  }
+
 .case {
   position: absolute; 
   top: 50px;
@@ -174,6 +199,22 @@
     }
   }
 
+  @media screen and (max-width: 380px) {
+    .case__text-wrapper {
+        height: 420px;
+         
+     
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .case__text-wrapper {
+        height: 420px;
+         
+     
+    }
+  }
+
 
 
 
@@ -218,6 +259,27 @@
     .case__text {
         font-size: 18px;
         line-height: 24px; 
+        max-width: 580px;
+        
+        padding-left: 18px;
+    }
+  }
+
+
+  @media screen and (max-width: 380px) {
+    .case__text {
+        font-size: 16px;
+        line-height: 20px; 
+        max-width: 580px;
+        
+        padding-left: 18px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .case__text {
+        font-size: 14px;
+        line-height: 18px; 
         max-width: 580px;
         
         padding-left: 18px;

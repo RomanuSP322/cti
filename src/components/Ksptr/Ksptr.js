@@ -26,7 +26,7 @@ function Ksptr() {
         <h2 className="ksptr__problem-title">
           Проблемы информационного обеспечения технологий
         </h2>
-        <div className="ksptr__section-content">
+        <div className="ksptr__section-content ">
           <img
             src={problem}
             alt="img"
@@ -63,7 +63,7 @@ function Ksptr() {
         <h3 className="ksptr__about-subtitle">
           Комплексная система поддержки технологического процесса ремонта
         </h3>
-        <div className="ksptr__section-content">
+        <div className="ksptr__section-content ksptr__section-content_column">
           <p className="ksptr__about-article">
             Корпоративная система цифровой подготовки и предоставления
             технологических процессов обслуживания и ремонта вагонов и
@@ -102,15 +102,15 @@ function Ksptr() {
         <h2 className="ksptr__problem-title">
           Конструктор <br></br> технологического процесса
         </h2>
-        <div className="ksptr__section-content">
+        <div className="ksptr__section-content ksptr__section-content_column">
           <img
             src={constructor}
             alt="img"
-            className="ksptr__problem-image"
+            className="ksptr__constructor-image"
             draggable="false"
           />
           <p className="ksptr__problem-article">
-            Конструктор технологического процесса Внедрение КС ПТР обеспечивает
+            Внедрение КС ПТР обеспечивает
             повышение эффективности за счет имеющейся в системе возможности
             оперативного изменения и создания технологических карт с помощью
             конструктора технологического процесса. Он представляет собой гибкий

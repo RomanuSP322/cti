@@ -1,7 +1,14 @@
 .news__cards-list_main{
 
-  padding: 180px 150px 0;
+  padding: 180px 350px 0;
 }
+
+@media screen and (max-width: 1920px) {
+  .news__cards-list_main {
+    padding: 180px 150px 0;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .news__cards-list_main {
     padding: 80px 50px 0 150px;
@@ -133,6 +140,13 @@
     padding-right: 25px;
  
   }
+  
+}
+
+@media screen and (max-width: 380px) {
+  .news-card {
+    width: 85%;
+  }
 }
 
  
@@ -198,6 +212,12 @@
 @media screen and (max-width: 650px) {
   .news-card_right {
     width: 130px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .news-card_right {
+    display: none;
   }
 }
  

@@ -22,7 +22,7 @@ import Waves from "../Waves/Waves";
 
 import "./Main.css";
 
-import slide_second from "../../images/slide5.png"; 
+import slide_second from "../../images/mainintro.png"; 
 
 function Main() {
 
@@ -61,8 +61,8 @@ function Main() {
           Центр Транспортных <br></br> Исследований
         </h2>
         <h3 className="main__subtitle top_span">
-          Надежный партнер на пути
-          <br></br> к цифровому будущему
+        Актуальные IT решения 
+          <br></br> с 1992 года
         </h3>
         <img
           src={slide_second}
@@ -71,10 +71,7 @@ function Main() {
           draggable="false"          
         />
         <div className="main__notes">
-          <div className="main__note">
-            <h4 className="main__note_title">30 лет</h4>
-            <p className="main__note_subtitle">на рынке IT-систем</p>
-          </div>
+          
           <div className="main__note">
             <h4 className="main__note_title">200+</h4>
             <p className="main__note_subtitle">проектов</p>

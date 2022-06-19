@@ -34,6 +34,12 @@
   }
 }
 
+
+@media screen and (max-width: 380px) {
+  .waves{
+    height: 100px;
+  }
+}
 .wave1{
   z-index: 3;
   position: absolute;

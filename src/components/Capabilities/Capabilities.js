@@ -35,7 +35,7 @@ function Capabilities({ capabilities }) {
                       ></div>
                     </button>
                     <p
-                      className={`capabilities__dropdown ${
+                      className={`capabilities__dropdown  ${
                         idx === cur ? "capabilities__dropdown_active" : ""
                       }`}
                     >
