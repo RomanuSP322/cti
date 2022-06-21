@@ -5,6 +5,25 @@ padding-bottom: 20px;
 overflow: hidden;
 }
 
+@media screen and (max-width: 900px) {
+  .newscard{    
+    width: 300px; 
+    }
+}
+
+@media screen and (max-width: 750px) {
+  .newscard{    
+    width: 250px; 
+    }
+}
+
+@media screen and (max-width: 650px) {
+  .newscard{    
+    width: 90%; 
+    }
+}
+
+
 .newscard:hover{
   cursor: pointer;
 }
@@ -16,9 +35,16 @@ overflow: hidden;
   margin: 0;
   object-fit: cover;
   transition: transform 1s ease-in-out;
-  padding-bottom: 10px;
-  
+  padding-bottom: 10px;  
 }
+
+@media screen and (max-width: 650px) {
+  .newscard__image{
+    width: 100%;
+    height: 220px;
+   }
+}
+
 .newscard:hover .newscard__image{
   transform: scale(1.1);
   
@@ -49,12 +75,22 @@ overflow: hidden;
   font-weight: 700;
 }
 
+@media screen and (max-width: 650px) {
+  .newscard__title{
+    font-size: 16px;
+    line-height: 22px;   
+    padding-bottom: 10px;    
+  }
+}
+
 .newscard__text{
   font-size: 14px;
   line-height: 20px;
   margin: 0;
   padding-bottom: 32px;
 }
+
+
 
 .newscard__button_more{
   color: #12abdb;

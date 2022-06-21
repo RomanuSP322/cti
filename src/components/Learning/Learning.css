@@ -1,150 +1,293 @@
-.learning{
-    background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%); 
-  }
-  
-  .learning__intro{  
-  padding: 70px 150px 100px;
+.learning {
+  background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%);
+}
+
+.learning__intro {
+  padding: 70px 50px 100px 350px;
   height: 100vh;
-  }
-  
-  .learning__title{
-    font-size: 72px; 
-    line-height: 86px;
-    padding-top: 200px;
-    max-width: 1200px;
-    padding-bottom: 30px;   
-    font-weight: 700;
-    color: white;
-   
-    margin: 0;
+  box-sizing: border-box;
+  background-size: contain;
+  background-position: right;
+}
 
-    text-shadow: 0 0 60px #444;
+@media screen and (max-width: 1920px) {
+  .learning__intro {
+    padding: 70px 150px 100px;
   }
-  
-  .learning__subtitle{
-    font-size: 35px;
+}
+
+@media screen and (max-width: 1200px) {
+  .learning__intro {
+    padding: 70px 50px 100px 100px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .learning__intro {
+    padding: 70px 30px 100px 60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .learning__intro {
+    padding: 70px 18px 100px 18px;
+  }
+}
+
+
+.learning__title {
+  font-size: 72px;
+  line-height: 86px;
+  padding-top: 200px;
+  max-width: 1000px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  text-shadow: 0 0 60px #444;
+}
+
+@media screen and (max-width: 1600px) {
+  .learning__title {
+    font-size: 50px;
+    line-height: 58px;
+    max-width: 550px;
+    padding-bottom: 20px;
+  }
+}
+
+.learning__subtitle {
+  font-size: 35px;
+  line-height: 1.2;
+  max-width: 720px;
+}
+
+@media screen and (max-width: 1600px) {
+  .learning__subtitle {
+    font-size: 26px;
     line-height: 1.2;
-    max-width: 720px;
+    max-width: 530px;
   }
+}
 
-  .learning__vr{
-    
-    background-color: #eef9ff;
-    padding: 100px 0px 100px 80px;
-  }
-  
+.learning__vr {
+  background-color: #eef9ff;
+  padding: 100px 0px 100px 80px;
+}
+
+.learning__vr-title {
+  font-size: 60px;
+  margin: 0;
+  padding-bottom: 50px;
+  font-weight: 700;
+
+  color: #12abdb;
+}
+
+@media screen and (max-width: 1600px) {
   .learning__vr-title {
-    font-size: 60px; 
-    margin: 0;   
-    padding-bottom: 50px;
-    font-weight: 700;    
-    
-    color: #12abdb;
+    font-size: 40px;
+    padding-bottom: 30px;
   }
+}
 
-  .learning__vr-content{
-    display: flex;
-    justify-content: space-between;
-    
+.learning__vr-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.learning__vr-article {
+  max-width: 700px;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  padding-right: 80px;
+}
+
+@media screen and (max-width: 1600px) {
+  .learning__vr-article {
+    font-size: 20px;
+    line-height: 26px;
+    padding-right: 20px;
   }
+}
 
-  .learning__vr-article{
-    max-width: 700px;
-    font-size: 24px; 
-    line-height: 32px;
-    margin: 0;  
-    padding-right: 80px;
-  }
+.vr {
+  position: relative;
+  padding-left: 100px;
+  padding-right: 150px;
+}
 
+@media screen and (max-width: 1700px) {
   .vr {
     position: relative;
     padding-left: 100px;
-    width: 1050px;   
-    
+    padding-right: 100px;
   }
+}
 
+.vr__headset-img {
+  position: absolute;
+  top: 0;
+  left: -0px;
+  width: 1050px;
+  height: 500px;
+}
+
+@media screen and (max-width: 1700px) {
   .vr__headset-img {
-    position: absolute;
+    width: 850px;
+    height: 400px;
+
     top: 0;
-    left: -0px;
-    width: 1050px;
-    height: 500px;
+    left: 20px;
   }
+}
 
- .learning__training {
-   padding-left: 150px;
-   padding-top: 100px;
- }
+.vr__video {
+  width: 853px;
+}
 
- .learning__training-title {
-  font-size: 60px; 
-  margin: 0;   
+@media screen and (max-width: 1700px) {
+  .vr__video {
+    width: 680px;
+  }
+}
+
+.learning__training {
+  padding-left: 150px;
+  padding-top: 100px;
+}
+
+
+
+.learning__training-title {
+  font-size: 60px;
+  margin: 0;
   padding-bottom: 50px;
   font-weight: 700;
-  color:#12abdb;
+  color: #12abdb;
   max-width: 900px;
- }
+}
 
-  .learning__training-content {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 300px;
-  }
-
-  .learning__training-article{
+@media screen and (max-width: 1600px) {
+  .learning__training-title {
+    font-size: 40px;
+   
+    padding-bottom: 30px;
+    
     max-width: 700px;
-    font-size: 24px; 
-    line-height: 32px;
-    margin: 0; 
-    color: #fff;
   }
+}
 
+.learning__training-content {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 150px;
+  align-items: center;
+}
+
+@media screen and (max-width: 1600px) {
+  .learning__training-content {
+
+    padding-right: 100px;
+    
+  }
+}
+
+.learning__training-article {
+  max-width: 700px;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  color: #fff;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 1600px) {
   .learning__training-article {
-    max-width: 800px;
-  }
-
-  .learning__training-phone-wrapper {
-    position: relative;
-  }
-
-  .learning__training-phone-img {
-    position: absolute;
-    top: -13px;
-    left: -7px;
-    width: 380px;
-  }
-
-  .learning__test {
-    padding: 100px 0px 150px 100px;
-  }
-
-  .learning__test-content {
-    display: flex;
-    color: #fff;
-    justify-content: space-between;
    
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 700px;
   }
+}
 
+
+
+.learning__training-phone-wrapper {
+  position: relative;
+}
+
+.learning__training-phone-img {
+  position: absolute;
+  top: -13px;
+  left: -7px;
+  width: 380px;
+}
+
+.learning__test {
+  padding: 100px 50px 150px 100px;
+}
+
+.learning__test-content {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.learning__test-title {
+  color: #12abdb;
+  max-width: 780px;
+  font-size: 60px;
+  line-height: 68px;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 1600px) {
   .learning__test-title {
-    color:#12abdb;
-    max-width: 780px;
-    font-size: 60px;
-    line-height: 68px;
-    padding-left: 50px;
+    
+    max-width: 500px;
+    font-size: 40px;
+    line-height: 48px;
+    padding-left: 30px;
   }
+}
 
-  .learning__test-wrapper {
-    position: relative;
-    padding-top: 25px;
-    padding-left: 36px;
-    padding-right: 40px;
-  }
+.learning__test-wrapper {
+  position: relative;
+  padding-top: 25px;
+  padding-left: 36px;
+  padding-right: 80px;
+}
 
-  .learning__laptop-img {
-    position: absolute;
-    top: 0;
-    left: 15px;
-    height: 580px;
-   
+
+.learning__laptop-img {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 580px;
+}
+
+@media screen and (max-width: 1700px) {
+  .learning__laptop-img {  
+    top: 6px;
+    left: 0;
+    height: 450px;
   }
-  
+}
+
+.learning__test-video{
+  height: 480px;
+  padding-left: 40px;
+}
+
+@media screen and (max-width: 1700px) {
+  .learning__test-video {  
+    padding-left: 0;
+    height: 380px;
+  }
+}

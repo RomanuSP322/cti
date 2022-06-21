@@ -36,20 +36,11 @@ function Main() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+  
   const next = useRef(null);
-  // const [hover, setHover] = useState(false);
-
-  // const style = {
-  //   normal: {
-  //     backgroundImage: `url(${slide_second})`,
-  //   },
-  //   hover: {
-  //     backgroundImage: `url(${slide_second})`,
-  //   },
-  // };
 
   return (
     <div className="main">

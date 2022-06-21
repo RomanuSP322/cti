@@ -312,32 +312,32 @@
 
 @media screen and (max-width: 1600px) {
   .solution__btn-more {
-    top: 90px;
-    left: 0px;
-    transform: scale(0.75);
+    top: 94px;
+    left: 20px;
+    
   }
 }
 
 @media screen and (max-width: 1300px) {
   .solution__btn-more {
-    top: 80px;
-    left: -10px;
-    transform: scale(0.75);
+    top: 86px;
+    left: 10px;
+   
   }
 }
 
 @media screen and (max-width: 900px) {
   .solution__btn-more {
-    top: 35px;
-    left: 0px;
-    transform: scale(0.75);
+    top: 40px;
+    left: 10px;
+   
   }
 }
 
 @media screen and (max-width: 650px) {
   .solution__btn-more {
     top: 25px;
-    left: -10px;
+    left: 0px;
   
   }
 }

@@ -12,9 +12,9 @@ import constructor from "../../images/constructor.png";
 import solution from "../../images/solution.png";
 
 function Ksptr() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   const next = useRef(null);
 

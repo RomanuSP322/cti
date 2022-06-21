@@ -17,9 +17,9 @@ import laptop from "../../images/notebook.png";
 import testvideoWebm from "../../video/test.webm";
 
 function Learning() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   const next = useRef(null);
 
@@ -37,7 +37,7 @@ function Learning() {
         <div className="learning__vr-content">
           <div className="vr">
             <img src={vrheadset} className="vr__headset-img" alt="vrimage" />
-            <video autoPlay muted loop width="853" height="480">
+            <video autoPlay muted loop className="vr__video">
               <source src={vrvideoMp} type="video/mp4" />
               <source src={vrvideoWebm} type="video/webm" />.
             </video>
@@ -94,7 +94,7 @@ function Learning() {
         <div className="learning__test-content">
           <div className="learning__test-wrapper">
             <img src={laptop} className="learning__laptop-img" alt="vrimage" />
-            <video autoPlay muted loop width="853" height="480">
+            <video autoPlay muted loop  className="learning__test-video">
               <source src={testvideoWebm} type="video/webm" />.
             </video>
           </div>

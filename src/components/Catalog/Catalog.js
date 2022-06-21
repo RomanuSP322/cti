@@ -17,15 +17,6 @@ function Catalog({ catalogdata }) {
   const onClick = (idx) => {
     idx + 1 === cur ? setCur(0) : setCur(idx + 1);
   };
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
   const videoWidth = (width) => {
     if (width > 1595) {
       return 778;
@@ -40,6 +31,16 @@ function Catalog({ catalogdata }) {
   const position = {
     transform: `translateX(-${cur * videoWidth(windowWidth)}px)`,
   };
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
 
   return (
     <section className='catalog'>

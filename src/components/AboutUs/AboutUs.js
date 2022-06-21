@@ -15,7 +15,7 @@ const AboutUs = ({ items }) => {
   return (
     <section className="about-us">
       <div className="about-us__title-wrapper">
-        <h2 className="about-us__title">Ресурсы для разработки проектов</h2>
+        <h2 className="about-us__title">Фундамент для разработки успешных проектов</h2>
         <h3 className="about-us__subtitle">
           Три десятилетия мы разрабатываем и успешно внедряем комплексное
           программное обеспечение для предприятий транспорта. За эти годы мы

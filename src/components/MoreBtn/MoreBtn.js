@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 
 
-function MoreBtn({direction, text}) {
+function MoreBtn({direction, text, type}) {
       
   let history = useHistory();
 
@@ -15,7 +15,9 @@ function MoreBtn({direction, text}) {
 
 
   return (
-    <button className="more__btn" onClick={()=> handleClick(direction)}>
+    <button className={`more__btn ${
+      type === "learn_more" ? "more__btn_large" : ""
+    }`} onClick={()=> handleClick(direction)}>
     <span className="circle" aria-hidden="true">
       <span className="more__icon more__arrow"></span>
     </span>

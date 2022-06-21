@@ -71,8 +71,7 @@ const Advantages = ({ items }) => {
   return (
     <section className="advantages">
       <h2 className="advantages__title">
-        Отраслевые решения на основе интеллектуальных технологий и лучших
-        практик
+      Оптимальные решения на основе современных технологий и экспертного опыта
       </h2>
       {windowWidth > 419 ? (
         <div className="advantages-list">

@@ -12,9 +12,9 @@ import "./Company.css";
 
 
 function Company() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   const next = useRef(null);
 

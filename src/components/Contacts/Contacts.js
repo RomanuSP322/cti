@@ -12,9 +12,9 @@ function Contacts() {
   const styles = {
     "--bg": `url(${contactsBg})`,
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <section className="contacts" style={styles}>

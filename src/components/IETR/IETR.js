@@ -12,13 +12,13 @@ import ThreeDInfo from '../ThreeDInfo/ThreeDInfo';
 import Footer from '../Footer/Footer';
 import './IETR.css';
 
-import catalog from '../../images/catalog.png';
 
 
 function IETR() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
  
   const next = useRef(null)
 
@@ -39,8 +39,7 @@ function IETR() {
 
       
       <Catalog catalogdata={catalogdata}/>
-      <TechManual manualdata={manualdata}/>
-      {/* <Capabilities  capabilities={ capabilities}/> */}
+      <TechManual manualdata={manualdata}/>    
       <Waves
         pos={'down'}
         svg={

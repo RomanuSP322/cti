@@ -7,10 +7,26 @@
     text-decoration: none;
     background: transparent;
     padding: 0;
-    width: 200px;
-    height: 48px;
-      
+   width: 200px;
+    height: 48px;      
   }
+
+  @media screen and (max-width: 650px) {
+    .more__btn {
+      width: 160px;
+    }
+  }
+
+  .more__btn_large{
+    width: 440px;
+  }
+
+  
+@media screen and (max-width: 650px) {
+  .more__btn_large {
+    width: 300px;
+  }
+}
    .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
@@ -20,6 +36,13 @@
     height: 48px;
     background: #12abdb;
     border-radius: 1.625rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    .circle {      
+      width: 34px;
+      height: 34px;
+    }
   }
    .more__icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -36,6 +59,12 @@
     height: 2px;
     background: none;
   }
+  @media screen and (max-width: 650px) {
+    .more__icon.more__arrow {      
+      left: -5px;
+    }
+  }
+
   .circle .more__icon.more__arrow::before {
     position: absolute;
     content: "";
@@ -65,14 +94,43 @@
     font-size: 20px;
     color: #12abdb;
   }
+
+  @media screen and (max-width: 650px) {
+    .more__text {
+      line-height: 34px;
+      font-size: 14px;
+      line-height: 48px;
+      padding: 0 0 0 20px;
+      color: #fff;
+    }
+  }
+
+
   .more__btn:hover .circle {
     width: 100%;
+  }
+
+  @media screen and (max-width: 650px) {
+    .circle{      
+      width: 100%;
+    }
   }
   .more__btn:hover .circle .more__icon.more__arrow {
     background: #fff;
     transform: translate(1rem, 0);
   }
+
+  
+  @media screen and (max-width: 650px) {
+    .circle .more__icon.more__arrow{      
+      background: #fff;
+      transform: translate(1rem, 0);
+    }
+  }
+
   .more__btn:hover .more__text {
     color: #fff;
   }
+
+
   

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Link, useRouteMatch  } from 'react-router-dom';
+
 import { intro, projects } from "../../consts/portfolioData";
 import Header from "../Header/Header";
 import Intro from "../Intro/Intro.js";
@@ -10,13 +10,14 @@ import portfolioBg from "../../images/portfolio.png";
 import "./Portfolio.css";
 
 function Portfolio() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
-  const { path } = useRouteMatch();
+
   const styles = {
     "--normal": `url(${portfolioBg})`,
+
   };
 
   const next = useRef(null);

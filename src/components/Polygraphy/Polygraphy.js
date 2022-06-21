@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Polygraphy.css";
 
 import stand from "../../images/stand.png";
 
 const Polygraphy = ({ posters }) => {
   const [cur, setCur] = React.useState(1);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const nextMoving = () => {
     if (cur >= posters.length - 1) {
@@ -22,7 +23,31 @@ const Polygraphy = ({ posters }) => {
     }
   };
 
-  const position = { transform: `translateX(-${cur * 700}px)` };
+  const videoWidth = (width) => {
+    if (width > 1595) {
+      return 700;
+    } else if (width > 1195) {
+      return 520;
+    } else if (width > 1020) {
+      return 389;
+    } else if (width > 590) {
+      return 520;
+    } else return 260;
+  };
+  
+  const position = {
+    transform: `translateX(-${cur * videoWidth(windowWidth)}px)`,
+  };
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
 
   return (
     <section className="polygraphy">

@@ -3,8 +3,18 @@
 }
 
 .ksptr__intro {
-  padding: 70px 150px 100px;
+  padding: 70px 350px 100px;
   height: 100vh;
+  box-sizing: border-box;
+  background-size: contain;
+  background-position: right;
+}
+
+@media screen and (max-width: 1920px) {
+  .ksptr__intro {
+    padding: 70px 150px 100px;  
+  
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -29,7 +39,8 @@
     .ksptr__intro {
         padding: 70px 0 100px 18px;   
         background-position: bottom 50px right;
-        background-size: 180% auto;  
+        background-size: 180% auto; 
+        height: 94vh; 
     }
   }
 
@@ -42,6 +53,7 @@
   max-width: 1200px;
   padding-bottom: 30px;
   padding-top: 180px;
+  text-shadow: 0 0 60px #444;
 }
 
 @media screen and (max-width: 1600px) {

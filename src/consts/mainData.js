@@ -2,7 +2,7 @@
 
 import accordionImg1 from "../images/diselImg.png";
 import accordionImg2 from "../images/techImg.png";
-import accordionImg3 from "../images/tm18dm.png";
+import accordionImg3 from "../images/twofloorred.png";
 import accordionImg4 from "../images/bsu.png";
 import caseegtv from "../images/case3.png";
 import caseenzd from "../images/caseenzd.png";

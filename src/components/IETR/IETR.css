@@ -5,6 +5,9 @@
 .ietr__intro{
 padding: 70px 350px 100px;
 height: 100vh;
+box-sizing: border-box;
+background-size: contain;
+  background-position: right;
 
 }
 

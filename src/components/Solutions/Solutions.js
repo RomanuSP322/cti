@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useHistory } from "react-router-dom";
 import MoreBtn from '../MoreBtn/MoreBtn';
 import './Solutions.css';
 
@@ -29,6 +29,11 @@ function Solution({ classy, text, image, path }) {
 
 const Solutions = ({ solutions }) => {
   const [cur, setCur] = React.useState(0);
+  let history = useHistory();
+
+  function handleClick(path) {
+    history.push(`/${path}`);
+  }
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
@@ -76,6 +81,7 @@ const Solutions = ({ solutions }) => {
                   onClick={() => {
                     updateIndex(index);
                   }}
+                  onDoubleClick={()=> handleClick(solution.path)}
                 >
                   <img
                     src={`${index === cur ? solution.activeico : solution.ico}`}

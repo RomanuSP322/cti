@@ -1,8 +1,6 @@
 .intro__wrapper {
     position: relative;
-box-sizing: border-box;
-background-size: contain;
-  background-position: right;
+
   background-repeat: no-repeat;
   background-image: var(--normal);
 }

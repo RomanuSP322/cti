@@ -35,6 +35,10 @@ export default class ScrollToTop extends Component {
     });
   }
 
+  componentWillUnmount() {
+    this.is_visible = false;
+  }
+
   render() {
     const { is_visible } = this.state;
     return (

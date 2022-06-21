@@ -149,10 +149,18 @@
   color: #000;
 }
 
+@media screen and (max-width: 900px) {
+  .projectslist__card-title{
+
+    text-align: center; 
+  }
+}
+
 @media screen and (max-width: 650px) {
   .projectslist__card-title{
     font-size: 12px;
-    line-height: 16px; 
+    line-height: 16px;
+  
   }
 }
 

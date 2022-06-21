@@ -1,7 +1,9 @@
 import React, { Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
 import Preloader from "../Preloader/Preloader";
+import { useHistory } from "react-router-dom";
 import ScrollToTopBtn from "../ScrollToTop/ScrollToTopBtn";
+
 import "./App.css";
 const Company = React.lazy(() => import("../Company/Company"));
 const Main = React.lazy(() => import("../Main/Main"));
@@ -14,7 +16,16 @@ const News = React.lazy(() => import("../News/News"));
 const Project = React.lazy(() => import("../Project/Project"));
 const Contacts = React.lazy(() => import("../Contacts/Contacts"));
 
+
+
 function App() {
+  let history = useHistory();
+
+  history.listen((location, action) => {
+    if (action === `PUSH`) 
+    window.scrollTo(0, 0);
+    })
+
   return (
     <Suspense fallback={<Preloader />}>
       <div className="app">
