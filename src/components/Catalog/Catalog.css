@@ -258,7 +258,7 @@
 @media screen and (max-width: 650px) {
   .catalog__discription{
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     font-weight: 400; 
     padding-bottom: 0; 
   }

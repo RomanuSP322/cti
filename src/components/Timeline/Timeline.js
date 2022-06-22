@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './Timeline.css';
-
-
+import React, { useEffect, useState } from "react";
+import "./Timeline.css";
 
 // Learning how to use useLayoutEffect
 // https://kentcdodds.com/blog/useeffect-vs-uselayouteffect
@@ -79,22 +77,19 @@ const EventItem = (props) => {
   const { date, content, role, company, location, image } = props;
   return (
     <li ref={timeItem} className={isVisible ? "inView" : null}>
-      <div className='event'>  
-              
-        <p className="description">
-        <time className='event__year'>
-          {date} 
-        </time> 
-        <p className="description_content">{content}</p>
-        </p>
-        <img src={image} alt='img' className="event__image" draggable='false' />
+      <div className="event">
+        <span className="description">
+          <time className="event__year">{date}</time>
+          <p className="description_content">{content}</p>
+        </span>
+        <img src={image} alt="img" className="event__image" draggable="false" />
       </div>
     </li>
   );
 };
 
 // Timeline
-const Timeline = ({events}) => {
+const Timeline = ({ events }) => {
   const scrollArea = React.useRef();
 
   const makeTimeline = (events) => {
@@ -118,8 +113,12 @@ const Timeline = ({events}) => {
     <div className="timeline__wrapper" ref={scrollArea}>
       <section className="timeline__header">
         <div className="timeline__container">
-          <h3 className='timeline__title'>История компании</h3>
-          <p className='timeline__subtitle'>Центр Транспортных Исследований был основан в 1992 году группой специалистов – выпускников МИИТа, инженеров и научных работников предприятий железнодорожного транспорта</p>
+          <h3 className="timeline__title">История компании</h3>
+          <p className="timeline__subtitle">
+            Центр Транспортных Исследований был основан в 1992 году группой
+            специалистов – выпускников МИИТа, инженеров и научных работников
+            предприятий железнодорожного транспорта
+          </p>
         </div>
       </section>
 

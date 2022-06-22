@@ -108,7 +108,7 @@ function TechManual({ manualdata }) {
                 </video>
                 {manualdata.map((item, idx) => {
                   return (
-                    <video autoPlay muted loop className='manual__video'>
+                    <video autoPlay muted loop className='manual__video' key={idx}>
                       <source src={item.webm} type='video/webm' />
                     </video>
                   );

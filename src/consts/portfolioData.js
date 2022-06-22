@@ -1,5 +1,3 @@
-import portfolioBg from "../images/portfolio.png";
-
 import posterFirst from "../images/projectposter1.png";
 import ivolgaPoster from "../images/ivolgaposter.jpg";
 import posterThird from "../images/projectposter3.png";

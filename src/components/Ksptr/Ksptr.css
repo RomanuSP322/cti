@@ -78,6 +78,7 @@
         line-height: 32px; 
         max-width: 500px;
         padding-bottom: 10px; 
+        padding-top: 150px;
     }
   }
 
@@ -104,7 +105,13 @@
   }
 
 .ksptr__problem {
-  padding: 70px 100px 0 150px;
+  padding: 70px 350px 0 350px;
+}
+
+@media screen and (max-width: 1920px) {
+  .ksptr__problem {
+    padding: 70px 100px 0 150px;  
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -269,7 +276,13 @@
 
 .ksptr__about {
   background-color: hsl(201, 100%, 97%);
-  padding: 0px 100px 0 150px;
+  padding: 0px 350px 0 350px;
+}
+
+@media screen and (max-width: 1920px) {
+  .ksptr__about {
+      padding: 0px 50px 0 150px;
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -401,7 +414,13 @@
       }
   }
 .ksptr__constructor {
-  padding: 70px 100px 0 150px;
+  padding: 70px 350px 0 350px;
+}
+
+@media screen and (max-width: 1920px) {
+  .ksptr__constructor {
+    padding: 70px 100px 0 150px;
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -477,8 +496,16 @@
 
 .ksptr__capabilities {
   display: flex;
-  padding: 160px 100px 0 150px;
+  padding: 160px 100px 0 350px;
   position: relative;
+}
+
+@media screen and (max-width: 1920px) {
+  .ksptr__capabilities {
+  
+    padding: 160px 100px 0 150px;
+  
+  }
 }
 
 @media screen and (max-width: 1600px) {

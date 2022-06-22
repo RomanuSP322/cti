@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { intro, posters } from "../../consts/learningData.js";
 import Header from "../Header/Header";
 import Intro from "../Intro/Intro";

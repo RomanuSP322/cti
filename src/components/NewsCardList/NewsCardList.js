@@ -13,8 +13,8 @@ function NewsCardList({news}) {
       <div className='cardlist-wrapper'>
           <h2 className='cardlist__title'>Новости</h2>
           <div className='cardlist'>
-          {news.map((item) =>
-        (<NewsCard props={item} />))}
+          {news.map((item, idx) =>
+        (<NewsCard props={item} key={idx}/>))}
       </div>
       </div>
     );

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Cases.css';
 import { useHistory } from "react-router-dom";
-
+import nextico from '../../images/nextico.png';
 
 const Cases = ({ cases }) => {
   const [cur, setCur] = React.useState(0);

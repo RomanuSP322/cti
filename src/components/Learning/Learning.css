@@ -26,12 +26,17 @@
 @media screen and (max-width: 1000px) {
   .learning__intro {
     padding: 70px 30px 100px 60px;
+    background-size: 140%;
+    background-position: right bottom;
   }
 }
 
 @media screen and (max-width: 650px) {
   .learning__intro {
     padding: 70px 18px 100px 18px;
+    height: 94vh;
+    background-size: 210%;
+    background-position: right bottom 0px;
   }
 }
 
@@ -57,6 +62,16 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .learning__title {
+    font-size: 26px;
+    line-height: 32px;
+    padding-top: 150px;
+    max-width: 300px;
+    padding-bottom: 10px;   
+  }
+}
+
 .learning__subtitle {
   font-size: 35px;
   line-height: 1.2;
@@ -65,16 +80,47 @@
 
 @media screen and (max-width: 1600px) {
   .learning__subtitle {
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 26px; 
     max-width: 530px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .learning__subtitle{
+    font-size: 14px;   
+    max-width: 290px; 
   }
 }
 
 .learning__vr {
   background-color: #eef9ff;
-  padding: 100px 0px 100px 80px;
+  padding: 100px 0px 100px 250px;
 }
+
+@media screen and (max-width: 1920px) {
+  .learning__vr {
+    padding: 100px 0px 100px 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .learning__vr {
+    padding: 80px 0px 80px 60px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .learning__vr {
+    padding: 0px 60px 40px 60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .learning__vr {
+    padding: 0px 18px 30px 18px;
+  }
+}
+
 
 .learning__vr-title {
   font-size: 60px;
@@ -92,10 +138,31 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .learning__vr-title {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .learning__vr-title {
+    font-size: 24px;   
+  
+  }
+}
+
 .learning__vr-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .learning__vr-content {
+flex-direction: column;
+align-items: center;
+  }
 }
 
 .learning__vr-article {
@@ -108,9 +175,24 @@
 
 @media screen and (max-width: 1600px) {
   .learning__vr-article {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
     padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .learning__vr-article {
+    max-width: 1000px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .learning__vr-article {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400; 
   }
 }
 
@@ -128,6 +210,41 @@
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .vr {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .vr {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .vr {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .vr {    
+
+    padding-bottom: 20px;
+  }
+}
+
+
+
 .vr__headset-img {
   position: absolute;
   top: 0;
@@ -140,11 +257,40 @@
   .vr__headset-img {
     width: 850px;
     height: 400px;
-
-    top: 0;
     left: 20px;
+    top: -2px;
+   
   }
 }
+
+@media screen and (max-width: 1350px) {
+  .vr__headset-img {
+    width: 650px;
+    height: 314px;
+
+    top: -2px;
+    left: -0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .vr__headset-img { 
+
+    top: -2px;
+    left: -30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .vr__headset-img { 
+    width: 320px;
+    height: 157px;
+    top: -10px;
+    left: 0px;
+  }
+}
+
+
 
 .vr__video {
   width: 853px;
@@ -156,9 +302,53 @@
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .vr__video {
+    width: 530px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .vr__video {
+    width: 260px;
+  }
+}
+
 .learning__training {
-  padding-left: 150px;
+  padding-left: 350px;
   padding-top: 100px;
+}
+
+@media screen and (max-width: 1920px) {
+  .learning__training {
+    padding-left: 150px;
+    padding-top: 100px;
+    
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .learning__training {
+    padding-left: 100px;
+    padding-top: 80px;
+    
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .learning__training {
+    padding-left: 60px;
+    padding-top: 40px;
+    
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .learning__training {
+    padding-left: 18px;
+    padding-top: 20px;
+    
+  }
 }
 
 
@@ -182,23 +372,53 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .learning__training-title {
+    font-size: 24px;
+   
+    padding-bottom: 30px;
+    
+    max-width: 700px;
+  }
+}
+
 .learning__training-content {
   display: flex;
-  justify-content: space-between;
+  gap:300px;
   padding-right: 150px;
   align-items: center;
 }
 
 @media screen and (max-width: 1600px) {
   .learning__training-content {
-
+    gap:100px;
     padding-right: 100px;
     
   }
 }
 
+
+
+@media screen and (max-width: 1020px) {
+  .learning__training-content {
+    gap:20px;
+    padding-right: 80px;
+    
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .learning__training-content {
+    flex-direction: column;
+    gap: 50px;
+    padding-right: 18px;
+  }
+}
+
+
+
 .learning__training-article {
-  max-width: 700px;
+ 
   font-size: 24px;
   line-height: 32px;
   margin: 0;
@@ -209,9 +429,16 @@
 @media screen and (max-width: 1600px) {
   .learning__training-article {
    
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 24px;
     max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .learning__training-article {   
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -228,8 +455,64 @@
   width: 380px;
 }
 
+@media screen and (max-width: 1350px) {
+  .learning__training-phone-img {
+    position: absolute;
+    top: -10px;
+    left: -4px;
+    width: 280px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1350px) {
+  .learning__training-content-gif {
+ 
+    width: 270px;
+  }
+}
+
 .learning__test {
-  padding: 100px 50px 150px 100px;
+  padding: 100px 50px 150px 300px;
+}
+
+
+@media screen and (max-width: 1920px) {
+  .learning__test { 
+    padding: 100px 50px 150px 100px;
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .learning__test {
+ 
+    padding: 100px 50px 150px 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .learning__test {
+ 
+    padding: 100px 50px 150px 100px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .learning__test {
+ 
+    padding: 120px 50px 0 60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .learning__test {
+ 
+    padding: 120px 18px 0 18px;
+  }
 }
 
 .learning__test-content {
@@ -238,6 +521,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width: 1150px) {
+  .learning__test-content {
+    
+ flex-direction: column;
+
+  }
+}
+
 
 .learning__test-title {
   color: #12abdb;
@@ -257,12 +549,47 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .learning__test-title {
+    
+    padding-left: 0px;
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .learning__test-title {
+    
+    padding-left: 0px;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .learning__test-title {
+    
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
 .learning__test-wrapper {
   position: relative;
   padding-top: 25px;
   padding-left: 36px;
   padding-right: 80px;
 }
+
+
+@media screen and (max-width: 1150px) {
+  .learning__test-wrapper {
+   align-self: center;
+   padding-right: 0;
+   padding-left: 0;
+  }
+}
+
+
 
 
 .learning__laptop-img {
@@ -280,6 +607,31 @@
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .learning__laptop-img {  
+    top: 12px;
+    left: 0;
+    height: 350px;
+  }
+}
+
+
+@media screen and (max-width: 1150px) {
+  .learning__laptop-img {  
+    top: 8px;
+    left: -40px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .learning__laptop-img {  
+    top: 16px;
+    left: -20px;
+    height: 200px;
+  }
+}
+
 .learning__test-video{
   height: 480px;
   padding-left: 40px;
@@ -291,3 +643,26 @@
     height: 380px;
   }
 }
+
+@media screen and (max-width: 1350px) {
+  .learning__test-video {  
+    padding-left: 0;
+    height: 290px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .learning__test-video {  
+    padding-left: 0;
+    height: 334px;
+    padding-bottom: 70px;
+  }  
+}
+
+@media screen and (max-width: 700px) {
+  .learning__test-video {  
+    padding-left: 0;
+    height: 165px;
+    padding-bottom: 50px;
+  }
+}
+

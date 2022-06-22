@@ -88,9 +88,9 @@ background-size: contain;
 
 @media screen and (max-width: 650px) {
   .ietr__title{
-    padding-top: 100px;
-    font-size: 22px;
-    line-height: 28px; 
+    padding-top: 150px;
+    font-size: 25px;
+    line-height: 32px; 
     max-width: 400px;
     padding-bottom: 10px;    
   }

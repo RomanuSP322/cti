@@ -26,13 +26,13 @@ const Polygraphy = ({ posters }) => {
   const videoWidth = (width) => {
     if (width > 1595) {
       return 700;
-    } else if (width > 1195) {
+    } else if (width > 1349) {
       return 520;
     } else if (width > 1020) {
-      return 389;
-    } else if (width > 590) {
+      return 350;
+    } else if (width > 700) {
       return 520;
-    } else return 260;
+    } else return 278;
   };
   
   const position = {

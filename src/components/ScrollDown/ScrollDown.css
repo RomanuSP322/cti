@@ -4,6 +4,14 @@
     right: 50%;
 }
 
+/* @media screen and (max-width: 700px) {
+  .scrolldown {
+    position: absolute;
+    bottom: 5px;
+    left: 36px;
+}
+} */
+
 .scrolldown:hover {
   cursor: pointer;
   opacity: 1;

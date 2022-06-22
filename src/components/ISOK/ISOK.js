@@ -52,7 +52,7 @@ function Isok({ isokdata }) {
                 </video>
                 {isokdata.map((item, idx) => {
                   return (
-                    <video autoPlay muted loop className="isok__video">
+                    <video autoPlay muted loop className="isok__video" key={idx}>
                       <source src={item.webm} type="video/webm" />
                     </video>
                   );
