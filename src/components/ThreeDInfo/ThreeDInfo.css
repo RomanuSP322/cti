@@ -27,7 +27,6 @@
   }
 }
 
-
 .threedinfo__hoverme {
   position: absolute;
   top: 50%;
@@ -85,8 +84,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
- animation: bgcolors 4s infinite;
- 
+  animation: bgcolors 4s infinite;
 }
 
 @media screen and (max-width: 1920px) {
@@ -109,7 +107,6 @@
     height: 460px;
   }
 }
-
 
 @media screen and (max-width: 650px) {
   .threedinfo__column_right {
@@ -204,11 +201,10 @@
   0%,
   100% {
     /* background: #12abdb; */
-    filter: drop-shadow(0px 0 0px rgba(18,171,219,1));
+    filter: drop-shadow(0px 0 0px rgba(18, 171, 219, 1));
   }
   50% {
     /* background: #a6e4f8;  */
-    filter: drop-shadow(-100px 0  120px rgba(18, 171,219,1));
+    filter: drop-shadow(-100px 0 120px rgba(18, 171, 219, 1));
   }
-
 }

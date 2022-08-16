@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink} from "react-router-dom";
-import Header from "../Header/Header";
+
 import Footer from "../Footer/Footer";
 import { news } from "../../consts/newsData.js";
 import NewsCardList from "../NewsCardList/NewsCardList";
@@ -15,7 +15,7 @@ function News({ location }) {
     <section>
       {location === "selfpage" ? (
         <div className="news__cards-list_self">
-          <Header />
+   
           <NewsCardList news={news} />
           <Footer />
         </div>

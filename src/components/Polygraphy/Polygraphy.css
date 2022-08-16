@@ -100,7 +100,6 @@
 
 @media screen and (max-width: 700px) {
   .polygraphy__column_right {
-  
     padding-right: 0;
     margin-left: 0;
     align-self: center;
@@ -138,7 +137,6 @@
     width: 560px;
   }
 }
-
 
 @media screen and (max-width: 700px) {
   .polygraphy__stand {
@@ -246,13 +244,11 @@
 }
 
 @media screen and (max-width: 350px) {
-  .polygraphy__button-next{
+  .polygraphy__button-next {
     top: 60%;
-    right:-15px;
+    right: -15px;
   }
 }
-
-
 
 .polygraphy__button-prev {
   top: 40%;
@@ -273,11 +269,10 @@
   }
 }
 
-
 @media screen and (max-width: 350px) {
   .polygraphy__button-prev {
     top: 60%;
-    left:-15px;
+    left: -15px;
   }
 }
 
@@ -292,7 +287,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .polygraphy__button-ico {  
+  .polygraphy__button-ico {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -314,10 +309,9 @@
 
 @media screen and (max-width: 650px) {
   .polygraphy__button-ico:after {
- 
     left: 8px;
     top: 10px;
- 
+
     width: 16px;
     height: 16px;
     border-top: 2px solid #fff;

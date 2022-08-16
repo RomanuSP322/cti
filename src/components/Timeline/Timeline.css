@@ -10,19 +10,19 @@
 
 @media screen and (max-width: 1200px) {
   .timeline__header {
-    padding: 70px 100px 0;
+    padding: 30px 100px 0;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .timeline__header {
-    padding: 70px 60px 0;
+    padding: 20px 60px 0;
   }
 }
 
 @media screen and (max-width: 650px) {
   .timeline__header {
-    padding: 70px 18px 0 18px;
+    padding: 10px 18px 0 18px;
   }
 }
 
@@ -37,14 +37,12 @@
 @media screen and (max-width: 1600px) {
   .timeline__title {
     font-size: 40px;
-    
   }
 }
 
 @media screen and (max-width: 650px) {
   .timeline__title {
     font-size: 24px;
-
   }
 }
 
@@ -69,7 +67,6 @@
     max-width: 900px;
   }
 }
-
 
 .timeline ul {
   overflow: hidden;
@@ -105,7 +102,7 @@
 
 @media screen and (max-width: 1600px) {
   .timeline ul li div {
-    width: 650px;
+    width: 600px;
   }
 }
 
@@ -154,7 +151,7 @@
 
 @media screen and (max-width: 1400px) {
   .timeline ul li:nth-child(even) div {
-    left: -700px;
+    left: -650px;
   }
 }
 
@@ -185,11 +182,13 @@ time {
 @media screen and (max-width: 1400px) {
   .event {
     flex-direction: column;
+    gap: 10px;
   }
 }
 
 .event__image {
-  height: 100%;
+  max-height: 300px;
+  object-fit: contain;
   filter: drop-shadow(8px 0 14px rgba(0, 0, 0, 0.3));
   overflow: hidden;
   z-index: 2;
@@ -209,6 +208,12 @@ time {
   transition: all 1.5s 0.5s ease;
 }
 
+@media screen and (max-width: 1400px) {
+  .event__image:hover {
+    transform: scale(1.5) translateY(-40px);
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .event__image:hover {
     filter: drop-shadow(0px 30px 124px rgba(0, 0, 0, 0.9));
@@ -222,6 +227,7 @@ time {
   font-size: 14px;
   margin-bottom: 4px;
 }
+
 .description {
   max-width: 360px;
   font-size: 16px;
@@ -236,9 +242,9 @@ time {
   .description {
     font-size: 14px;
     line-height: 20px;
+    max-width: 100%;
   }
 }
-
 
 @media screen and (max-width: 650px) {
   .description {
@@ -247,10 +253,9 @@ time {
   }
 }
 
-
 @media screen and (max-width: 650px) {
   .description_content {
-  margin: 0;
+    margin: 0;
   }
 }
 
@@ -280,12 +285,33 @@ time {
   opacity: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
+
+@media screen and (max-width: 420px) {
+  .timeline ul li div {
+    opacity: 1;
+    transition: none;
+  }
+}
+
 .timeline ul li:nth-child(odd) div {
   transform: translate3d(150px, 0, 0);
 }
 .timeline ul li:nth-child(even) div {
   transform: translate3d(-150px, 0, 0);
 }
+
+@media screen and (max-width: 420px) {
+  .timeline ul li:nth-child(odd) div {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .timeline ul li:nth-child(even) div {
+    transform: none;
+  }
+}
+
 .timeline ul li.inView div {
   opacity: 1;
   transform: none;

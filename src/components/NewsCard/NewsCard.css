@@ -1,73 +1,68 @@
-.newscard{
-background-color: #eef9ff;
-width: 360px;
-padding-bottom: 20px;
-overflow: hidden;
+.newscard {
+  background-color: #eef9ff;
+  width: 360px;
+  padding-bottom: 20px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 900px) {
-  .newscard{    
-    width: 300px; 
-    }
+  .newscard {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 750px) {
-  .newscard{    
-    width: 250px; 
-    }
+  .newscard {
+    width: 250px;
+  }
 }
 
 @media screen and (max-width: 650px) {
-  .newscard{    
-    width: 90%; 
-    }
+  .newscard {
+    width: 90%;
+  }
 }
 
-
-.newscard:hover{
+.newscard:hover {
   cursor: pointer;
 }
 
-
-.newscard__image{
- width: 100%;
+.newscard__image {
+  width: 100%;
   padding-right: 32px;
   margin: 0;
   object-fit: cover;
   transition: transform 1s ease-in-out;
-  padding-bottom: 10px;  
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 650px) {
-  .newscard__image{
+  .newscard__image {
     width: 100%;
     height: 220px;
-   }
+  }
 }
 
-.newscard:hover .newscard__image{
+.newscard:hover .newscard__image {
   transform: scale(1.1);
-  
 }
 
-.newscard__content{
+.newscard__content {
   color: #000;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 20px;
   padding-right: 20px;
-  
 }
 
-
-.newscard__date{
+.newscard__date {
   font-size: 10px;
   padding-bottom: 8px;
   margin: 0;
 }
 
-.newscard__title{
+.newscard__title {
   font-size: 18px;
   line-height: 24px;
   margin: 0;
@@ -76,48 +71,45 @@ overflow: hidden;
 }
 
 @media screen and (max-width: 650px) {
-  .newscard__title{
+  .newscard__title {
     font-size: 16px;
-    line-height: 22px;   
-    padding-bottom: 10px;    
+    line-height: 22px;
+    padding-bottom: 10px;
   }
 }
 
-.newscard__text{
+.newscard__text {
   font-size: 14px;
   line-height: 20px;
   margin: 0;
   padding-bottom: 32px;
 }
 
-
-
-.newscard__button_more{
+.newscard__button_more {
   color: #12abdb;
   border: none;
   outline: none;
   margin: 0;
   padding: 0;
   background-color: transparent;
-  padding-top: 12px;  
+  padding-top: 12px;
   font-weight: 700;
   position: relative;
 }
 
 .newscard__button_more:after {
   display: block;
-	position: absolute;
+  position: absolute;
   align-self: start;
-	left: 0;
-  bottom: -5px; 
-	width: 25%;
-	height: 2px; 
-	background-color: #12abdb; 
-	content: "";
-	transition: width 0.3s ease-out;
-  
+  left: 0;
+  bottom: -5px;
+  width: 25%;
+  height: 2px;
+  background-color: #12abdb;
+  content: "";
+  transition: width 0.3s ease-out;
 }
 
-.newscard:hover .newscard__button_more:after{
+.newscard:hover .newscard__button_more:after {
   width: 100%;
- }
+}

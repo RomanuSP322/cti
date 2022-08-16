@@ -1,27 +1,29 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import { intro, events, abouts } from "../../consts/companyData.js";
-import Header from "../Header/Header";
 
-import Intro from '../Intro/Intro.js';
+import Intro from "../Intro/Intro.js";
 import Timeline from "../Timeline/Timeline";
 import AboutUs from "../AboutUs/AboutUs";
 import Waves from "../Waves/Waves";
 import Footer from "../Footer/Footer";
 import "./Company.css";
 
-
-
 function Company() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
-
   const next = useRef(null);
+  const history = useHistory();
+  useEffect(() => {
+    const hash = history.location.hash;
+
+    const el = hash && document.getElementById(hash.substr(1));
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [history.location.hash]);
 
   return (
     <div className="company">
-      <Header />
-      <Intro intro={intro} nextRef={next}/> 
+      <Intro intro={intro} nextRef={next} />
 
       <Waves
         pos={"up"}
@@ -39,10 +41,10 @@ function Company() {
         }
       />
 
-      <div>
-       <Timeline events={events} /> 
+      <div id="timeline">
+        <Timeline events={events} />
       </div>
-   <Footer/>
+      <Footer />
     </div>
   );
 }

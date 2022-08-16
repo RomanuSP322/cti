@@ -1,15 +1,22 @@
 .notfound {
-  background-color: #202020;
-  min-height: 100vh;
+  background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%);
+}
+
+.notfound-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  background-image: var(--normal);
+  background-position: bottom -120px right -400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .notfound__status {
-  font-weight: 400;
-  font-size: 140px;
+  font-weight: 700;
+  font-size: 180px;
   line-height: 169px;
   color: #ffffff;
   margin: 0;
@@ -25,18 +32,17 @@
 @media screen and (max-width: 768px) {
   .notfound__status {
     margin-top: 330px;
-    font-size: 80px;
+    font-size: 90px;
     line-height: 97px;
   }
 }
 
 .notfound__message {
-  font-family: Inter;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 24px;
+  line-height: 32px;
   color: #ffffff;
-  margin: 5px 0 184px;
+  margin: 15px 0 184px;
 }
 
 @media screen and (max-width: 768px) {
@@ -50,9 +56,9 @@
 .notfound__link {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #4285f4;
+  font-size: 20px;
+  line-height: 28px;
+  color: #12abdb;
   cursor: pointer;
   text-decoration: none;
 }

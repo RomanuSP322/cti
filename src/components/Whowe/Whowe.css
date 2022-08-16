@@ -1,54 +1,49 @@
 .whowe {
-  width: 100%;  
+  width: 100%;
   background-color: #eef9ff;
- padding-left: 350px;
+  padding-left: 350px;
 
- padding-bottom: 60px;
- padding-right: 350px;
-   box-sizing: border-box;
-   z-index: 3;
-  
+  padding-bottom: 60px;
+  padding-right: 350px;
+  box-sizing: border-box;
+  z-index: 3;
 }
 
 @media screen and (max-width: 1920px) {
-  .whowe{
+  .whowe {
     padding-left: 150px;
     padding-right: 100px;
   }
 }
 
 @media screen and (max-width: 1300px) {
-  .whowe{
-      padding-left: 100px;
+  .whowe {
+    padding-left: 100px;
   }
 }
 
-
 @media screen and (max-width: 900px) {
-  .whowe{
-      padding-left: 60px;
-      padding-right: 30px;
+  .whowe {
+    padding-left: 60px;
+    padding-right: 30px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .whowe{
-      padding-left: 18px;
-      padding-right: 18px;
-      
+  .whowe {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }
 
-@media screen and (max-width:380px) {
-  .whowe{
-     padding-top: 50px;
-      
+@media screen and (max-width: 380px) {
+  .whowe {
+    padding-top: 50px;
   }
 }
 
 .whowe__parters {
-  margin: 0 auto; 
-   
+  margin: 0 auto;
 }
 
 .whowe__partners_title {
@@ -56,121 +51,118 @@
   font-size: 30px;
   line-height: 36px;
   font-weight: 500;
-  color:#000;  
+  color: #000;
   text-align: center;
   padding-bottom: 50px;
   margin: 0;
 }
 
 @media screen and (max-width: 650px) {
-  .whowe__partners_title{
+  .whowe__partners_title {
     font-size: 24px;
     line-height: 28px;
   }
+}
+
+.whowe__title {
+  padding-top: 70px;
+  padding-bottom: 0;
 }
 
 .partners__row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-flow: wrap; 
-  
-    
+  flex-flow: wrap;
 }
 
 @media screen and (max-width: 650px) {
-  .partners__row{
-column-gap: 50px;
-row-gap: 20px;
+  .partners__row {
+    column-gap: 50px;
+    row-gap: 20px;
   }
 }
 
-
 .partners__row_top {
-
- padding-bottom: 40px;
-
+  padding-bottom: 40px;
 }
 
-
 @media screen and (max-width: 650px) {
-  .partners__row_top{
-    padding-bottom: 20px;;
+  .partners__row_top {
+    padding-bottom: 20px;
   }
 }
 
 .partners__img {
   height: 50px;
-    -webkit-filter: grayscale(70%);
+  -webkit-filter: grayscale(70%);
   -moz-filter: grayscale(70%);
   -ms-filter: grayscale(70%);
   -o-filter: grayscale(70%);
   filter: grayscale(70%);
   filter: gray; /* IE 6-9 */
-  
-  transition: filter 0.3s ease-in-out; 
+
+  transition: filter 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1200px) {
-  .partners__img{
+  .partners__img {
     height: 30px;
   }
 }
 
-
 .partner__circle-ico {
-  height:60px
+  height: 60px;
 }
 
 @media screen and (max-width: 1200px) {
-  .partner__circle-ico{
+  .partner__circle-ico {
     height: 40px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .partner__circle-ico{
+  .partner__circle-ico {
     height: 30px;
   }
 }
 
 .partner__rectangle-ico {
-  height: 40px
+  height: 40px;
 }
 
 @media screen and (max-width: 1200px) {
-  .partner__rectangle-ico{
+  .partner__rectangle-ico {
     height: 30px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .partner__rectangle-ico{
+  .partner__rectangle-ico {
     height: 25px;
   }
 }
 
-.partner__rzd-ico {  
+.partner__rzd-ico {
   height: 50px;
 }
 
 @media screen and (max-width: 1200px) {
-  .partner__rzd-ico{
+  .partner__rzd-ico {
     height: 40px;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .partner__rzd-ico{
+  .partner__rzd-ico {
     height: 35px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .partner__rzd-ico{
+  .partner__rzd-ico {
     height: 30px;
   }
 }
-
 
 .partner__pkbct-ico {
   height: 65px;
@@ -178,21 +170,20 @@ row-gap: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-  .partner__pkbct-ico{
+  .partner__pkbct-ico {
     height: 45px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .partner__pkbct-ico{
+  .partner__pkbct-ico {
     padding-right: 0px;
     height: 35px;
   }
 }
 
 .partners__img:hover {
-  
-    -webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
   -ms-filter: grayscale(0);
   -o-filter: grayscale(0);

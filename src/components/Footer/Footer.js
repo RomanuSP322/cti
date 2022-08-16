@@ -12,14 +12,13 @@ function Footer({ theme }) {
     history.push(`/${path}`);
   }
 
-
   return (
     <>
       {theme === "dark" ? (
         <Waves
           pos={"down"}
           svg={
-            'M0,96L60,90.7C120,85,240,75,360,90.7C480,107,600,149,720,160C840,171,960,149,1080,144C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'
+            "M0,96L60,90.7C120,85,240,75,360,90.7C480,107,600,149,720,160C840,171,960,149,1080,144C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
           }
         />
       ) : (
@@ -50,12 +49,35 @@ function Footer({ theme }) {
           </div>
           <div className="footer__contact">
             <h3 className="footer__contact_title">Контакты</h3>
-            <p className="footer__contact_item">(+7) 495-984-80-69</p>
-            <p className="footer__contact_item">info@m-cti.ru</p>
-            <button className="footer__contact_button" onClick={()=> handleClick('contacts')}>Связаться с нами</button>
+            <p className="footer__contact_item">
+              <a
+                href="tel: +74959848069"
+                className={`footer__contact_link ${
+                  theme === "dark" ? "footer__contact_link_dark" : ""
+                }`}
+              >
+                (+7) 495-984-80-69
+              </a>
+            </p>
+            <p className="footer__contact_item">
+              <a
+                href="mailto: info@m-cti.ru"
+                className={`footer__contact_link ${
+                  theme === "dark" ? "footer__contact_link_dark" : ""
+                }`}
+              >
+                info@m-cti.ru
+              </a>
+            </p>
+            <button
+              className="footer__contact_button"
+              onClick={() => handleClick("contacts")}
+            >
+              Связаться с нами
+            </button>
           </div>
         </div>
-        <p className="footer__copyright">© 2022 ООО ЦТИ</p>
+        <p className="footer__copyright">© 2022 ЦТИ</p>
       </footer>
     </>
   );

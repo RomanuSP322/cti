@@ -1,0 +1,207 @@
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Активация ключей</title>
+    <meta name="Description" content="Активация ключей" />
+    <meta name="KeyWords" content="" />
+    <link rel="shortcut icon" href="logoolddark.svg" type="image/x-icon" />
+    <link href="clients.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="root">
+
+        <header class="online-header">
+            <div class="online-header__content">
+                <img class="online-header__logo" src="logoold.svg" alt="Логотип" />
+                <div class="online-header__logo-container">
+                    <a class="online-header__link" href="http://roma.m-cti.ru">Главная</a>
+                    <a class="online-header__link" href="http://roma.m-cti.ru/#/cti/projects">Проекты</a>
+                    <a class="online-header__link" href="http://roma.m-cti.ru/#/cti/company">О компании</a>
+                    <a class="online-header__link" href="http://roma.m-cti.ru/#/cti/news">Новости</a>
+                    <a class="online-header__link" href="http://roma.m-cti.ru/#/cti/contacts">Контакты</a>
+                    <div class="online-header__user-wrapper">
+                        <div id="user">
+                            <div class="online-header__org-name org-name">
+                                test
+                            </div>
+                        </div>
+                        <button class="online__btn online__btn-logout" style="line-height: 25px; cursor: pointer"
+                            onclick="window.open('disconnect','_self')" title="Выйти из личного кабинета">
+                            Выйти
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="online-content">
+            <ul class="breadcrumb">
+                <li>
+                    <a class="breadcrumb__link" href="http://roma.m-cti.ru">Главная</a>
+                </li>
+                <li class="active">Активация ключей</li>
+            </ul>
+            <div class="online-content__container">
+                <h1 class="online-content__title online-keys__title">
+                    Интерактивное электронное техническое руководство (ИЭТР) на тележки
+                    моделей 68-4110, 68-4111
+                </h1>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="tabs-margin"></div>
+            <input type="radio" name="inset" value="" id="tab_1" checked />
+            <label for="tab_1" class="tabs-label"><img src="digitalkey.svg" class="label__ico" alt="иконка ключа" /><img
+                    src="digitalkeyblue.svg" class="label__ico_active" alt="иконка ключа" />
+                Активация ключей</label>
+            <input type="radio" name="inset" value="" id="tab_2" />
+            <label for="tab_2" class="tabs-label"><img src="folder.svg" class="label__ico" alt="иконка ключа" /><img
+                    src="folderblue.svg" class="label__ico_active" alt="иконка ключа" />Версии продукта</label>
+
+            <input type="radio" name="inset" value="" id="tab_3" />
+            <label for="tab_3" class="tabs-label"><img src="docs.svg" class="label__ico" alt="иконка ключа" /><img
+                    src="docsblue.svg" class="label__ico_active" alt="иконка ключа" />Документация</label>
+
+            <div id="panel_1" class="tab-panel">
+                <h2 class="keys__title">Активировать новый код</h2>
+                <form method="post" method="post" action="book1" class="online__form online__form_keys">
+                    <div class="online__form_keys-wrapper">
+                        <label class="form-group">
+                            <input type="text" autocomplete="off" class="online-form__input online-form__input_keys"
+                                name="code" placeholder="Регистрационный код" value="" />
+                        </label>
+                        <label class="form-group">
+                            <input type="text" class="online-form__input online-form__input_keys" name="name"
+                                placeholder="Кому (ФИО, Должность, IP)" autocomplete="off" />
+                        </label>
+                        <button type="submit" class="online__btn online__btn-activate">
+                            Активировать
+                        </button>
+                    </div>
+                    <span class="alert alert-danger alert-success" role="alert">
+                        Недопустимый регистрационнный код 'sags' - длина кода должна быть 19 символов
+                    </span>
+                    <button class="online__btn  online__btn-activate online__btn-retry"  onclick="$('#form-activatekey-secondaryappend').val(1);$('#form-activatekey').get(0).submit();">Выдать повторно</button>
+                </form>
+
+                <table class="table table-striped table-bordered table-hover table-condensed"
+                    id="widget-E2272EEF-4A7A-604A-4A17-BD1D5443B996-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 120px">Дата</th>
+                            <th>Кому (ФИО, Должность, IP)</th>
+                            <th style="width: 280px">Регистрационный код</th>
+                            <th style="width: 180px">Ключ активации</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="5">
+                            <td>29.06.2022</td>
+                            <td>Роман</td>
+                            <td>3838-2881-8951-1680</td>
+                            <td>1120-8170</td>
+                        </tr>
+                        <tr id="4">
+                            <td>28.06.2022</td>
+                            <td></td>
+                            <td>3838-2881-8951-1680</td>
+                            <td>1120-8170</td>
+                        </tr>
+                        <tr id="2">
+                            <td>28.06.2022</td>
+                            <td>Галинский Л.А</td>
+                            <td>3838-2881-8951-1680</td>
+                            <td>1120-8170</td>
+                        </tr>
+                        <tr id="3">
+                            <td>28.06.2022</td>
+                            <td>Иванов И.И.</td>
+                            <td>3838-2881-8951-1680</td>
+                            <td>1120-8170</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="panel_2" class="tab-panel">
+                <div class="online__products">
+                    <h2 class="products__title book__title">Скачать версию продукта</h2>
+                    <ul class="online__products_list">
+                        <li id="1" class="products__item">
+                            <a class="products__link products__link_dark"
+                                href="/services.php?name=linkget&amp;klslink=8" target="_blank">ИЭТР 'Железнодорожный
+                                путь', включая ИУП ТП - 3D технологические
+                                процессы. Обновлено 05.07.2018
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="panel_3" class="tab-panel">
+                <div class="online__products">
+                    <h2 class="products__title book__title">Скачать документацию</h2>
+                    <ul class="online__products_list">
+                        <li id="1" class="products__item">
+                            <a class="products__link products__link_dark"
+                                href="/services.php?name=linkget&amp;klslink=8" target="_blank">Пример документации
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="waves">
+            <svg class="wave4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#eef9ff"
+                    d="M0,96L60,90.7C120,85,240,75,360,90.7C480,107,600,149,720,160C840,171,960,149,1080,144C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+
+            <svg class="wave5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                    d="M0,96L60,90.7C120,85,240,75,360,90.7C480,107,600,149,720,160C840,171,960,149,1080,144C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <svg class="wave6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                    d="M0,96L60,90.7C120,85,240,75,360,90.7C480,107,600,149,720,160C840,171,960,149,1080,144C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+
+        <footer class="online-footer footer__thme_dark">
+            <div class="footer__content footer__content_dark">
+                <div class="footer__logo-wrapper">
+                    <img class="footer__logo" src="logoold.svg" alt="Логотип" />
+                    <h3 class="footer__tagline">Актуальные IT решения с 1992 года</h3>
+                </div>
+                <div class="footer__contact">
+                    <h3 class="footer__contact_title">Контакты</h3>
+                    <p className="footer__contact_item">
+                        <a href="tel: +74959848069" class="footer__contact_link footer__contact_link_dark" >
+                          (+7) 495-984-80-69
+                        </a>
+                        </p>
+                        <p className="footer__contact_item">
+                        <a href="mailto: info@m-cti.ru" class="footer__contact_link footer__contact_link_dark">
+                          info@m-cti.ru
+                        </a>
+                        </p>
+                </div>
+            </div>
+            <p class="footer__copyright">© 2022 ЦТИ</p>
+        </footer>
+    </div>
+    <script src=""></script>
+</body>
+
+</html>

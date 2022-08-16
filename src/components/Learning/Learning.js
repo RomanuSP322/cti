@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { intro, posters } from "../../consts/learningData.js";
-import Header from "../Header/Header";
+
 import Intro from "../Intro/Intro";
 import Polygraphy from "../Polygraphy/Polygraphy";
 import Waves from "../Waves/Waves";
@@ -15,17 +15,13 @@ import phone from "../../images/phone.png";
 import learning from "../../images/phone.gif";
 import laptop from "../../images/notebook.png";
 import testvideoWebm from "../../video/test.webm";
+import testvideoMp from "../../video/test.mp4";
 
 function Learning() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
-
   const next = useRef(null);
 
   return (
     <div className="learning">
-      <Header />
       <Intro intro={intro} nextRef={next} />
       <Waves
         pos={"up"}
@@ -37,7 +33,7 @@ function Learning() {
         <div className="learning__vr-content">
           <div className="vr">
             <img src={vrheadset} className="vr__headset-img" alt="vrimage" />
-            <video autoPlay muted loop className="vr__video">
+            <video autoPlay muted loop playsInline className="vr__video">
               <source src={vrvideoMp} type="video/mp4" />
               <source src={vrvideoWebm} type="video/webm" />.
             </video>
@@ -82,8 +78,16 @@ function Learning() {
             </p>
           </div>
           <div className="learning__training-phone-wrapper">
-            <img src={phone} className="learning__training-phone-img" />
-            <img src={learning} className="learning__training-content-gif" />
+            <img
+              src={phone}
+              className="learning__training-phone-img"
+              alt="phoneimg"
+            />
+            <img
+              src={learning}
+              className="learning__training-content-gif"
+              alt="learning_video"
+            />
           </div>
         </div>
       </section>
@@ -94,8 +98,15 @@ function Learning() {
         <div className="learning__test-content">
           <div className="learning__test-wrapper">
             <img src={laptop} className="learning__laptop-img" alt="vrimage" />
-            <video autoPlay muted loop  className="learning__test-video">
-              <source src={testvideoWebm} type="video/webm" />.
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="learning__test-video"
+            >
+              <source src={testvideoWebm} type="video/webm" />
+              <source src={testvideoMp} type="video/mp4" />
             </video>
           </div>
           <div>

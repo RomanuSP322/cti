@@ -1,59 +1,52 @@
 .isok {
-   
-    padding: 150px 350px 100px 350px;
-    min-height: 1000px;
-    box-sizing: border-box;
+  padding: 150px 350px 100px 350px;
+  min-height: 1000px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1920px) {
-  .isok{
+  .isok {
     padding: 100px 50px 100px 150px;
- 
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .isok{
+  .isok {
     padding: 50px 50px 50px 150px;
     min-height: 800px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .isok{
+  .isok {
     padding: 50px 50px 50px 100px;
-   
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .isok{
-    padding: 50px 50px 50px 60px;   
+  .isok {
+    padding: 50px 50px 50px 60px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .isok{
-    padding: 20px 18px 18px 18px;   
+  .isok {
+    padding: 20px 18px 18px 18px;
   }
 }
 
-
-
-
-
 .isok__title {
-    font-size: 60px; 
-    line-height: 70px;   
-    font-weight: 700;
-    color: #12abdb;
-    margin: 0;
-    max-width: 1000px;
-    padding-bottom: 50px;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #12abdb;
+  margin: 0;
+  max-width: 1000px;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 1600px) {
-  .isok__title{
+  .isok__title {
     font-size: 40px;
     line-height: 48px;
     max-width: 700px;
@@ -61,9 +54,8 @@
   }
 }
 
-
 @media screen and (max-width: 650px) {
-  .isok__title{
+  .isok__title {
     font-size: 24px;
     line-height: 30px;
     max-width: 350px;
@@ -72,78 +64,71 @@
 }
 
 .isok__container {
-    display: flex;
-    
-    height: 100%;
-    width: 100%;
+  display: flex;
+
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 930px) {
-  .isok__container{
-   flex-direction: column-reverse;
-   gap: 30px;
+  .isok__container {
+    flex-direction: column-reverse;
+    gap: 30px;
   }
 }
 
 .isok__column_left {
-    justify-self: right;
+  justify-self: right;
 }
 
 @media screen and (max-width: 1024px) {
-  .isok__column_left{
-  align-self: center;
-   
+  .isok__column_left {
+    align-self: center;
   }
 }
 
-
 .isok__video-content {
-
-    position: relative;
-    padding-top: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 65px;
-  
+  position: relative;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 65px;
 }
 
 @media screen and (max-width: 1600px) {
-  .isok__video-content{
+  .isok__video-content {
     padding-top: 25px;
     padding-left: 12px;
     padding-right: 10px;
-   
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .isok__video-content{
+  .isok__video-content {
     padding-top: 22px;
     padding-left: 7px;
-    padding-right: 7px;    
+    padding-right: 7px;
   }
 }
 
 @media screen and (max-width: 930px) {
-  .isok__video-content{
+  .isok__video-content {
     padding-top: 25px;
     padding-left: 12px;
     padding-right: 10px;
-   
   }
 }
 
 @media screen and (max-width: 650px) {
-  .isok__video-content{
+  .isok__video-content {
     padding-top: 20px;
     padding-left: 6px;
     padding-right: 5px;
-   
   }
 }
 
 .isok__phone-img {
-    filter: drop-shadow(10px 0 14px rgba(0,0,0,0.3));
+  filter: drop-shadow(10px 0 14px rgba(0, 0, 0, 0.3));
   position: absolute;
   height: 760px;
   width: 430px;
@@ -152,177 +137,157 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .isok__phone-img{
+  .isok__phone-img {
     height: 570px;
     width: 322px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .isok__phone-img{
+  .isok__phone-img {
     height: 380px;
     width: 214px;
   }
 }
 
 @media screen and (max-width: 930px) {
-  .isok__phone-img{
+  .isok__phone-img {
     height: 570px;
     width: 322px;
   }
 }
 
-
 @media screen and (max-width: 650px) {
-  .isok__phone-img{
+  .isok__phone-img {
     height: 285px;
     width: 161px;
   }
 }
 
 .isok__video-wrapper {
-    overflow: hidden;
-    
+  overflow: hidden;
 }
 
 .isok__videos {
-   
-    display: flex;
-    width: 400px;
-    height: 705px;
-    transition: transform 1s ease;
+  display: flex;
+  width: 400px;
+  height: 705px;
+  transition: transform 1s ease;
 }
 
 @media screen and (max-width: 1600px) {
-  .isok__videos{
+  .isok__videos {
     width: 300px;
     height: 529px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .isok__videos{
+  .isok__videos {
     width: 200px;
     height: 352px;
   }
 }
 
 @media screen and (max-width: 930px) {
-  .isok__videos{
+  .isok__videos {
     width: 300px;
     height: 529px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .isok__videos{
+  .isok__videos {
     width: 150px;
     height: 264px;
   }
 }
 
-
 .isok__column_right {
-    padding-left: 250px;
-    color: #fff;
+  padding-left: 250px;
+  color: #fff;
 }
 
 @media screen and (max-width: 1920px) {
-  .isok__column_right{
+  .isok__column_right {
     padding-left: 150px;
- 
   }
 }
 
-
 @media screen and (max-width: 1600px) {
-  .isok__column_right{
+  .isok__column_right {
     padding-left: 100px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .isok__column_right{
+  .isok__column_right {
     padding-left: 70px;
   }
 }
 
 @media screen and (max-width: 930px) {
-  .isok__column_right{
+  .isok__column_right {
     padding-left: 0px;
   }
 }
 
-
 .isok__discription {
-    font-size: 24px; 
-    line-height: 32px;   
-    font-weight: 500;    
-    max-width: 950px;
-    margin: 0;    
-    padding-bottom: 40px; 
-    /* border-bottom: 1px solid rgb(18, 171, 219, 0.4);    */
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  max-width: 950px;
+  margin: 0;
+  padding-bottom: 40px;
+  /* border-bottom: 1px solid rgb(18, 171, 219, 0.4);    */
 }
 
 @media screen and (max-width: 1600px) {
-  .isok__discription{
+  .isok__discription {
     font-size: 18px;
-    line-height: 24px;  
+    line-height: 24px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .isok__discription{
+  .isok__discription {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
-    padding-bottom: 20px;   
+    padding-bottom: 20px;
   }
 }
 
-.isok__button { 
-
-    color: #fff;
+.isok__button {
+  color: #fff;
 }
 
 .isok__button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .isok__capabilities {
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-
-
-
 .isok__capabilities-title_active {
-    color: #FFF;
-  }
+  color: #fff;
+}
 
+.isok__item-title:before {
+  content: "";
+  background: #fff;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+}
 
-
-  
-  .isok__item-title:before {
-    content: "";
-    background: #fff;
-    width: 4px;
-    height: 4px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    border-radius: 50%;
-  }
-  
-  
-
-  .isok__item-title {
-    background-image: linear-gradient(
-        to right,
-        white 20%,
-        rgba(0, 0, 0, 0) 0%
-      );
-  }
+.isok__item-title {
+  background-image: linear-gradient(to right, white 20%, rgba(0, 0, 0, 0) 0%);
+}

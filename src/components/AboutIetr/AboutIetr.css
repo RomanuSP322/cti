@@ -1,43 +1,41 @@
-.about-ietr{
- 
+.about-ietr {
   box-sizing: border-box;
   padding: 80px 350px 150px;
 }
 
 @media screen and (max-width: 1920px) {
-  .about-ietr{
+  .about-ietr {
     padding: 80px 150px 0;
   }
 }
 
 @media screen and (max-width: 1300px) {
-  .about-ietr{
+  .about-ietr {
     padding: 80px 50px 0 100px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .about-ietr{
+  .about-ietr {
     padding: 80px 20px 0 60px;
   }
 }
 
-
 @media screen and (max-width: 768px) {
-  .about-ietr{
+  .about-ietr {
     padding: 60px 20px 0 60px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .about-ietr{
+  .about-ietr {
     padding: 20px 20px 0 18px;
   }
 }
 
-.about-ietr__title{
-  font-size: 50px; 
-  line-height: 72px;   
+.about-ietr__title {
+  font-size: 50px;
+  line-height: 72px;
   font-weight: 700;
   color: white;
   max-width: 1400px;
@@ -46,136 +44,130 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .about-ietr__title{
+  .about-ietr__title {
     font-size: 36px;
-    line-height: 44px; 
-    max-width: 900px; 
+    line-height: 44px;
+    max-width: 900px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .about-ietr__title{
+  .about-ietr__title {
     padding-bottom: 25px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .about-ietr__title{
+  .about-ietr__title {
     font-size: 30px;
-    line-height: 38px; 
-    max-width: 900px; 
+    line-height: 38px;
+    max-width: 900px;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .about-ietr__title{
+  .about-ietr__title {
     font-size: 18px;
-    line-height: 24px; 
-    max-width: 420px; 
+    line-height: 24px;
+    max-width: 420px;
     text-align: center;
     padding-bottom: 15px;
   }
 }
 
-.about-ietr__subtitle{
-  font-size: 44px; 
-  line-height: 52px;   
+.about-ietr__subtitle {
+  font-size: 44px;
+  line-height: 52px;
   font-weight: 700;
-  color: #12abdb;  
+  color: #12abdb;
   margin: 0;
   padding-bottom: 40px;
 }
 
 @media screen and (max-width: 1600px) {
-  .about-ietr__subtitle{
-    font-size: 30px;  
-    line-height: 38px;  
-    max-width: 900px; 
+  .about-ietr__subtitle {
+    font-size: 30px;
+    line-height: 38px;
+    max-width: 900px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .about-ietr__subtitle{
+  .about-ietr__subtitle {
     padding-bottom: 15px;
-  
   }
 }
 @media screen and (max-width: 768px) {
-  .about-ietr__subtitle{
-   text-align: center;
-   font-size: 26px; 
-   line-height: 32px;   
+  .about-ietr__subtitle {
+    text-align: center;
+    font-size: 26px;
+    line-height: 32px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .about-ietr__subtitle{
-   text-align: center;
-   font-size: 18px;  
-   line-height: 22px;
-   padding-bottom: 0px;  
+  .about-ietr__subtitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 0px;
   }
 }
 
-
-.about-ietr__content{
- display: flex;
- width: 100%;
- justify-content: space-between;
+.about-ietr__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1100px) {
-  .about-ietr__content{
+  .about-ietr__content {
     flex-direction: column;
-    
   }
 }
 
 @media screen and (max-width: 768px) {
-  .about-ietr__content{
+  .about-ietr__content {
     align-items: center;
-    
   }
 }
 
-
-.about-ietr__image{
+.about-ietr__image {
   padding-top: 40px;
   height: 620px;
   object-fit: cover;
 }
 
 @media screen and (max-width: 1920px) {
-  .about-ietr__image{
+  .about-ietr__image {
     height: 520px;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .about-ietr__image{
+  .about-ietr__image {
     height: 420px;
   }
 }
 
 @media screen and (max-width: 1300px) {
-  .about-ietr__image{
+  .about-ietr__image {
     height: 320px;
     padding-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .about-ietr__image{
+  .about-ietr__image {
     height: 380px;
     width: 600px;
     padding-bottom: 50px;
   }
 }
 
-
 @media screen and (max-width: 660px) {
-  .about-ietr__image{
+  .about-ietr__image {
     padding-top: 20px;
     height: auto;
     width: 100%;
@@ -183,10 +175,9 @@
   }
 }
 
-
-.about-ietr__article-wrapper{
-  font-size: 24px; 
-  line-height: 32px;   
+.about-ietr__article-wrapper {
+  font-size: 24px;
+  line-height: 32px;
   font-weight: 500;
   color: white;
   max-width: 650px;
@@ -194,53 +185,50 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .about-ietr__article-wrapper{
-    font-size: 18px; 
+  .about-ietr__article-wrapper {
+    font-size: 18px;
     line-height: 24px;
-    padding-left: 40px;  
+    padding-left: 40px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .about-ietr__article-wrapper{
+  .about-ietr__article-wrapper {
     max-width: 750px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .about-ietr__article-wrapper{
+  .about-ietr__article-wrapper {
     padding-left: 0;
     max-width: 850px;
   }
 }
 
-
 @media screen and (max-width: 650px) {
-  .about-ietr__article-wrapper{
-    font-size: 14px; 
+  .about-ietr__article-wrapper {
+    font-size: 14px;
     line-height: 18px;
     font-weight: 400;
   }
 }
 
-
-.about-ietr__article{
+.about-ietr__article {
   margin: 0;
-
 }
 
-.about-ietr__article_top{
+.about-ietr__article_top {
   padding-bottom: 50px;
 }
 
 @media screen and (max-width: 1024px) {
-  .about-ietr__article_top{
+  .about-ietr__article_top {
     padding-bottom: 35px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .about-ietr__article_top{
+  .about-ietr__article_top {
     padding-bottom: 20px;
   }
 }

@@ -1,0 +1,92 @@
+<html lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Вход для клиентов</title>
+  <meta name="Description" content="Вход для клиентов" />
+  <meta name="KeyWords" content="" />
+  <link rel="shortcut icon" href="logoolddark.svg" type="image/x-icon" />
+  <link href="clients.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="root online__login">
+    <header class="online-header">
+      <div class="online-header__content">
+        <img class="online-header__logo" src="logoold.svg" alt="Логотип" />
+        <div class="online-header__logo-container">
+          <a class="online-header__link" href="http://roma.m-cti.ru">Главная</a>
+          <a class="online-header__link" href="http://roma.m-cti.ru/#/cti/projects">Проекты</a>
+          <a class="online-header__link" href="http://roma.m-cti.ru/#/cti/company">О компании</a>
+          <a class="online-header__link" href="http://roma.m-cti.ru/#/cti/news">Новости</a>
+          <a class="online-header__link" href="http://roma.m-cti.ru/#/cti/contacts">Контакты</a>
+        </div>
+        <div id="user"></div>
+      </div>
+    </header>
+
+    <div class="online-content">
+      <ul class="breadcrumb">
+        <li><a class="breadcrumb__link" href="http://roma.m-cti.ru">Главная</a></li>
+        <li class="active">Вход для клиентов</li>
+      </ul>
+      <div class="online-content__container">
+        <h2 class="online-content__title">Вход для клиентов</h2>
+
+        <form method="post" action="login" class="online__form">
+          <label class="form-group">
+            <input type="text" autocomplete="off" class="online-form__input" id="login" name="login" placeholder="Логин"
+              value="" />
+          </label>
+          <label class="form-group">
+            <input type="password" class="online-form__input" id="password" name="password" placeholder="Пароль"
+              autocomplete="off" />
+
+
+          </label>
+          <button type="submit" class="online__btn online__btn-login">
+            Войти
+          </button>
+          <span class="alert alert-danger" role="alert">Неверный логин и(или) пароль</span>
+        </form>
+      </div>
+    </div>
+
+    <div class="waves">
+      <svg class="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#eef9ff"
+          d="M0,64L48,58.7C96,53,192,43,288,69.3C384,96,480,160,576,176C672,192,768,160,864,133.3C960,107,1056,85,1152,69.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+
+      <svg class="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          d="M0,64L48,58.7C96,53,192,43,288,69.3C384,96,480,160,576,176C672,192,768,160,864,133.3C960,107,1056,85,1152,69.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+      <svg class="wave3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          d="M0,64L48,58.7C96,53,192,43,288,69.3C384,96,480,160,576,176C672,192,768,160,864,133.3C960,107,1056,85,1152,69.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+
+    <footer class="online-footer">
+      <div class="footer__content">
+        <div class="footer__logo-wrapper">
+          <img class="footer__logo" src="logoolddark.svg" alt="Логотип" />
+          <h3 class="footer__tagline">Актуальные IT решения с 1992 года</h3>
+        </div>
+        <div class="footer__contact">
+          <h3 class="footer__contact_title">Контакты</h3>
+          <p class="footer__contact_item">(+7) 495-984-80-69</p>
+          <p class="footer__contact_item">info@m-cti.ru</p>
+        </div>
+      </div>
+      <p class="footer__copyright">© 2022 ЦТИ</p>
+    </footer>
+  </div>
+  <script src=""></script>
+</body>
+
+</html>

@@ -1,136 +1,154 @@
- .more__btn {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;   
-    text-decoration: none;
-    background: transparent;
-    padding: 0;
-   width: 200px;
-    height: 48px;      
-  }
+.more__btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  width: 200px;
+  height: 48px;
+}
 
-  @media screen and (max-width: 650px) {
-    .more__btn {
-      width: 160px;
-    }
-  }
-
-  .more__btn_large{
-    width: 440px;
-  }
-
-  
 @media screen and (max-width: 650px) {
+  .more__btn {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .more__btn {
+    width: 140px;
+  }
+}
+
+.more__btn_large {
+  width: 500px;
+}
+
+@media screen and (max-width: 650px) {
+  .more__btn_large {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 370px) {
   .more__btn_large {
     width: 300px;
   }
 }
-   .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 48px;
-    height: 48px;
-    background: #12abdb;
-    border-radius: 1.625rem;
-  }
 
-  @media screen and (max-width: 650px) {
-    .circle {      
-      width: 34px;
-      height: 34px;
-    }
+.circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  background: #12abdb;
+  border-radius: 1.625rem;
+}
+
+@media screen and (max-width: 650px) {
+  .circle {
+    width: 34px;
+    height: 34px;
   }
-   .more__icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
-  }
+}
+.more__icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+.more__icon.more__arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 12px;
+  width: 1.14rem;
+  height: 2px;
+  background: none;
+}
+@media screen and (max-width: 650px) {
   .more__icon.more__arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 12px;
-    width: 1.14rem;
-    height: 2px;
-    background: none;
+    left: -5px;
   }
-  @media screen and (max-width: 650px) {
-    .more__icon.more__arrow {      
-      left: -5px;
-    }
-  }
+}
 
-  .circle .more__icon.more__arrow::before {
-    position: absolute;
-    content: "";
-    top: -6px;
-    right: 0.0625rem;
-    width: 12px;
-    height: 12px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform: rotate(45deg);
-  }
-  
+.circle .more__icon.more__arrow::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  right: 0.0625rem;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+.more__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  padding: 0;
+  margin: 0;
+  color: #282936;
+  font-weight: 700;
+  line-height: 48px;
+  padding: 0 0 0 50px;
+  margin: 0;
+  font-size: 20px;
+  color: #12abdb;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
   .more__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    padding: 0;
-    margin: 0;
-    color: #282936;
-    font-weight: 700;
+    line-height: 34px;
+    font-size: 14px;
     line-height: 48px;
-    padding: 0 0 0 50px;
-    margin:0;
-    font-size: 20px;
-    color: #12abdb;
+    padding: 0 0 0 20px;
+    color: #fff;
   }
+}
 
-  @media screen and (max-width: 650px) {
-    .more__text {
-      line-height: 34px;
-      font-size: 14px;
-      line-height: 48px;
-      padding: 0 0 0 20px;
-      color: #fff;
-    }
+@media screen and (max-width: 370px) {
+  .more__text {
+    line-height: 34px;
+    font-size: 12px;
+    line-height: 48px;
+    padding: 0 0 0 20px;
+    color: #fff;
   }
+}
 
+.more__btn:hover .circle {
+  width: 100%;
+}
 
-  .more__btn:hover .circle {
+@media screen and (max-width: 650px) {
+  .circle {
     width: 100%;
   }
+}
+.more__btn:hover .circle .more__icon.more__arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
 
-  @media screen and (max-width: 650px) {
-    .circle{      
-      width: 100%;
-    }
-  }
-  .more__btn:hover .circle .more__icon.more__arrow {
+@media screen and (max-width: 650px) {
+  .circle .more__icon.more__arrow {
     background: #fff;
     transform: translate(1rem, 0);
   }
+}
 
-  
-  @media screen and (max-width: 650px) {
-    .circle .more__icon.more__arrow{      
-      background: #fff;
-      transform: translate(1rem, 0);
-    }
-  }
-
-  .more__btn:hover .more__text {
-    color: #fff;
-  }
-
-
-  
+.more__btn:hover .more__text {
+  color: #fff;
+}

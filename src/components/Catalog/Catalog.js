@@ -1,22 +1,29 @@
-import React, { useEffect, useState } from 'react';
-import './Catalog.css';
-import '../Capabilities/Capabilities.css';
+import React, { useEffect, useState } from "react";
+import "./Catalog.css";
 
-import catalogintro from '../../video/catalog.webm';
-import monitor from '../../images/monitor.png';
+import catalogintro from "../../video/catalog.webm";
+import catalogintroMp from "../../video/catalog.mp4";
+import monitor from "../../images/monitor.png";
 
 function Catalog({ catalogdata }) {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  const styles = {
-    '--normal': `url(${monitor})`,
-  };
-
   const [cur, setCur] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const styles = {
+    "--normal": `url(${monitor})`,
+  };
 
   const onClick = (idx) => {
     idx + 1 === cur ? setCur(0) : setCur(idx + 1);
   };
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const videoWidth = (width) => {
     if (width > 1595) {
       return 778;
@@ -28,30 +35,27 @@ function Catalog({ catalogdata }) {
       return 520;
     } else return 260;
   };
-  const position = {
+  const positionc = {
     transform: `translateX(-${cur * videoWidth(windowWidth)}px)`,
   };
 
-  useEffect(() => {
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-
-
   return (
-    <section className='catalog'>
-      <h2 className='catalog__title'>Интерактивные Электронные Каталоги</h2>
-      <div className='catalog__container'>
-        <div className='catalog__column_left'>
-          <div className='catalog__video-content' style={styles}>
-            <div className='catalog__video-wrapper'>
-              <div className='catalog__videos' style={position}>
-                <video autoPlay muted loop className='catalog__video'>
-                  <source src={catalogintro} type='video/webm' />
+    <section className="catalog">
+      <h2 className="catalog__title">Интерактивные Электронные Каталоги</h2>
+      <div className="catalog__container">
+        <div className="catalog__column_left">
+          <div className="catalog__video-content" style={styles}>
+            <div className="catalog__video-wrapper">
+              <div className="catalog__videos" style={positionc}>
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="catalog__video"
+                >
+                  <source src={catalogintro} type="video/webm" />
+                  <source src={catalogintroMp} type="video/mp4" />
                 </video>
                 {catalogdata.map((item, idx) => {
                   return (
@@ -59,10 +63,12 @@ function Catalog({ catalogdata }) {
                       autoPlay
                       muted
                       loop
-                      className='catalog__video'
+                      className="catalog__video"
                       key={idx}
+                      playsInline
                     >
-                      <source src={item.webm} type='video/webm' />
+                      <source src={item.webm} type="video/webm" />
+                      <source src={item.mp4} type="video/mp4" />
                     </video>
                   );
                 })}
@@ -71,8 +77,8 @@ function Catalog({ catalogdata }) {
           </div>
         </div>
 
-        <div className='catalog__column_right'>
-          <p className='catalog__discription'>
+        <div className="catalog__column_right">
+          <p className="catalog__discription">
             Интерактивный электронный каталог сборочных единиц, деталей и узлов
             представляет собой интерактивную иерархическую модель изделия.
             Элементы модели снабжены подробной текстовой и графической
@@ -80,41 +86,41 @@ function Catalog({ catalogdata }) {
             технологических требованиях
           </p>
           {!catalogdata || catalogdata.length === 0 ? null : (
-            <div className='catalog__capabilities'>
+            <div className="catalog__capabilities">
               <h2
                 className={`capabilities-title ${
-                  cur === 0 ? '' : 'capabilities-title_active'
+                  cur === 0 ? "" : "capabilities-title_active"
                 }`}
               >
                 Функциональность
               </h2>
               {catalogdata.map((item, idx) => {
                 return (
-                  <div className='capabilities__item' key={idx}>
+                  <div className="capabilities__item" key={idx}>
                     <button
                       onClick={() => onClick(idx)}
                       className={`capabilities__button ${
-                        idx + 1 === cur ? 'capabilities__button_active' : ''
+                        idx + 1 === cur ? "capabilities__button_active" : ""
                       }`}
                     >
                       <h3
                         className={`capabilities__item-title ${
                           idx + 1 === cur
-                            ? 'capabilities__item-title_active'
-                            : ''
+                            ? "capabilities__item-title_active"
+                            : ""
                         }`}
                       >
                         {item.title}
                       </h3>
                       <div
                         className={`capabilities__arrow ${
-                          idx + 1 === cur ? 'capabilities__arrow_active' : ''
+                          idx + 1 === cur ? "capabilities__arrow_active" : ""
                         }`}
                       ></div>
                     </button>
                     <p
                       className={`capabilities__dropdown ${
-                        idx + 1 === cur ? 'capabilities__dropdown_active' : ''
+                        idx + 1 === cur ? "capabilities__dropdown_active" : ""
                       }`}
                     >
                       {item.description}

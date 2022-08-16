@@ -17,7 +17,6 @@ const Advantages = ({ items }) => {
 
   const [touchPosition, setTouchPosition] = useState(null);
 
-  // Set the length to match current children from props
   useEffect(() => {
     setLength(items.length);
   }, [items]);
@@ -71,7 +70,7 @@ const Advantages = ({ items }) => {
   return (
     <section className="advantages">
       <h2 className="advantages__title">
-      Оптимальные решения на основе современных технологий и экспертного опыта
+        Оптимальные решения на основе современных технологий и экспертного опыта
       </h2>
       {windowWidth > 419 ? (
         <div className="advantages-list">

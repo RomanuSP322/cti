@@ -24,67 +24,59 @@
 }
 
 .main__slider {
-  
   padding-top: 70px;
   overflow: hidden;
   position: relative;
   padding-left: 350px;
- box-sizing: border-box;
+  box-sizing: border-box;
   margin-bottom: 80px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 1980px) {
-  .main__slider{
+  .main__slider {
     padding-left: 150px;
-    
   }
 }
 
-
-
 @media screen and (max-width: 1300px) {
-  .main__slider{
+  .main__slider {
     padding-left: 100px;
-    
-    
   }
 }
 
 @media screen and (max-width: 900px) {
-  .main__slider{
+  .main__slider {
     padding-left: 60px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .main__slider{
+  .main__slider {
     padding-left: 18px;
     margin-bottom: 0;
+    height: 94vh;
   }
 }
 
 .main__title {
- 
-
   font-size: 90px;
   line-height: 1.2;
   font-weight: 700;
   color: white;
   margin: 0;
   padding-top: 150px;
-  
 }
 
 @media screen and (max-width: 1600px) {
   .main__title {
     font-size: 60px;
-  padding-top: 120px;
-
+    padding-top: 120px;
   }
 }
-
 
 @media screen and (max-width: 1300px) {
   .main__title {
@@ -139,46 +131,49 @@
   }
 }
 
-
-
 .main__image {
   position: absolute;
-  top: 100px;
+  top: 80px;
   right: -300px;
   max-height: 1200px;
 }
 
-
 @media screen and (max-width: 1920px) {
   .main__image {
-    top: 100px;
+    top: 80px;
     right: -300px;
-    max-height: 900px;
+    max-height: 940px;
   }
 }
 
-
+@media screen and (max-width: 1700px) {
+  .main__image {
+    top: 100px;
+    right: -220px;
+    height: 800px;
+  }
+}
 
 @media screen and (max-width: 1600px) {
   .main__image {
-    top: 50px;
+    top: 70px;
     right: -220px;
-    height: 700px;
+    height: 800px;
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .main__image {
     top: 100px;
-    right: -100px;
-    height: 600px;
+    right: -200px;
+    height: 650px;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .main__image {
     top: 180px;
-    right: -100px;
+    right: -180px;
     height: 550px;
   }
 }
@@ -186,7 +181,7 @@
 @media screen and (max-width: 900px) {
   .main__image {
     top: 180px;
-    right: -100px;
+    right: -180px;
     width: 100%;
     height: auto;
   }
@@ -195,94 +190,99 @@
 @media screen and (max-width: 650px) {
   .main__image {
     top: 250px;
-    right: -100px;
+    right: -120px;
     width: 120%;
     height: auto;
     overflow: hidden;
-    }
-}
-
-
-
-
-
-
-.main__notes {
-  display: flex;
-  justify-content: space-between;
-  width: 35%;
-  padding-top: 460px;
-}
-
-@media screen and (max-width: 1920px) {
-  .main__notes {
-    padding-top: 180px;
   }
 }
 
-@media screen and (max-width: 1100px) {
+.main__notes {
+  display: flex;
+  margin-top: auto;
+  gap: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1000px) {
   .main__notes {
-    padding-top: 350px;
+    padding-bottom: 80px;
   }
 }
 
 .main__note {
   color: #fff;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+}
+
+.main__note:hover {
+  filter: drop-shadow(0 0 22px #12abdb);
+  cursor: pointer;
 }
 
 .main__note_title {
-  font-size: 46px;
+  font-size: 38px;
   line-height: 1.5;
   font-weight: 400;
   margin: 0;
   padding-bottom: 6px;
+  transition: color 0.4s ease-in-out;
+}
+
+.main__note:hover > .main__note_title {
+  color: #12abdb;
 }
 
 @media screen and (max-width: 1600px) {
-  .main__note_title{
+  .main__note_title {
     font-size: 36px;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .main__note_title{
+  .main__note_title {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .main__note_title{
+  .main__note_title {
     font-size: 18px;
   }
 }
 
 .main__note_subtitle {
   font-size: 20px;
+  line-height: 28px;
   font-weight: 700;
-  min-width: 200px;
+  max-width: 250px;
   margin: 0;
 }
 
 @media screen and (max-width: 1600px) {
-  .main__note_subtitle{
+  .main__note_subtitle {
     font-size: 16px;
+    line-height: 22px;
+    max-width: 200px;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .main__note_subtitle{
+  .main__note_subtitle {
     font-size: 12px;
+    line-height: 18px;
     font-weight: 500;
+    max-width: 150px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .main__note_subtitle{
+  .main__note_subtitle {
     font-size: 12px;
     min-width: 100px;
   }
 }
-
 
 .main__accordion {
   padding-top: 20px;
@@ -306,4 +306,3 @@
 .main__news {
   width: 100%;
 }
-

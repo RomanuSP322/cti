@@ -1,43 +1,47 @@
 .footer {
   background-color: #eef9ff;
   padding-left: 350px;
-  padding-right: 250px;
+  padding-right: 200px;
   padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1920px) {
   .footer {
     padding-left: 150px;
-    padding-right: 100px;
+    padding-right: 0;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .footer {
     padding-left: 100px;
-    padding-right: 50px;
   }
 }
 
 @media screen and (max-width: 900px) {
   .footer {
     padding-left: 60px;
-    padding-right: 0;
   }
 }
-
 
 @media screen and (max-width: 650px) {
   .footer {
     padding-left: 18px;
-    padding-right: 0;
   }
 }
-
 
 .footer__content {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 24px;
+  }
 }
 
 .footer__logo-wrapper {
@@ -54,7 +58,6 @@
 @media screen and (max-width: 650px) {
   .footer__logo-wrapper {
     flex-direction: column;
-    justify-content: left;
     padding-top: 18px;
   }
 }
@@ -88,11 +91,9 @@
   }
 }
 
-
 .footer__tagline {
   margin: 0;
   padding-left: 30px;
-  /* color:#12abdb; */
   font-size: 24px;
   line-height: 32px;
   max-width: 300px;
@@ -117,10 +118,10 @@
 
 @media screen and (max-width: 650px) {
   .footer__tagline {
-  padding-left: 0;
-  text-align: center;
-  font-size: 16px;
-  line-height: 20px;
+    padding-left: 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -159,25 +160,42 @@
   }
 }
 
-
 .footer__contact_item {
-  font-size: 16px;
   padding-left: 20px;
-  font-weight: 400px;
 }
 
 @media screen and (max-width: 1024px) {
   .footer__contact_item {
-    font-size: 14px;
     padding-left: 14px;
   }
 }
 
 @media screen and (max-width: 650px) {
   .footer__contact_item {
-    font-size: 12px;
     padding-left: 14px;
   }
+}
+
+.footer__contact_link {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__contact_link {
+    font-size: 14px;
+  }
+}
+
+.footer__contact_link_dark {
+  color: #fff;
+}
+
+.footer__contact_link:hover {
+  color: #12abdb;
 }
 
 .footer__contact_button {
@@ -193,7 +211,6 @@
   border: 2px solid #12abdb;
   transition: all 0.3s ease-in-out;
 }
-
 
 @media screen and (max-width: 1024px) {
   .footer__contact_button {
@@ -218,6 +235,12 @@
 }
 .footer__copyright {
   margin: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .footer__copyright {
+    font-size: 14px;
+  }
 }
 
 .footer__thme_dark {

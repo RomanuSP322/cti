@@ -1,12 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { useSwipeable } from 'react-swipeable';
-import './Slider.css';
+import React, { useEffect, useState } from "react";
+import { useSwipeable } from "react-swipeable";
+import "./Slider.css";
 
-export const SliderItem = ({ children, width}) => {
+export const SliderItem = ({ children, width }) => {
   return (
-    <div className='carousel-item' style={{ width: width,
-    //  opacity: `${index === activeIndex ? '1' : '0'}`,
-      }}>
+    <div
+      className="carousel-item"
+      style={{
+        width: width,
+        //  opacity: `${index === activeIndex ? '1' : '0'}`,
+      }}
+    >
       {children}
     </div>
   );
@@ -15,7 +19,6 @@ export const SliderItem = ({ children, width}) => {
 const Slider = ({ children }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
- 
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
@@ -46,30 +49,29 @@ const Slider = ({ children }) => {
   });
 
   return (
-    <div  {...handlers} className='carousel'>
+    <div {...handlers} className="carousel">
       <div
-        className='inner'
+        className="inner"
         style={{
-           transform: `translateX(-${activeIndex * 100}%)`,       
-                     
-          }}
+          transform: `translateX(-${activeIndex * 100}%)`,
+        }}
       >
         {React.Children.map(children, (child, i) => {
-          return React.cloneElement(child, { width: '100%' });
+          return React.cloneElement(child, { width: "100%" });
         })}
       </div>
-      <div className='indicators'>
+      <div className="indicators">
         {React.Children.map(children, (child, index) => {
           return (
             <button
-              className={`indicator ${index === activeIndex ? 'active' : ''}`}
+              className={`indicator ${index === activeIndex ? "active" : ""}`}
               onClick={() => {
                 updateIndex(index);
               }}
             >
-              {index === 0 && <p className='indicator__title'>Решения</p>}
-              {index === 1 && <p className='indicator__title'>Проекты</p>}
-              {index === 2 && <p className='indicator__title'>Технологии</p>}
+              {index === 0 && <p className="indicator__title">Решения</p>}
+              {index === 1 && <p className="indicator__title">Проекты</p>}
+              {index === 2 && <p className="indicator__title">Технологии</p>}
             </button>
           );
         })}

@@ -1,91 +1,112 @@
-.waves{
+.waves {
   position: relative;
   height: 400px;
   overflow: hidden;
- 
 }
 
 @media screen and (max-width: 1920px) {
-  .waves{
+  .waves {
     height: 300px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .waves{
-    height: 250px;
+  .waves {
+    height: 220px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .waves{
-    height: 200px;
+  .waves {
+    height: 180px;
   }
 }
 
 @media screen and (max-width: 720px) {
-  .waves{
-    height: 160px;
+  .waves {
+    height: 130px;
   }
 }
 @media screen and (max-width: 650px) {
-  .waves{
-    height: 120px;
-  }
-}
-
-
-@media screen and (max-width: 380px) {
-  .waves{
+  .waves {
     height: 100px;
   }
 }
-.wave1{
+
+@media screen and (max-width: 380px) {
+  .waves {
+    height: 80px;
+  }
+}
+.wave1 {
   z-index: 3;
   position: absolute;
-  left:0;
-  top:40px;
+  left: 0;
+  top: 40px;
   overflow: hidden;
 }
 
-.wave2{
+@media screen and (max-width: 650px) {
+  .wave1 {
+    top: 20px;
+  }
+}
+
+.wave2 {
   position: absolute;
   top: 20px;
   z-index: 2;
   left: -5px;
   transform: rotate(1deg);
   overflow: hidden;
- 
 }
 
-.wave3{
+@media screen and (max-width: 650px) {
+  .wave2 {
+    top: 10px;
+  }
+}
+
+.wave3 {
   position: absolute;
   top: 0;
   left: -5px;
   transform: rotate(2deg);
   z-index: 1;
-  
 }
 
-.wave4{
+.wave4 {
   z-index: 3;
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   overflow: hidden;
 }
-.wave5{
+
+.wave5 {
   position: absolute;
-  top: 20px;
   z-index: 2;
   left: -5px;
+  top: 20px;
   transform: rotate(1deg);
   overflow: hidden;
 }
-.wave6{
+@media screen and (max-width: 650px) {
+  .wave5 {
+    top: 10px;
+  }
+}
+
+.wave6 {
   position: absolute;
   top: 40px;
   left: -5px;
   transform: rotate(2deg);
   z-index: 1;
+}
+
+@media screen and (max-width: 650px) {
+  .wave6 {
+    top: 20px;
+  }
 }

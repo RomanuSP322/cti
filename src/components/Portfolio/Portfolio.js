@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 import { intro, projects } from "../../consts/portfolioData";
-import Header from "../Header/Header";
+
 import Intro from "../Intro/Intro.js";
 import Waves from "../Waves/Waves";
 import Footer from "../Footer/Footer";
@@ -10,21 +10,14 @@ import portfolioBg from "../../images/portfolio.png";
 import "./Portfolio.css";
 
 function Portfolio() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
-
-
   const styles = {
     "--normal": `url(${portfolioBg})`,
-
   };
 
   const next = useRef(null);
 
   return (
     <div className="portfolio" style={styles}>
-      <Header />
       <Intro intro={intro} nextRef={next} scroller={"off"} />
       <Waves
         pos={"up"}
@@ -33,9 +26,9 @@ function Portfolio() {
         }
       />
       <div className="portfolio__about" ref={next}>
-        <ProjectsList projects={projects}/>
-         </div>
-      <Footer theme={'dark'} />
+        <ProjectsList projects={projects} />
+      </div>
+      <Footer theme={"dark"} />
     </div>
   );
 }

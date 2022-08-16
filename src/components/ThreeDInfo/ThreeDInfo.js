@@ -9,17 +9,16 @@ function ThreeDInfo({ items }) {
   const [hover, setHover] = useState(false);
 
   const styles = {
-   '--normal':  `url(${line})`,
-    
-    '--hover':  `url(${real})`
-  }
+    "--normal": `url(${line})`,
 
+    "--hover": `url(${real})`,
+  };
 
   return (
     <section className="threedinfo">
-
-    
-      <h2 className="threedinfo__title">Цифровая трансформация технической документации</h2>
+      <h2 className="threedinfo__title">
+        Цифровая трансформация технической документации
+      </h2>
       <div className="threedinfo__content">
         <div className="threedinfo__column_left">
           {!items || items.length === 0
@@ -37,14 +36,10 @@ function ThreeDInfo({ items }) {
                 );
               })}
         </div>
-        <div
-          className="threedinfo__column_right"
-          style={styles}      
-         
-        >
-        <HoverMe />
+        <div className="threedinfo__column_right" style={styles}>
+          <HoverMe />
         </div>
-      </div>      
+      </div>
     </section>
   );
 }

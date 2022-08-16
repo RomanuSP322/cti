@@ -1,39 +1,37 @@
-.ietr{
-  background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%); 
+.ietr {
+  background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%);
 }
 
-.ietr__intro{
-padding: 70px 350px 100px;
-height: 100vh;
-box-sizing: border-box;
-background-size: contain;
+.ietr__intro {
+  padding: 70px 350px 100px;
+  height: 100vh;
+  box-sizing: border-box;
+  background-size: contain;
   background-position: right;
-
 }
 
 @media screen and (max-width: 1920px) {
-  .ietr__intro{
+  .ietr__intro {
     padding: 70px 150px 100px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .ietr__intro{
+  .ietr__intro {
     padding: 70px 100px 100px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .ietr__intro{
+  .ietr__intro {
     padding: 80px 20px 0 60px;
     background-position: bottom 20px right;
     background-size: 130% auto;
   }
 }
 
-
 @media screen and (max-width: 850px) {
-  .ietr__intro{
+  .ietr__intro {
     background-position: bottom right;
     background-size: 165% auto;
     padding: 60px 20px 0 60px;
@@ -41,7 +39,7 @@ background-size: contain;
 }
 
 @media screen and (max-width: 650px) {
-  .ietr__intro{
+  .ietr__intro {
     background-position: bottom 20px right;
     background-size: 180% auto;
     padding: 60px 18px 0 18px;
@@ -50,124 +48,81 @@ background-size: contain;
 }
 
 .ietr__title {
-  font-size: 72px; 
-  line-height: 86px; 
-  max-width: 1200px; 
+  font-size: 72px;
+  line-height: 86px;
+  max-width: 1200px;
   padding-top: 350px;
   padding-bottom: 30px;
 }
 
 @media screen and (max-width: 1920px) {
-  .ietr__title{
+  .ietr__title {
     padding-top: 200px;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .ietr__title{
+  .ietr__title {
     font-size: 50px;
-    line-height: 58px; 
-    max-width: 800px; 
+    line-height: 58px;
+    max-width: 800px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .ietr__title{
+  .ietr__title {
     padding-top: 150px;
     font-size: 40px;
-    line-height: 48px; 
+    line-height: 48px;
     max-width: 800px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .ietr__title{
-    padding-top: 130px;    
+  .ietr__title {
+    padding-top: 130px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .ietr__title{
+  .ietr__title {
     padding-top: 150px;
     font-size: 25px;
-    line-height: 32px; 
+    line-height: 32px;
     max-width: 400px;
-    padding-bottom: 10px;    
+    padding-bottom: 10px;
   }
 }
 
-
-
-.ietr__subtitle{
+.ietr__subtitle {
   font-size: 35px;
   line-height: 1.2;
   max-width: 700px;
-  
 }
 
 @media screen and (max-width: 1600px) {
-  .ietr__subtitle{
-    font-size: 26px;     
-    max-width: 500px; 
+  .ietr__subtitle {
+    font-size: 26px;
+    max-width: 500px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .ietr__subtitle{
-    font-size: 20px;     
-    max-width: 390px; 
+  .ietr__subtitle {
+    font-size: 20px;
+    max-width: 390px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .ietr__subtitle{
-        
-    max-width: 400px; 
+  .ietr__subtitle {
+    max-width: 400px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .ietr__subtitle{
-    font-size: 14px;   
-    max-width: 270px; 
+  .ietr__subtitle {
+    font-size: 14px;
+    max-width: 270px;
   }
 }
-
-/* 
-.ietr__catalog {
-  background-color: #eef9ff;
-  padding: 0px 150px 100px;
-}
-
-.ietr__catalog-title {
-  font-size: 66px; 
-  line-height: 76px;   
-  font-weight: 700;
-  color: #12abdb;
-  margin: 0;
-  max-width: 1000px;
-  padding-bottom: 50px;
-}
-
-.ietr__catalog-content{
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.ietr__catalog-image{
-  object-fit: cover;   
-  height: 600px;
-
-}
-
-.ietr__catalog-article{
-  font-size: 24px; 
-  line-height: 32px;   
-  font-weight: 500;
-  color: #000;
-  max-width: 650px;
-  margin: 0;
-  align-self: center;
-  padding-bottom: 100px;
-} */

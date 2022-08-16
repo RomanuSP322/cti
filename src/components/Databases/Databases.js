@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import { intro, panels, databaseCases } from "../../consts/databasesData";
-import Header from "../Header/Header";
+
 import Intro from "../Intro/Intro.js";
 import Accordion from "../Accordion/Accordion";
 import Waves from "../Waves/Waves";
@@ -24,15 +24,10 @@ function Databases() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
-
   const next = useRef(null);
 
   return (
     <div className="databases">
-      <Header />
       <Intro intro={intro} nextRef={next} />
 
       <div className="main__accordion" ref={next}>
@@ -62,10 +57,9 @@ function Databases() {
             решений.
           </p>
           <div className="databases__platform_btn">
-           
             <MoreBtn
-              direction={"#"}
-              text={`Читать подробнее о платформе`}
+              direction={"http://roma.m-cti.ru/"}
+              text={`Перейти к технической документации`}
               type={"learn_more"}
             />
           </div>

@@ -63,7 +63,7 @@ function Whowe() {
             alt=""
             draggable="false"
           />
-              <img
+          <img
             className="partners__img partner__circle-ico"
             src={tvz}
             alt=""
@@ -75,7 +75,7 @@ function Whowe() {
             alt=""
             draggable="false"
           />
-      
+
           <img className="partners__img " src={get} alt="" draggable="false" />
           <img
             className="partners__img "

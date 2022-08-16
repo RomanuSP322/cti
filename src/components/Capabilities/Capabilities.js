@@ -4,13 +4,12 @@ import vrvideoWebm from "../../video/catalog.webm";
 import tablet from "../../images/tablet.png";
 
 function Capabilities({ capabilities }) {
-  const [cur, setCur] = useState(0);  
+  const [cur, setCur] = useState(0);
   const position = { transform: `translateY(-${cur * 505}px)` };
 
-  
   const onClick = (idx) => {
-    setCur(idx);    
-   };
+    setCur(idx);
+  };
 
   return (
     <section className="capabilities">
@@ -19,7 +18,6 @@ function Capabilities({ capabilities }) {
         <div className="capabilities__column_left">
           {!capabilities || capabilities.length === 0 ? null : (
             <>
-                 
               {capabilities.map((item, idx) => {
                 return (
                   <div className="capabilities__item" key={idx}>
@@ -67,7 +65,6 @@ function Capabilities({ capabilities }) {
                   />
                 );
               })}
-         
             </div>
           </div>
         </div>

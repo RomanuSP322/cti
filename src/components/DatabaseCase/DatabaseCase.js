@@ -11,7 +11,7 @@ function DatabaseCase({
   path,
   theme,
   imgpos,
-  columns
+  columns,
 }) {
   return (
     <div
@@ -41,12 +41,14 @@ function DatabaseCase({
             <h2 className="database-case__title">{title}</h2>
 
             <h3 className="database-case__subtitle">{subtitle}</h3>
-           {  columns === "1" ? <img
-            src={image}
-            alt='img'
-            className='database-case__image'
-            draggable='false'
-          />  : null} 
+            {columns === "1" ? (
+              <img
+                src={image}
+                alt="img"
+                className="database-case__image"
+                draggable="false"
+              />
+            ) : null}
             <p className="database-case__article">{description}</p>
 
             <div className="database-case__btn-more">

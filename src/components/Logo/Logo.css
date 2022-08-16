@@ -1,9 +1,9 @@
 .logo {
-  width: 50px;  
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .logo:hover {

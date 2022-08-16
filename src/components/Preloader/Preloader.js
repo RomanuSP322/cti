@@ -1,17 +1,12 @@
-import React, {useState, useEffect} from 'react';
-import './Preloader.css';
+import React from "react";
+import "./Preloader.css";
 
 const Preloader = () => {
-
-  return ( 
+  return (
     <div className="preloader">
-<div className="triple-spinner">
-</div>
-</div>
+      <div className="triple-spinner"></div>
+    </div>
   );
-}
-
+};
 
 export default Preloader;
-
-

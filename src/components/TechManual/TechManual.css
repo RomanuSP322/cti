@@ -6,39 +6,35 @@
 }
 
 @media screen and (max-width: 1920px) {
-  .manual{
+  .manual {
     padding: 100px 50px 100px 150px;
- 
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .manual{
+  .manual {
     padding: 50px 50px 50px 150px;
     min-height: 700px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .manual{
+  .manual {
     padding: 50px 50px 50px 100px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .manual{
+  .manual {
     padding: 50px 50px 50px 60px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .manual{
+  .manual {
     padding: 20px 18px 20px 18px;
   }
 }
-
-
-
 
 .manual__title {
   font-size: 60px;
@@ -51,7 +47,7 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .manual__title{
+  .manual__title {
     font-size: 40px;
     line-height: 48px;
     max-width: 840px;
@@ -60,7 +56,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .manual__title{
+  .manual__title {
     font-size: 24px;
     line-height: 30px;
     max-width: 360px;
@@ -74,15 +70,13 @@
   width: 100%;
 }
 
-
 @media screen and (max-width: 930px) {
-  .manual__container{
+  .manual__container {
     flex-direction: column-reverse;
     align-items: center;
     gap: 30px;
   }
 }
-
 
 .manual__column_left {
   justify-self: right;
@@ -90,13 +84,12 @@
 }
 
 @media screen and (max-width: 930px) {
-  .manual__column_left{
+  .manual__column_left {
     display: flex;
     flex-direction: column-reverse;
-    gap: 30px
+    gap: 30px;
   }
 }
-
 
 .manual__video-content {
   background-image: var(--normal);
@@ -112,48 +105,47 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .manual__video-content{
+  .manual__video-content {
     padding-top: 25px;
-  padding-left: 18px;
-  padding-right: 34px;
-  padding-bottom: 25px;
+    padding-left: 18px;
+    padding-right: 34px;
+    padding-bottom: 25px;
   }
 }
-
 
 @media screen and (max-width: 1024px) {
-  .manual__video-content{
+  .manual__video-content {
     padding-top: 22px;
-  padding-left: 14px;
-  padding-right: 24px;
-  padding-bottom: 22px;
+    padding-left: 14px;
+    padding-right: 24px;
+    padding-bottom: 22px;
   }
 }
 
 @media screen and (max-width: 930px) {
-  .manual__video-content{
+  .manual__video-content {
     padding-top: 25px;
-  padding-left: 18px;
-  padding-right: 34px;
-  padding-bottom: 25px;
+    padding-left: 18px;
+    padding-right: 34px;
+    padding-bottom: 25px;
   }
 }
 
 @media screen and (max-width: 930px) {
-  .manual__video-content{
+  .manual__video-content {
     padding-top: 25px;
-  padding-left: 18px;
-  padding-right: 34px;
-  padding-bottom: 25px;
+    padding-left: 18px;
+    padding-right: 34px;
+    padding-bottom: 25px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .manual__video-content{
+  .manual__video-content {
     padding-top: 12px;
-  padding-left: 9px;
-  padding-right: 17px;
-  padding-bottom: 12px;
+    padding-left: 9px;
+    padding-right: 17px;
+    padding-bottom: 12px;
   }
 }
 
@@ -169,33 +161,32 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .manual__videos{
+  .manual__videos {
     width: 520px;
     height: 312px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .manual__videos{
+  .manual__videos {
     width: 389px;
     height: 233px;
   }
 }
 
 @media screen and (max-width: 930px) {
-  .manual__videos{
+  .manual__videos {
     width: 520px;
     height: 312px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .manual__videos{
+  .manual__videos {
     width: 260px;
     height: 156px;
   }
 }
-
 
 .manual__monitor-img {
   position: absolute;
@@ -209,19 +200,19 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .manual__column_right{
+  .manual__column_right {
     padding-left: 70px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .manual__column_right{
+  .manual__column_right {
     padding-left: 50px;
   }
 }
 
 @media screen and (max-width: 930px) {
-  .manual__column_right{
+  .manual__column_right {
     padding-left: 0;
   }
 }
@@ -230,34 +221,32 @@
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
-  color: #000;  
+  color: #000;
   margin: 0;
   padding-bottom: 40px;
- 
 }
 
 @media screen and (max-width: 1600px) {
-  .manual__discription{
+  .manual__discription {
     font-size: 18px;
-    line-height: 24px;  
+    line-height: 24px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .manual__discription{
+  .manual__discription {
     font-size: 14px;
-    line-height: 18px;  
+    line-height: 18px;
     padding-bottom: 10px;
   }
 }
 
 .manual__capabilities {
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 
 .manual__capabilities-title {
   font-size: 28px;
@@ -268,10 +257,6 @@
   transition: color 0.4s ease-in-out;
 }
 
-
 .manual__capabilities-title_active {
   color: #12abdb;
 }
-
-
-

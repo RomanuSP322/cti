@@ -79,6 +79,12 @@
   border: 2px solid rgba(170, 170, 170, 0.2);
   padding: 6px 11px;
   border-radius: 50px;
+  transition: border .4s ease-in-out;
+}
+
+.navigation__item_type_profile:hover {
+  border: 2px solid #12abdb;  
+  cursor: pointer;
 }
 
 .navigation__item_type_burger {
@@ -122,8 +128,7 @@
 	height: 3px; 
 	background-color: #12abdb; 
 	content: "";
-	transition: width 0.3s ease-out;
-  
+	transition: width 0.3s ease-out;  
 }
 
 .navigation__link_type_header:hover:after{
@@ -132,6 +137,7 @@
 
 .navigation__link_active.navigation__link_type_header:after{
   width: 100%;
+  
 }
 
 .navigation__link_type_burger {
@@ -165,6 +171,8 @@
   background-position: left;
   width: 100px;
 }
+
+
 
 .navigation__link_text_bold {
   font-weight: 500;
@@ -347,6 +355,11 @@
   transition: color .5s ease-in-out;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+
+.navigation__link_type_dropdown-active {
+  color: #12abdb;
 }
 
 

@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%); 
+  background: linear-gradient(280deg, rgb(5, 36, 82) 24%, rgb(3, 85, 137) 95%);
 }
 
 .triple-spinner {
@@ -17,7 +17,6 @@
   border-top: 4px solid #12abdb;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
-  
 }
 
 .triple-spinner::before,
@@ -35,7 +34,6 @@
   border-top-color: #128adb;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3.5s linear infinite;
-
 }
 .triple-spinner::after {
   top: 15px;
@@ -45,30 +43,26 @@
   border-top-color: #1279db;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.75s linear infinite;
-  
 }
-     
-
 
 @-webkit-keyframes spin {
-    from {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 @keyframes spin {
-    from {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

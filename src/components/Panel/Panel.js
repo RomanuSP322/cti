@@ -1,8 +1,6 @@
-import React from 'react';
+import React from "react";
 
 class Panel extends React.Component {
- 
-
   render() {
     const {
       label,
@@ -18,7 +16,7 @@ class Panel extends React.Component {
     } = this.props;
 
     const isActive = activeTab === index;
-    
+
     const innerStyleV = {
       width: `${isActive ? `${openedWidth}px` : `${closedWidth}px`}`,
       backgroundImage: `url(${imgurl})`,
@@ -32,26 +30,28 @@ class Panel extends React.Component {
 
     return (
       <div
-        className={`panel ${orientation === 'horizontal' ? '' : ''} ${index === length -1 ? '' : 'panel__border'}`}        
-        aria-expanded={isActive}  
+        className={`panel ${orientation === "horizontal" ? "" : ""} ${
+          index === length - 1 ? "" : "panel__border"
+        }`}
+        aria-expanded={isActive}
       >
         <div
           className={`panel__inner ${
-            orientation === 'horizontal' ? 'panel__inner_horizontal' : ''
+            orientation === "horizontal" ? "panel__inner_horizontal" : ""
           }`}
-          style={orientation === 'horizontal' ? innerStyleH : innerStyleV}
+          style={orientation === "horizontal" ? innerStyleH : innerStyleV}
           aria-hidden={!isActive}
         >
           <button
             className={`panel__label ${
-              orientation === 'horizontal' ? 'panel__label_horizontal' : ''
+              orientation === "horizontal" ? "panel__label_horizontal" : ""
             }`}
-            role='tab'
+            role="tab"
             onClick={activateTab}
           >
             <h3
               className={`panel__title ${
-                orientation === 'horizontal' ? 'panel__title_horizontal' : ''
+                orientation === "horizontal" ? "panel__title_horizontal" : ""
               }`}
             >
               {label}

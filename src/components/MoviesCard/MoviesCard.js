@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import './MoviesCard.css';
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
+import "./MoviesCard.css";
 
 function MoviesCard({ movie, onSaveMovie, onDeleteMovie, isMovieSaved }) {
   const location = useLocation();
@@ -17,48 +17,48 @@ function MoviesCard({ movie, onSaveMovie, onDeleteMovie, isMovieSaved }) {
   }
 
   const cardLikeButtonClassName = `movies-card__button movies-card__like-button ${
-    isLiked ? 'movies-card__like-button_active' : null
+    isLiked ? "movies-card__like-button_active" : null
   }`;
 
   const durationFormatting = (minutes) => {
     const h = Math.floor(minutes / 60);
     const m = minutes % 60;
-    return `${h > 0 ? `${h}ч ` : ''}${m}м`;
+    return `${h > 0 ? `${h}ч ` : ""}${m}м`;
   };
 
   return (
-    <div className='movies-card'>
+    <div className="movies-card">
       <a
         href={movie.trailerLink}
-        className='movies-card__link'
-        target='_blank'
-        rel='noopener noreferrer'
+        className="movies-card__link"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <img
-          className='movies-card__image'
+          className="movies-card__image"
           src={
-            movie.image.url && location.pathname === '/movies'
+            movie.image.url && location.pathname === "/movies"
               ? `https://api.nomoreparties.co${movie.image.url}`
               : `${movie.image}`
           }
-          alt='Постер к фильму'
+          alt="Постер к фильму"
         />
       </a>
-      <h2 className='movies-card__title'>{movie.nameRU}</h2>
-      {location.pathname === '/movies' ? (
+      <h2 className="movies-card__title">{movie.nameRU}</h2>
+      {location.pathname === "/movies" ? (
         <button
           className={cardLikeButtonClassName}
-          type='button'
+          type="button"
           onClick={isLiked ? handleDeleteClick : handleLikeClick}
         ></button>
       ) : (
         <button
-          className='movies-card__button movies-card__delete-button'
-          type='button'
+          className="movies-card__button movies-card__delete-button"
+          type="button"
           onClick={handleDeleteClick}
         ></button>
       )}
-      <p className='movies-card__duration'>
+      <p className="movies-card__duration">
         {durationFormatting(movie.duration)}
       </p>
     </div>

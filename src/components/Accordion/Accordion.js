@@ -12,15 +12,8 @@ class Accordion extends React.Component {
       activeTab: 0,
     };
 
-   
     this.activateTab = this.activateTab.bind(this);
-    
   }
-
-
-
-
- 
 
   activateTab(index) {
     this.setState((prev) => ({
@@ -28,16 +21,13 @@ class Accordion extends React.Component {
     }));
   }
 
-
-
   render() {
     const { panels } = this.props;
-    const { type }  = this.props;
+    const { type } = this.props;
     const { activeTab } = this.state;
-    const sum =  panels.length ;  
-    const openedWidth = ((window.innerWidth)/2+50) ;
-    const closedWidth = ((openedWidth)/(sum)+20);
-    
+    const sum = panels.length;
+    const openedWidth = window.innerWidth / 2 + 50;
+    const closedWidth = openedWidth / sum + 20;
 
     return (
       <div
@@ -47,14 +37,14 @@ class Accordion extends React.Component {
         role="tablist"
       >
         {panels.map((panel, index) => (
-          <React.Fragment key={index} >
+          <React.Fragment key={index}>
             <Panel
               activeTab={activeTab}
               index={index}
-              orientation={type}             
-              openedWidth = {openedWidth}
-              closedWidth = {closedWidth}
-              length = {sum}
+              orientation={type}
+              openedWidth={openedWidth}
+              closedWidth={closedWidth}
+              length={sum}
               {...panel}
               activateTab={this.activateTab.bind(null, index)}
             />
@@ -73,7 +63,9 @@ class Accordion extends React.Component {
               }}
             >
               <h2
-                className={`panel__subtitle ${type === "horizosntal"  ? "panel__subtitle_disable" : ""}`}
+                className={`panel__subtitle ${
+                  type === "horizosntal" ? "panel__subtitle_disable" : ""
+                }`}
               >
                 {panel.subtitle}
               </h2>
@@ -85,7 +77,9 @@ class Accordion extends React.Component {
                 {panel.content_title}
               </h2>
               <p
-                className={`panel__content ${type === "horizontal" ? "panel__content_horizontal" : ""}`}
+                className={`panel__content ${
+                  type === "horizontal" ? "panel__content_horizontal" : ""
+                }`}
               >
                 {panel.content}
               </p>

@@ -34,7 +34,7 @@ const Polygraphy = ({ posters }) => {
       return 520;
     } else return 278;
   };
-  
+
   const position = {
     transform: `translateX(-${cur * videoWidth(windowWidth)}px)`,
   };
@@ -43,11 +43,9 @@ const Polygraphy = ({ posters }) => {
     function handleResize() {
       setWindowWidth(window.innerWidth);
     }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-
 
   return (
     <section className="polygraphy">

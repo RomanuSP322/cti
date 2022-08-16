@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Timeline.css";
 
-// Learning how to use useLayoutEffect
-// https://kentcdodds.com/blog/useeffect-vs-uselayouteffect
-// https://reactjs.org/docs/hooks-reference.html#uselayouteffect
-// https://dev.to/n8tb1t/tracking-scroll-position-with-react-hooks-3bbj
+
 const isBrowser = typeof window !== `undefined`;
 
 const getScrollPosition = ({ element, useWindow }) => {
@@ -41,7 +38,6 @@ const useScrollPosition = (effect, deps, element, useWindow, wait) => {
       }
     };
 
-    // add for reflow or reposition on resize or scroll
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleScroll);
     return () => {
@@ -51,7 +47,7 @@ const useScrollPosition = (effect, deps, element, useWindow, wait) => {
   }, deps);
 };
 
-// Event Item
+
 const EventItem = (props) => {
   const timeItem = React.useRef();
   const [isVisible, setIsVisible] = React.useState(false);
@@ -74,7 +70,7 @@ const EventItem = (props) => {
   useScrollPosition(({ currPos }) => {
     setIsVisible(checkElement(timeItem.current));
   });
-  const { date, content, role, company, location, image } = props;
+  const { date, content, image } = props;
   return (
     <li ref={timeItem} className={isVisible ? "inView" : null}>
       <div className="event">
@@ -88,7 +84,7 @@ const EventItem = (props) => {
   );
 };
 
-// Timeline
+
 const Timeline = ({ events }) => {
   const scrollArea = React.useRef();
 
